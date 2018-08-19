@@ -1,0 +1,29 @@
+Toon Code (Lower-Level) Example: 
+
+color #, #, # 
+outline #, #, # 
+line # 
+
+vector ***** 
+
+at #, #, # 
+about #, #, # 
+axes #, #, # 
+
+ellipsoid 
+
+reset 
+
+axes #, #, # 
+ellipsoid 
+
+path 
+pt #, #, # 
+pt #, #, # 
+pt #, #, # 
+... 
+
+fill 
+stroke 
+
+... 

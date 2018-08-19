@@ -1,0 +1,67 @@
+	len 83.33 
+	fps 12 
+	cam camera1 @1$0 
+	new camera camera1 
+	set camera camera1.y 400 @1$0 
+	new figure stick-figure-1 
+	set figure stick-figure-1.aboutZ 3.1415 @1$0 
+	new figure stick-figure-1.body 
+	new figure stick-figure-1.body.neck 
+	set figure stick-figure-1.body.neck.z 60 @1$0 
+	new figure stick-figure-1.body.neck.head 
+	set figure stick-figure-1.body.neck.head.z 10 @1$0 
+	new figure stick-figure-1.body.neck.head.top-of-head 
+	set figure stick-figure-1.body.neck.head.top-of-head.z 20 @1$0 
+	new figure stick-figure-1.body.neck.head.face 
+	set figure stick-figure-1.body.neck.head.face.y -10 @1$0 
+	set figure stick-figure-1.body.neck.head.face.z 30 @1$0 
+	new figure stick-figure-1.body.neck.head.face.eyes 
+	set figure stick-figure-1.body.neck.head.face.eyes.y -1 @1$0 
+	new figure stick-figure-1.body.neck.head.face.nose 
+	set figure stick-figure-1.body.neck.head.face.nose.z -2 @1$0 
+	new figure stick-figure-1.body.neck.head.face.mouth 
+	set figure stick-figure-1.body.neck.head.face.mouth.z -11.24 @1$0 
+	new figure stick-figure-1.body.left-high 
+	set figure stick-figure-1.body.left-high.z 60 @1$0 
+	set figure stick-figure-1.body.left-high.aboutY 1.57 @1$0 
+	new figure stick-figure-1.body.left-high.left-arm 
+	set figure stick-figure-1.body.left-high.left-arm.z 20 @1$0 
+	set figure stick-figure-1.body.left-high.left-arm.aboutY 0.4 @1$0 
+	new figure stick-figure-1.body.left-high.left-arm.left-forearm 
+	set figure stick-figure-1.body.left-high.left-arm.left-forearm.z 40 @1$0 
+	set figure stick-figure-1.body.left-high.left-arm.left-forearm.aboutY 0.8 @1$0 
+	new figure stick-figure-1.body.left-high.left-arm.left-forearm.left-hand 
+	set figure stick-figure-1.body.left-high.left-arm.left-forearm.left-hand.z 40 @1$0 
+	new figure stick-figure-1.body.right-high 
+	set figure stick-figure-1.body.right-high.z 60 @1$0 
+	set figure stick-figure-1.body.right-high.aboutY -1.57 @1$0 
+	new figure stick-figure-1.body.right-high.right-arm 
+	set figure stick-figure-1.body.right-high.right-arm.z 20 @1$0 
+	set figure stick-figure-1.body.right-high.right-arm.aboutY -0.4 @1$0 
+	new figure stick-figure-1.body.right-high.right-arm.right-forearm 
+	set figure stick-figure-1.body.right-high.right-arm.right-forearm.z 40 @1$0 
+	set figure stick-figure-1.body.right-high.right-arm.right-forearm.aboutY -0.8 @1$0 
+	new figure stick-figure-1.body.right-high.right-arm.right-forearm.right-hand 
+	set figure stick-figure-1.body.right-high.right-arm.right-forearm.right-hand.z 40 @1$0 
+	new figure stick-figure-1.left-low 
+	set figure stick-figure-1.left-low.aboutY 1.57 @1$0 
+	new figure stick-figure-1.left-low.left-femur 
+	set figure stick-figure-1.left-low.left-femur.z 20 @1$0 
+	set figure stick-figure-1.left-low.left-femur.aboutY 1.57 @1$0 
+	new figure stick-figure-1.left-low.left-femur.left-leg 
+	set figure stick-figure-1.left-low.left-femur.left-leg.z 60 @1$0 
+	new figure stick-figure-1.left-low.left-femur.left-leg.left-foot 
+	set figure stick-figure-1.left-low.left-femur.left-leg.left-foot.z 60 @1$0 
+	set figure stick-figure-1.left-low.left-femur.left-leg.left-foot.aboutX -1.57 @1$0 
+	new figure stick-figure-1.right-low 
+	set figure stick-figure-1.right-low.aboutY -1.57 @1$0 
+	new figure stick-figure-1.right-low.right-femur 
+	set figure stick-figure-1.right-low.right-femur.z 20 @1$0 
+	set figure stick-figure-1.right-low.right-femur.aboutY -1.57 @1$0 
+	new figure stick-figure-1.right-low.right-femur.right-leg 
+	set figure stick-figure-1.right-low.right-femur.right-leg.z 60 @1$0 
+	new figure stick-figure-1.right-low.right-femur.right-leg.right-foot 
+	set figure stick-figure-1.right-low.right-femur.right-leg.right-foot.z 60 @1$0 
+	set figure stick-figure-1.right-low.right-femur.right-leg.right-foot.aboutX -1.57 @1$0 
+	set figure stick-figure-1.x 100 @999 
+	set figure stick-figure-1.aboutX 120 @999 

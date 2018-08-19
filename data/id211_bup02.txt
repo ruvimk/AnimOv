@@ -1,0 +1,347 @@
+	new camera camera1<stop>
+4	set camera camera1.zoom 0.875 @1<stop>
+5	set camera camera1.zoom 0.75 @1<stop>
+6	set camera camera1.zoom 0.875 @1<stop>
+7	set camera camera1.zoom 1 @1<stop>
+8	set camera camera1.zoom -11 @1<stop>
+9	set camera camera1.zoom -10.875 @1<stop>
+10	set camera camera1.zoom 0 @1<stop>
+11	set camera camera1.zoom 0.875 @1<stop>
+12	set camera camera1.zoom 1 @1<stop>
+13	fps 12<stop>
+14	len 1<stop>
+15	cam camera1 @1$0<stop>
+	set figure stick-figure-1.aboutZ 1.57 @31$1 <stop>
+	new camera camera1 <stop>
+	set camera camera1.y 7 @1$0 <stop>
+	new figure stick-figure-1 <stop>
+	set figure stick-figure-1.aboutZ 3.1415 @1$0 <stop>
+	new figure stick-figure-1.body <stop>
+	new figure stick-figure-1.body.neck <stop>
+	set figure stick-figure-1.body.neck.z 60 @1$0 <stop>
+	new figure stick-figure-1.body.neck.head <stop>
+	set figure stick-figure-1.body.neck.head.z 10 @1$0 <stop>
+	new figure stick-figure-1.body.neck.head.top-of-head <stop>
+	set figure stick-figure-1.body.neck.head.top-of-head.z 20 @1$0 <stop>
+	new figure stick-figure-1.body.neck.head.face <stop>
+	set figure stick-figure-1.body.neck.head.face.y -10 @1$0 <stop>
+	set figure stick-figure-1.body.neck.head.face.z 30 @1$0 <stop>
+	new figure stick-figure-1.body.neck.head.face.eyes <stop>
+	set figure stick-figure-1.body.neck.head.face.eyes.y -1 @1$0 <stop>
+	new figure stick-figure-1.body.neck.head.face.nose <stop>
+	set figure stick-figure-1.body.neck.head.face.nose.z -2 @1$0 <stop>
+	new figure stick-figure-1.body.neck.head.face.mouth <stop>
+	set figure stick-figure-1.body.neck.head.face.mouth.z -11.24 @1$0 <stop>
+	new figure stick-figure-1.body.left-high <stop>
+	set figure stick-figure-1.body.left-high.z 60 @1$0 <stop>
+	set figure stick-figure-1.body.left-high.aboutY 1.57 @1$0 <stop>
+	new figure stick-figure-1.body.left-high.left-arm <stop>
+	set figure stick-figure-1.body.left-high.left-arm.z 20 @1$0 <stop>
+	set figure stick-figure-1.body.left-high.left-arm.aboutY 0.4 @1$0 <stop>
+	new figure stick-figure-1.body.left-high.left-arm.left-forearm <stop>
+	set figure stick-figure-1.body.left-high.left-arm.left-forearm.z 40 @1$0 <stop>
+	set figure stick-figure-1.body.left-high.left-arm.left-forearm.aboutY 0.8 @1$0 <stop>
+	new figure stick-figure-1.body.left-high.left-arm.left-forearm.left-hand <stop>
+	set figure stick-figure-1.body.left-high.left-arm.left-forearm.left-hand.z 40 @1$0 <stop>
+	new figure stick-figure-1.body.right-high <stop>
+	set figure stick-figure-1.body.right-high.z 60 @1$0 <stop>
+	set figure stick-figure-1.body.right-high.aboutY -1.57 @1$0 <stop>
+	new figure stick-figure-1.body.right-high.right-arm <stop>
+	set figure stick-figure-1.body.right-high.right-arm.z 20 @1$0 <stop>
+	set figure stick-figure-1.body.right-high.right-arm.aboutY -0.4 @1$0 <stop>
+	new figure stick-figure-1.body.right-high.right-arm.right-forearm <stop>
+	set figure stick-figure-1.body.right-high.right-arm.right-forearm.z 40 @1$0 <stop>
+	set figure stick-figure-1.body.right-high.right-arm.right-forearm.aboutY -0.8 @1$0 <stop>
+	new figure stick-figure-1.body.right-high.right-arm.right-forearm.right-hand <stop>
+	set figure stick-figure-1.body.right-high.right-arm.right-forearm.right-hand.z 40 @1$0 <stop>
+	new figure stick-figure-1.left-low <stop>
+	set figure stick-figure-1.left-low.aboutY 1.57 @1$0 <stop>
+	new figure stick-figure-1.left-low.left-femur <stop>
+	set figure stick-figure-1.left-low.left-femur.z 20 @1$0 <stop>
+	set figure stick-figure-1.left-low.left-femur.aboutY 1.57 @1$0 <stop>
+	new figure stick-figure-1.left-low.left-femur.left-leg <stop>
+	set figure stick-figure-1.left-low.left-femur.left-leg.z 60 @1$0 <stop>
+	new figure stick-figure-1.left-low.left-femur.left-leg.left-foot <stop>
+	set figure stick-figure-1.left-low.left-femur.left-leg.left-foot.z 60 @1$0 <stop>
+	set figure stick-figure-1.left-low.left-femur.left-leg.left-foot.aboutX -1.57 @1$0 <stop>
+	new figure stick-figure-1.right-low <stop>
+	set figure stick-figure-1.right-low.aboutY -1.57 @1$0 <stop>
+	new figure stick-figure-1.right-low.right-femur <stop>
+	set figure stick-figure-1.right-low.right-femur.z 20 @1$0 <stop>
+	set figure stick-figure-1.right-low.right-femur.aboutY -1.57 @1$0 <stop>
+	new figure stick-figure-1.right-low.right-femur.right-leg <stop>
+	set figure stick-figure-1.right-low.right-femur.right-leg.z 60 @1$0 <stop>
+	new figure stick-figure-1.right-low.right-femur.right-leg.right-foot <stop>
+	set figure stick-figure-1.right-low.right-femur.right-leg.right-foot.z 60 @1$0 <stop>
+	set figure stick-figure-1.right-low.right-femur.right-leg.right-foot.aboutX -1.57 @1$0 <stop>
+	set figure stick-figure-1.x 100 @999 <stop>
+	set figure stick-figure-1.aboutX 120 @999 <stop> 
+	set figure figure1.path figure1 @1$0<stop>
+	set figure figure1.opc 1 @1$0<stop>
+	set figure figure1.branch1.path figure1.branch1 @1$0<stop>
+	set figure figure1.branch1.opc 1 @1$0<stop>
+	set figure stick-figure-1.path stick-figure-1 @1$0<stop>
+	set figure stick-figure-1.aboutZ 3.1415 @1$0<stop>
+	set figure stick-figure-1.opc 1 @1$0<stop>
+	set figure stick-figure-1.body.path stick-figure-1.body @1$0<stop>
+	set figure stick-figure-1.body.opc 1 @1$0<stop>
+	set figure stick-figure-1.body.neck.path stick-figure-1.body.neck @1$0<stop>
+	set figure stick-figure-1.body.neck.z 60 @1$0<stop>
+	set figure stick-figure-1.body.neck.opc 1 @1$0<stop>
+	set figure stick-figure-1.body.neck.head.path stick-figure-1.body.neck.head @1$0<stop>
+	set figure stick-figure-1.body.neck.head.z 10 @1$0<stop>
+	set figure stick-figure-1.body.neck.head.opc 1 @1$0<stop>
+	set figure stick-figure-1.body.neck.head.top-of-head.path stick-figure-1.body.neck.head.top-of-head @1$0<stop>
+	set figure stick-figure-1.body.neck.head.top-of-head.z 20 @1$0<stop>
+	set figure stick-figure-1.body.neck.head.top-of-head.opc 1 @1$0<stop>
+	set figure stick-figure-1.body.neck.head.face.path stick-figure-1.body.neck.head.face @1$0<stop>
+	set figure stick-figure-1.body.neck.head.face.y -10 @1$0<stop>
+	set figure stick-figure-1.body.neck.head.face.z 30 @1$0<stop>
+	set figure stick-figure-1.body.neck.head.face.opc 1 @1$0<stop>
+	set figure stick-figure-1.body.left-high.path stick-figure-1.body.left-high @1$0<stop>
+	set figure stick-figure-1.body.left-high.z 60 @1$0<stop>
+	set figure stick-figure-1.body.left-high.aboutY 1.57 @1$0<stop>
+	set figure stick-figure-1.body.left-high.opc 1 @1$0<stop>
+	set figure stick-figure-1.aboutZ 1.57 @31$1 <stop>
+	
+	
+	
+	new figure one <stop>
+	set figure one.aboutZ 3.1415 @1$0 <stop>
+	new figure one.body <stop>
+	new figure one.body.neck <stop>
+	set figure one.body.neck.z 1.4 @1$0 <stop>
+	new figure one.body.neck.head <stop>
+	set figure one.body.neck.head.z 0.25 @1$0 <stop>
+		new one.body.neck.head.face <stop>
+		set one.body.neck.head.face.y -10 @1$0 <stop>
+		set one.body.neck.head.face.z 30 @1$0 <stop>
+		new one.body.neck.head.face.eyes <stop>
+		set one.body.neck.head.face.eyes.y -1 @1$0 <stop>
+		new one.body.neck.head.face.nose <stop>
+		set one.body.neck.head.face.nose.z -2 @1$0 <stop>
+		new one.body.neck.head.face.mouth <stop>
+		set one.body.neck.head.face.mouth.z -11.24 @1$0 <stop>
+	new figure one.body.left-high <stop>
+	set figure one.body.left-high.z 1.2 @1$0 <stop>
+	set figure one.body.left-high.aboutY 1.57 @1$0 <stop>
+	new figure one.body.left-high.arm <stop>
+	set figure one.body.left-high.arm.z 0.5 @1$0 <stop>
+	set figure one.body.left-high.arm.aboutY 0.4 @1$0 <stop>
+	new figure one.body.left-high.arm.forearm <stop>
+	set figure one.body.left-high.arm.forearm.z 1 @1$0 <stop>
+	set figure one.body.left-high.arm.forearm.aboutY 0.8 @1$0 <stop>
+	new figure one.body.left-high.arm.forearm.hand <stop>
+	set figure one.body.left-high.arm.forearm.hand.z 0.9 @1$0 <stop>
+	new figure one.body.right-high <stop>
+	set figure one.body.right-high.z 1.2 @1$0 <stop>
+	set figure one.body.right-high.aboutY -1.57 @1$0 <stop>
+	new figure one.body.right-high.arm <stop>
+	set figure one.body.right-high.arm.z 0.5 @1$0 <stop>
+	set figure one.body.right-high.arm.aboutY -0.4 @1$0 <stop>
+	new figure one.body.right-high.arm.forearm <stop>
+	set figure one.body.right-high.arm.forearm.z 1 @1$0 <stop>
+	set figure one.body.right-high.arm.forearm.aboutY -0.8 @1$0 <stop>
+	new figure one.body.right-high.arm.forearm.hand <stop>
+	set figure one.body.right-high.arm.forearm.hand.z 0.9 @1$0 <stop>
+	new figure one.left-low <stop>
+	set figure one.left-low.aboutY 1.57 @1$0 <stop>
+	new figure one.left-low.femur <stop>
+	set figure one.left-low.femur.z 0.35 @1$0 <stop>
+	set figure one.left-low.femur.aboutY 1.57 @1$0 <stop>
+	new figure one.left-low.femur.leg <stop>
+	set figure one.left-low.femur.leg.z 1.8 @1$0 <stop>
+	new figure one.left-low.femur.leg.foot <stop>
+	set figure one.left-low.femur.leg.foot.z 1.5 @1$0 <stop>
+	set figure one.left-low.femur.leg.foot.aboutX -1.57 @1$0 <stop>
+	new figure one.right-low <stop>
+	set figure one.right-low.aboutY -1.57 @1$0 <stop>
+	new figure one.right-low.femur <stop>
+	set figure one.right-low.femur.z 0.35 @1$0 <stop>
+	set figure one.right-low.femur.aboutY -1.57 @1$0 <stop>
+	new figure one.right-low.femur.leg <stop>
+	set figure one.right-low.femur.leg.z 1.8 @1$0 <stop>
+	new figure one.right-low.femur.leg.foot <stop>
+	set figure one.right-low.femur.leg.foot.z 1.5 @1$0 <stop>
+	set figure one.right-low.femur.leg.foot.aboutX -1.57 @1$0 <stop>
+	
+	new figure nei <stop>
+	set figure nei.aboutZ 3.1415 @1$0 <stop>
+	new figure nei.body <stop>
+	new figure nei.body.neck <stop>
+	set figure nei.body.neck.z 1.4 @1$0 <stop>
+	new figure nei.body.neck.head <stop>
+	set figure nei.body.neck.head.z 0.25 @1$0 <stop>
+		new nei.body.neck.head.face <stop>
+		set nei.body.neck.head.face.y -10 @1$0 <stop>
+		set nei.body.neck.head.face.z 30 @1$0 <stop>
+		new nei.body.neck.head.face.eyes <stop>
+		set nei.body.neck.head.face.eyes.y -1 @1$0 <stop>
+		new nei.body.neck.head.face.nose <stop>
+		set nei.body.neck.head.face.nose.z -2 @1$0 <stop>
+		new nei.body.neck.head.face.mouth <stop>
+		set nei.body.neck.head.face.mouth.z -11.24 @1$0 <stop>
+	new figure nei.body.left-high <stop>
+	set figure nei.body.left-high.z 1.2 @1$0 <stop>
+	set figure nei.body.left-high.aboutY 1.57 @1$0 <stop>
+	new figure nei.body.left-high.arm <stop>
+	set figure nei.body.left-high.arm.z 0.5 @1$0 <stop>
+	set figure nei.body.left-high.arm.aboutY 0.4 @1$0 <stop>
+	new figure nei.body.left-high.arm.forearm <stop>
+	set figure nei.body.left-high.arm.forearm.z 1 @1$0 <stop>
+	set figure nei.body.left-high.arm.forearm.aboutY 0.8 @1$0 <stop>
+	new figure nei.body.left-high.arm.forearm.hand <stop>
+	set figure nei.body.left-high.arm.forearm.hand.z 0.9 @1$0 <stop>
+	new figure nei.body.right-high <stop>
+	set figure nei.body.right-high.z 1.2 @1$0 <stop>
+	set figure nei.body.right-high.aboutY -1.57 @1$0 <stop>
+	new figure nei.body.right-high.arm <stop>
+	set figure nei.body.right-high.arm.z 0.5 @1$0 <stop>
+	set figure nei.body.right-high.arm.aboutY -0.4 @1$0 <stop>
+	new figure nei.body.right-high.arm.forearm <stop>
+	set figure nei.body.right-high.arm.forearm.z 1 @1$0 <stop>
+	set figure nei.body.right-high.arm.forearm.aboutY -0.8 @1$0 <stop>
+	new figure nei.body.right-high.arm.forearm.hand <stop>
+	set figure nei.body.right-high.arm.forearm.hand.z 0.9 @1$0 <stop>
+	new figure nei.left-low <stop>
+	set figure nei.left-low.aboutY 1.57 @1$0 <stop>
+	new figure nei.left-low.femur <stop>
+	set figure nei.left-low.femur.z 0.35 @1$0 <stop>
+	set figure nei.left-low.femur.aboutY 1.57 @1$0 <stop>
+	new figure nei.left-low.femur.leg <stop>
+	set figure nei.left-low.femur.leg.z 1.8 @1$0 <stop>
+	new figure nei.left-low.femur.leg.foot <stop>
+	set figure nei.left-low.femur.leg.foot.z 1.5 @1$0 <stop>
+	set figure nei.left-low.femur.leg.foot.aboutX -1.57 @1$0 <stop>
+	new figure nei.right-low <stop>
+	set figure nei.right-low.aboutY -1.57 @1$0 <stop>
+	new figure nei.right-low.femur <stop>
+	set figure nei.right-low.femur.z 0.35 @1$0 <stop>
+	set figure nei.right-low.femur.aboutY -1.57 @1$0 <stop>
+	new figure nei.right-low.femur.leg <stop>
+	set figure nei.right-low.femur.leg.z 1.8 @1$0 <stop>
+	new figure nei.right-low.femur.leg.foot <stop>
+	set figure nei.right-low.femur.leg.foot.z 1.5 @1$0 <stop>
+	set figure nei.right-low.femur.leg.foot.aboutX -1.57 @1$0 <stop>
+	
+	new figure nei2 <stop>
+	set figure nei2.aboutZ 3.1415 @1$0 <stop>
+	new figure nei2.body <stop>
+	new figure nei2.body.neck <stop>
+	set figure nei2.body.neck.z 1.4 @1$0 <stop>
+	new figure nei2.body.neck.head <stop>
+	set figure nei2.body.neck.head.z 0.25 @1$0 <stop>
+		new nei2.body.neck.head.face <stop>
+		set nei2.body.neck.head.face.y -10 @1$0 <stop>
+		set nei2.body.neck.head.face.z 30 @1$0 <stop>
+		new nei2.body.neck.head.face.eyes <stop>
+		set nei2.body.neck.head.face.eyes.y -1 @1$0 <stop>
+		new nei2.body.neck.head.face.nose <stop>
+		set nei2.body.neck.head.face.nose.z -2 @1$0 <stop>
+		new nei2.body.neck.head.face.mouth <stop>
+		set nei2.body.neck.head.face.mouth.z -11.24 @1$0 <stop>
+	new figure nei2.body.left-high <stop>
+	set figure nei2.body.left-high.z 1.2 @1$0 <stop>
+	set figure nei2.body.left-high.aboutY 1.57 @1$0 <stop>
+	new figure nei2.body.left-high.arm <stop>
+	set figure nei2.body.left-high.arm.z 0.5 @1$0 <stop>
+	set figure nei2.body.left-high.arm.aboutY 0.4 @1$0 <stop>
+	new figure nei2.body.left-high.arm.forearm <stop>
+	set figure nei2.body.left-high.arm.forearm.z 1 @1$0 <stop>
+	set figure nei2.body.left-high.arm.forearm.aboutY 0.8 @1$0 <stop>
+	new figure nei2.body.left-high.arm.forearm.hand <stop>
+	set figure nei2.body.left-high.arm.forearm.hand.z 0.9 @1$0 <stop>
+	new figure nei2.body.right-high <stop>
+	set figure nei2.body.right-high.z 1.2 @1$0 <stop>
+	set figure nei2.body.right-high.aboutY -1.57 @1$0 <stop>
+	new figure nei2.body.right-high.arm <stop>
+	set figure nei2.body.right-high.arm.z 0.5 @1$0 <stop>
+	set figure nei2.body.right-high.arm.aboutY -0.4 @1$0 <stop>
+	new figure nei2.body.right-high.arm.forearm <stop>
+	set figure nei2.body.right-high.arm.forearm.z 1 @1$0 <stop>
+	set figure nei2.body.right-high.arm.forearm.aboutY -0.8 @1$0 <stop>
+	new figure nei2.body.right-high.arm.forearm.hand <stop>
+	set figure nei2.body.right-high.arm.forearm.hand.z 0.9 @1$0 <stop>
+	new figure nei2.left-low <stop>
+	set figure nei2.left-low.aboutY 1.57 @1$0 <stop>
+	new figure nei2.left-low.femur <stop>
+	set figure nei2.left-low.femur.z 0.35 @1$0 <stop>
+	set figure nei2.left-low.femur.aboutY 1.57 @1$0 <stop>
+	new figure nei2.left-low.femur.leg <stop>
+	set figure nei2.left-low.femur.leg.z 1.8 @1$0 <stop>
+	new figure nei2.left-low.femur.leg.foot <stop>
+	set figure nei2.left-low.femur.leg.foot.z 1.5 @1$0 <stop>
+	set figure nei2.left-low.femur.leg.foot.aboutX -1.57 @1$0 <stop>
+	new figure nei2.right-low <stop>
+	set figure nei2.right-low.aboutY -1.57 @1$0 <stop>
+	new figure nei2.right-low.femur <stop>
+	set figure nei2.right-low.femur.z 0.35 @1$0 <stop>
+	set figure nei2.right-low.femur.aboutY -1.57 @1$0 <stop>
+	new figure nei2.right-low.femur.leg <stop>
+	set figure nei2.right-low.femur.leg.z 1.8 @1$0 <stop>
+	new figure nei2.right-low.femur.leg.foot <stop>
+	set figure nei2.right-low.femur.leg.foot.z 1.5 @1$0 <stop>
+	set figure nei2.right-low.femur.leg.foot.aboutX -1.57 @1$0 <stop>
+	
+	new figure two <stop>
+	set figure two.aboutZ 3.1415 @1$0 <stop>
+	new figure two.body <stop>
+	new figure two.body.neck <stop>
+	set figure two.body.neck.z 1.4 @1$0 <stop>
+	new figure two.body.neck.head <stop>
+	set figure two.body.neck.head.z 0.25 @1$0 <stop>
+		new two.body.neck.head.face <stop>
+		set two.body.neck.head.face.y -10 @1$0 <stop>
+		set two.body.neck.head.face.z 30 @1$0 <stop>
+		new two.body.neck.head.face.eyes <stop>
+		set two.body.neck.head.face.eyes.y -1 @1$0 <stop>
+		new two.body.neck.head.face.nose <stop>
+		set two.body.neck.head.face.nose.z -2 @1$0 <stop>
+		new two.body.neck.head.face.mouth <stop>
+		set two.body.neck.head.face.mouth.z -11.24 @1$0 <stop>
+	new figure two.body.left-high <stop>
+	set figure two.body.left-high.z 1.2 @1$0 <stop>
+	set figure two.body.left-high.aboutY 1.57 @1$0 <stop>
+	new figure two.body.left-high.arm <stop>
+	set figure two.body.left-high.arm.z 0.5 @1$0 <stop>
+	set figure two.body.left-high.arm.aboutY 0.4 @1$0 <stop>
+	new figure two.body.left-high.arm.forearm <stop>
+	set figure two.body.left-high.arm.forearm.z 1 @1$0 <stop>
+	set figure two.body.left-high.arm.forearm.aboutY 0.8 @1$0 <stop>
+	new figure two.body.left-high.arm.forearm.hand <stop>
+	set figure two.body.left-high.arm.forearm.hand.z 0.9 @1$0 <stop>
+	new figure two.body.right-high <stop>
+	set figure two.body.right-high.z 1.2 @1$0 <stop>
+	set figure two.body.right-high.aboutY -1.57 @1$0 <stop>
+	new figure two.body.right-high.arm <stop>
+	set figure two.body.right-high.arm.z 0.5 @1$0 <stop>
+	set figure two.body.right-high.arm.aboutY -0.4 @1$0 <stop>
+	new figure two.body.right-high.arm.forearm <stop>
+	set figure two.body.right-high.arm.forearm.z 1 @1$0 <stop>
+	set figure two.body.right-high.arm.forearm.aboutY -0.8 @1$0 <stop>
+	new figure two.body.right-high.arm.forearm.hand <stop>
+	set figure two.body.right-high.arm.forearm.hand.z 0.9 @1$0 <stop>
+	new figure two.left-low <stop>
+	set figure two.left-low.aboutY 1.57 @1$0 <stop>
+	new figure two.left-low.femur <stop>
+	set figure two.left-low.femur.z 0.35 @1$0 <stop>
+	set figure two.left-low.femur.aboutY 1.57 @1$0 <stop>
+	new figure two.left-low.femur.leg <stop>
+	set figure two.left-low.femur.leg.z 1.8 @1$0 <stop>
+	new figure two.left-low.femur.leg.foot <stop>
+	set figure two.left-low.femur.leg.foot.z 1.5 @1$0 <stop>
+	set figure two.left-low.femur.leg.foot.aboutX -1.57 @1$0 <stop>
+	new figure two.right-low <stop>
+	set figure two.right-low.aboutY -1.57 @1$0 <stop>
+	new figure two.right-low.femur <stop>
+	set figure two.right-low.femur.z 0.35 @1$0 <stop>
+	set figure two.right-low.femur.aboutY -1.57 @1$0 <stop>
+	new figure two.right-low.femur.leg <stop>
+	set figure two.right-low.femur.leg.z 1.8 @1$0 <stop>
+	new figure two.right-low.femur.leg.foot <stop>
+	set figure two.right-low.femur.leg.foot.z 1.5 @1$0 <stop>
+	set figure two.right-low.femur.leg.foot.aboutX -1.57 @1$0 <stop>
+	
+424	set figure Background.opc 0 @1$0<stop>
+425	set figure BG %2Chttp%3A//wbord.net/AnimOv/Backgrounds/100_2538.JPG%2Chttp%3A//wbord.net/AnimOv/Backgrounds/100_2539.JPG%2Chttp%3A//wbord.net/AnimOv/Backgrounds/100_2545.JPG%2Chttp%3A//wbord.net/AnimOv/Backgrounds/100_2546.JPG%2Chttp%3A//wbord.net/AnimOv/Backgrounds/100_2556.JPG @1$0<stop>
+<end of message>

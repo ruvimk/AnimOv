@@ -1,0 +1,394 @@
+<file type="text/xml-animation" name="test"> 
+	<header> 
+		<object> 
+			color = #0000FF 
+			and 
+			outline = #FF0000 
+			and line = 1 
+			<points> 
+				vector= figure1.branch1 
+				1 (0, 0, 0) 
+				2 (0, 100, 0) 
+				3 (100, 50, 70)  
+			</points> 
+			<faces> 
+				1, 2, 3 = #FF0000 
+			</faces> 
+			<toon> 
+				vector = figure1.branch1 <!-- 
+				ellipsoid (at:(0, -500, 0);about:(0,0,0);radii:(10, 20, 30);) 
+				ellipsoid (at:(50, -200, -20);about:(0,0,0);axes:(100, 200, 300);) --> 
+			</toon> 
+		</object> 
+		<object name="person1_leye"> 
+			color = #F0F0F0 and outline = #000000 and line = 1 
+			<toon> 
+				vector = stick-figure-1.body.neck.head.face 
+				bezier (fill,) [(-7.74, 0, 0.64), (-8.14, 0, 7.58), (-7, 0, 10.8), (-5.08, 0, 10.78), 
+					(-3.06, 0, 10.84), (-2.18, 0, 9.24), (-2.42, 0, 0.7),] 
+			</toon> 
+		</object> 
+			<object name="person1_liris"> 
+				color = #21B350 and outline = #21B350 and line = 1 
+				<toon> 
+					vector = stick-figure-1.body.neck.head.face.eyes 
+					<!--ellipsoid (at: (-5,0,5.34); axes: (0.71,0.01,2.04);) -->
+					ellipsoid (at: (-5,0,5.34); axes: (1.42,0.01,4.08);) 
+				</toon> 
+			</object> 
+			<object name="person1_lpupil"> 
+				color = #000000 and outline = #000000 and line = 1 
+				<toon> 
+					vector = stick-figure-1.body.neck.head.face.eyes 
+					<!--ellipsoid (at: (-5,-0.1,5.34); axes: (0.42,0.01,1.1);) -->
+					ellipsoid (at: (-5,-0.1,5.34); axes: (0.84,0.01,2.2);) 
+				</toon> 
+			</object> 
+		<object name="person1_reye"> 
+			color = #F0F0F0 and outline = #000000 and line = 1 
+			<toon> 
+				vector = stick-figure-1.body.neck.head.face 
+				bezier (fill,) [(7.74, 0, 0.64), (8.14, 0, 7.58), (7, 0, 10.8), (5.08, 0, 10.78), 
+					(3.06, 0, 10.84), (2.18, 0, 9.24), (2.42, 0, 0.7),] 
+			</toon> 
+		</object> 
+			<object name="person1_riris"> 
+				color = #21B350 and outline = #21B350 and line = 1 
+				<toon> 
+					vector = stick-figure-1.body.neck.head.face.eyes 
+					<!--ellipsoid (at: (5,0,5.34); axes: (0.71,0.01,2.04);) -->
+					ellipsoid (at: (5,0,5.34); axes: (1.42,0.01,4.08);) 
+				</toon> 
+			</object> 
+			<object name="person1_rpupil"> 
+				color = #000000 and outline = #000000 and line = 1 
+				<toon> 
+					vector = stick-figure-1.body.neck.head.face.eyes 
+					<!--ellipsoid (at: (5,-0.1,5.34); axes: (0.42,0.01,1.1);) -->
+					ellipsoid (at: (5,-0.1,5.34); axes: (0.84,0.01,2.2);) 
+				</toon> 
+			</object> 
+		<object name="person1_nose"> 
+			color = #EECFAF and outline = #000000 and line = 1 
+			<toon> 
+				vector = stick-figure-1.body.neck.head.face.nose 
+				bezier (stroke,) [(0,-1,1.5), (0,-1,1.5), (0,-2,-0.5), (0,-2,-0.5), 
+					(0,-2,-0.5), (0,-1,-1.5), (0,-1,-1.5),] 
+			</toon> 
+		</object> 
+		<object name="person1_mouth"> 
+			color = #FF5555 and outline = #88FF88 and line = 1 
+			<toon> 
+				vector = stick-figure-1.body.neck.head.face.mouth 
+				bezier (stroke,) [(-4.3,-1,0), (-4.3,-1,0), (4.3,-1,0), (4.3,-1,0),] 
+				bezier (fill,stroke,) [(-4.3,-1,0), (-4.3,-1,0), (-2,-2,0), (0,-2,0), 
+					(2,-2,0), (4.3,-1,0), (4.3,-1,0), 
+						(4.3,-1,-2), (4.3,-1,-2), (2,-2,-2), 
+						(0,-2,-2), (-2,-2,-2), (-4.3,-1,-2), (-4.3,-1,-2),] 
+			</toon> 
+		</object> 
+		<object name="person1_head"> 
+			color = #FFFCC1 and outline = #000000 and line = 1 
+			<toon> 
+				vector = stick-figure-1.body.neck 
+				<!--ellipsoid (at: (0, 0, 10); about: (0, 0, 0); axes: (5, 5, 10);) -->
+				
+				vector = stick-figure-1.body.neck.head 
+				ellipsoid (at: (0, 0, 30); about: (0, 0, 0); axes: (17, 18, 20);) 
+			</toon> 
+		</object> 
+			<object name="person1_hair"> 
+				color = #444444 
+				<toon> 
+					vector = stick-figure-1.body.neck.head 
+					ellipsoid (at: (0, 1.5, 30.8); about: (0, 0, 0); axes: (18, 19, 20);) 
+				</toon> 
+			</object> 
+			<object name="antennae"> 
+				color = #444444 
+				<toon> 
+					vector = stick-figure-1.body.neck.head.left-antenna 
+					ellipsoid (at: (0, 0, 16); axes: (2, 2, 16);) 
+					ellipsoid (at: (0, 0, 32); axes: (5, 5, 2);) 
+					
+					vector = stick-figure-1.body.neck.head.right-antenna 
+					ellipsoid (at: (0, 0, 16); axes: (2, 2, 16);) 
+					ellipsoid (at: (0, 0, 32); axes: (5, 5, 2);) 
+				</toon> 
+			</object> 
+		<object name="person1_lhand"> 
+			color = #222222 and outline = #000000 and line = 1 
+			<toon> 
+				vector = stick-figure-1.body.left-high.left-arm 
+				ellipsoid (at: (0, 0, 11); about: (0, 0, 0); axes: (5, 5, 20);)
+				
+				vector = stick-figure-1.body.left-high.left-arm.left-forearm 
+				ellipsoid (at: (0, 0, 20); about: (0, 0, 0); axes: (5, 5, 20);) 
+			</toon> 
+		</object> 
+		<object name="person1_rhand"> 
+			color = #222222 and outline = #000000 and line = 1 
+			<toon> 
+				vector = stick-figure-1.body.right-high.right-arm 
+				ellipsoid (at: (0, 0, 11); about: (0, 0, 0); axes: (5, 5, 20);) 
+				
+				vector = stick-figure-1.body.right-high.right-arm.right-forearm 
+				ellipsoid (at: (0, 0, 20); about: (0, 0, 0); axes: (5, 5, 20);) 
+			</toon> 
+		</object> 
+		<object name="wings"> 
+			color = #777777 
+			<toon> 
+				vector = stick-figure-1.body.lwing 
+				ellipsoid (at: (0,0,40); axes:(25,1,50);) 
+				
+				vector = stick-figure-1.body.rwing 
+				ellipsoid (at: (0,0,40); axes:(25,1,50);) 
+			</toon> 
+		</object> 
+		<object name="person1_shirt"> 
+			color = #FFFF00 and outline = #000000 and line = 1 
+			<toon> 
+				vector = stick-figure-1.body 
+				<!--ellipsoid (at:(0,0,30); about: (0, 0, 0); axes: (20, 10, 30);) 
+				ellipsoid (at: (0, 0, 55); about: (0, 0, 0); axes: (20, 10, 15);) -->
+				ellipsoid (at:(0,0,35); about: (0, 0, 0); axes: (22, 10, 35);) 
+				
+				<!--vector = stick-figure-1.body.left-high.left-arm 
+				ellipsoid (at: (0, 0, 10); about: (0, 0, 0); axes: (10, 10, 10);) 
+				
+				vector = stick-figure-1.body.right-high.right-arm 
+				ellipsoid (at: (0, 0, 10); about: (0, 0, 0); axes: (10, 10, 10);) -->
+			</toon> 
+		</object> 
+			<object name="person1_shirt_stripes"> 
+				color= #444444 and 
+				outline= #000000 and 
+				line= 1 
+				<toon> 
+					vector = stick-figure-1.body 
+					ellipsoid (at:(0,0,35);axes:(24,12,18);) 
+					ellipsoid (at:(0,0,18);axes:(20,10,12);) 
+					ellipsoid (at:(0,0,52);axes:(20,10,12);) 
+				</toon> 
+			</object> 
+		<object name="person1_pants"> 
+			color = #222222 and outline = #000000 and line = 1 
+			<toon> 
+				vector = stick-figure-1 
+				ellipsoid (at:(0,0,0); about: (0, 0, 0); axes: (20, 10, 5);) 
+				
+				vector = stick-figure-1.left-low.left-femur 
+				ellipsoid (at: (0, 0, 30); about: (0, 0, 0); axes: (5, 5, 30);) 
+				vector = stick-figure-1.left-low.left-femur.left-leg 
+				ellipsoid (at: (0, 0, 30); about: (0, 0, 0); axes: (5, 5, 30);) 
+				
+				vector = stick-figure-1.right-low.right-femur 
+				ellipsoid (at: (0, 0, 30); about: (0, 0, 0); axes: (5, 5, 30);) 
+				vector = stick-figure-1.right-low.right-femur.right-leg 
+				ellipsoid (at: (0, 0, 30); about: (0, 0, 0); axes: (5, 5, 30);) 
+			</toon> 
+		</object> 
+		<object name="person1_lshoe"> 
+			color = #444400 and outline = #000000 and line = 1 
+			<toon> 
+				vector = stick-figure-1.left-low.left-femur.left-leg.left-foot 
+				ellipsoid (at: (0, 0, 10); about: (0, 0, 0); axes: (8, 5, 12);) 
+			</toon> 
+		</object> 
+		<object name="person1_rshoe"> 
+			color = #444400 and outline = #000000 and line = 1 
+			<toon> 
+				vector = stick-figure-1.right-low.right-femur.right-leg.right-foot 
+				ellipsoid (at: (0, 0, 10); about: (0, 0, 0); axes: (8, 5, 12);) 
+			</toon> 
+		</object> 
+		<object name="planet"> 
+			color = #21B350 and outline = #000000 and line = 1 
+			<toon> 
+				vector = planet 
+				ellipsoid (at: (0, 0, 0); about: (0, 0, 0); axes: (65536, 65536, 65536);) 
+			</toon> 
+		</object> 
+		<!--<object name="laptop"> 
+			color = #888888 and outline = #000000 and line = 1 
+			<toon> 
+				vector = laptop 
+				ellipsoid (at: (0,0,0); axes: (10,10,0);) 
+				ellipsoid (at: (5,0,0); axes: (10,10,0);) 
+				ellipsoid (at: (10,0,0); axes: (10,10,0);) 
+				ellipsoid (at: (15,0,0); axes: (10,10,0);) 
+				ellipsoid (at: (20,0,0); axes: (10,10,0);) 
+				ellipsoid (at: (25,0,0); axes: (10,10,0);) 
+				ellipsoid (at: (30,0,0); axes: (10,10,0);) 
+				ellipsoid (at: (0,5,0); axes: (10,10,0);) 
+				ellipsoid (at: (5,5,0); axes: (10,10,0);) 
+				ellipsoid (at: (10,5,0); axes: (10,10,0);) 
+				ellipsoid (at: (15,5,0); axes: (10,10,0);) 
+				ellipsoid (at: (20,5,0); axes: (10,10,0);) 
+				ellipsoid (at: (25,5,0); axes: (10,10,0);) 
+				ellipsoid (at: (30,5,0); axes: (10,10,0);) 
+				ellipsoid (at: (0,10,0); axes: (10,10,0);) 
+				ellipsoid (at: (5,10,0); axes: (10,10,0);) 
+				ellipsoid (at: (10,10,0); axes: (10,10,0);) 
+				ellipsoid (at: (15,10,0); axes: (10,10,0);) 
+				ellipsoid (at: (20,10,0); axes: (10,10,0);) 
+				ellipsoid (at: (25,10,0); axes: (10,10,0);) 
+				ellipsoid (at: (30,10,0); axes: (10,10,0);) 
+				ellipsoid (at: (0,15,0); axes: (10,10,0);) 
+				ellipsoid (at: (5,15,0); axes: (10,10,0);) 
+				ellipsoid (at: (10,15,0); axes: (10,10,0);) 
+				ellipsoid (at: (15,15,0); axes: (10,10,0);) 
+				ellipsoid (at: (20,15,0); axes: (10,10,0);) 
+				ellipsoid (at: (25,15,0); axes: (10,10,0);) 
+				ellipsoid (at: (30,15,0); axes: (10,10,0);) 
+				ellipsoid (at: (0,20,0); axes: (10,10,0);) 
+				ellipsoid (at: (5,20,0); axes: (10,10,0);) 
+				ellipsoid (at: (10,20,0); axes: (10,10,0);) 
+				ellipsoid (at: (15,20,0); axes: (10,10,0);) 
+				ellipsoid (at: (20,20,0); axes: (10,10,0);) 
+				ellipsoid (at: (25,20,0); axes: (10,10,0);) 
+				ellipsoid (at: (30,20,0); axes: (10,10,0);) 
+				ellipsoid (at: (0,25,0); axes: (10,10,0);) 
+				ellipsoid (at: (5,25,0); axes: (10,10,0);) 
+				ellipsoid (at: (10,25,0); axes: (10,10,0);) 
+				ellipsoid (at: (15,25,0); axes: (10,10,0);) 
+				ellipsoid (at: (20,25,0); axes: (10,10,0);) 
+				ellipsoid (at: (25,25,0); axes: (10,10,0);) 
+				ellipsoid (at: (30,25,0); axes: (10,10,0);) 
+				ellipsoid (at: (0,30,0); axes: (10,10,0);) 
+				ellipsoid (at: (5,30,0); axes: (10,10,0);) 
+				ellipsoid (at: (10,30,0); axes: (10,10,0);) 
+				ellipsoid (at: (15,30,0); axes: (10,10,0);) 
+				ellipsoid (at: (20,30,0); axes: (10,10,0);) 
+				ellipsoid (at: (25,30,0); axes: (10,10,0);) 
+				ellipsoid (at: (30,30,0); axes: (10,10,0);) -->
+				<!-- bezier (fill,stroke,) [(0,0,0), (0,0,0), (0,0,30), (0,0,30), 
+					(0,0,30), (45,0,30), (45,0,30), 
+					(45,0,30), (45,0,0), (45,0,0), 
+					(45,0,0), (0,0,0), (0,0,0)] --> <!--
+			</toon> 
+		</object> -->
+		<!-- <object name="laptop_lid"> 
+			color = #888888 and outline = #000000 and line = 1 
+			<toon> 
+				vector = laptop.lid 
+				ellipsoid (at: (0,0,0); axes: (10,10,0);) 
+				ellipsoid (at: (5,0,0); axes: (10,10,0);) 
+				ellipsoid (at: (10,0,0); axes: (10,10,0);) 
+				ellipsoid (at: (15,0,0); axes: (10,10,0);) 
+				ellipsoid (at: (20,0,0); axes: (10,10,0);) 
+				ellipsoid (at: (25,0,0); axes: (10,10,0);) 
+				ellipsoid (at: (30,0,0); axes: (10,10,0);) 
+				ellipsoid (at: (0,5,0); axes: (10,10,0);) 
+				ellipsoid (at: (5,5,0); axes: (10,10,0);) 
+				ellipsoid (at: (10,5,0); axes: (10,10,0);) 
+				ellipsoid (at: (15,5,0); axes: (10,10,0);) 
+				ellipsoid (at: (20,5,0); axes: (10,10,0);) 
+				ellipsoid (at: (25,5,0); axes: (10,10,0);) 
+				ellipsoid (at: (30,5,0); axes: (10,10,0);) 
+				ellipsoid (at: (0,10,0); axes: (10,10,0);) 
+				ellipsoid (at: (5,10,0); axes: (10,10,0);) 
+				ellipsoid (at: (10,10,0); axes: (10,10,0);) 
+				ellipsoid (at: (15,10,0); axes: (10,10,0);) 
+				ellipsoid (at: (20,10,0); axes: (10,10,0);) 
+				ellipsoid (at: (25,10,0); axes: (10,10,0);) 
+				ellipsoid (at: (30,10,0); axes: (10,10,0);) 
+				ellipsoid (at: (0,15,0); axes: (10,10,0);) 
+				ellipsoid (at: (5,15,0); axes: (10,10,0);) 
+				ellipsoid (at: (10,15,0); axes: (10,10,0);) 
+				ellipsoid (at: (15,15,0); axes: (10,10,0);) 
+				ellipsoid (at: (20,15,0); axes: (10,10,0);) 
+				ellipsoid (at: (25,15,0); axes: (10,10,0);) 
+				ellipsoid (at: (30,15,0); axes: (10,10,0);) 
+				ellipsoid (at: (0,20,0); axes: (10,10,0);) 
+				ellipsoid (at: (5,20,0); axes: (10,10,0);) 
+				ellipsoid (at: (10,20,0); axes: (10,10,0);) 
+				ellipsoid (at: (15,20,0); axes: (10,10,0);) 
+				ellipsoid (at: (20,20,0); axes: (10,10,0);) 
+				ellipsoid (at: (25,20,0); axes: (10,10,0);) 
+				ellipsoid (at: (30,20,0); axes: (10,10,0);) 
+				ellipsoid (at: (0,25,0); axes: (10,10,0);) 
+				ellipsoid (at: (5,25,0); axes: (10,10,0);) 
+				ellipsoid (at: (10,25,0); axes: (10,10,0);) 
+				ellipsoid (at: (15,25,0); axes: (10,10,0);) 
+				ellipsoid (at: (20,25,0); axes: (10,10,0);) 
+				ellipsoid (at: (25,25,0); axes: (10,10,0);) 
+				ellipsoid (at: (30,25,0); axes: (10,10,0);) 
+				ellipsoid (at: (0,30,0); axes: (10,10,0);) 
+				ellipsoid (at: (5,30,0); axes: (10,10,0);) 
+				ellipsoid (at: (10,30,0); axes: (10,10,0);) 
+				ellipsoid (at: (15,30,0); axes: (10,10,0);) 
+				ellipsoid (at: (20,30,0); axes: (10,10,0);) 
+				ellipsoid (at: (25,30,0); axes: (10,10,0);) 
+				ellipsoid (at: (30,30,0); axes: (10,10,0);) -->
+				<!-- bezier (fill,stroke,) [(0,0,0), (0,0,0), (0,0,30), (0,0,30), 
+					(0,0,30), (45,0,30), (45,0,30), 
+					(45,0,30), (45,0,0), (45,0,0), 
+					(45,0,0), (0,0,0), (0,0,0)] --> <!-- 
+			</toon> 
+		</object> -->
+	</header> 
+	<animation fps="12"> 
+		<frame number="1" camname="camera1" bgcolor="#00FF00"> 
+			linesFor = 0 
+			<camera name="camera1" xyz="(0,400,0)" /> 
+			<!--
+			<figure name="figure1"> 
+				<branch name="branch1" rev="(0, 0, 0)" /> 
+			</figure> 
+			<figure name="stick-figure-1" xyz="(0,0,0)" rev="(0,0,3.1415)"> 
+				<branch name="body" xyz="(0,0,0)" rev="(0,0,0)"> 
+					<branch name="neck" xyz="(0,0,60)" rev="(0,0,0)"> 
+						<branch name="head" xyz="(0,0,10)" rev="(0,0,0)"> 
+							<branch name="top-of-head" xyz="(0,0,20)" /> 
+							<branch name="face" xyz="(0, -10, 30)" rev="(0, 0, 0)"> 
+								<branch name="eyes" xyz="(0,-1,0)" /> 
+								<branch name="nose" xyz="(0,0,-2)" /> 
+								<branch name="mouth" xyz="(0,0,-11.24)" /> -->
+								<!-- <branch name="open-mouth" xyz="(0,0,-11.24)" opc="0" /> --> <!--
+							</branch> 
+						</branch> 
+					</branch> 
+					<branch name="left-high" xyz="(0,0,60)" rev="(0,1.57,0)"> 
+						<branch name="left-arm" xyz="(0,0,20)" rev="(0,0.4,0)"> 
+							<branch name="left-forearm" xyz="(0,0,40)" rev="(0,0.8,0)"> 
+								<branch name="left-hand" xyz="(0,0,40)" /> 
+							</branch> 
+						</branch> 
+					</branch> 
+					<branch name="right-high" xyz="(0,0,60)" rev="(0,-1.57,0)"> 
+						<branch name="right-arm" xyz="(0,0,20)" rev="(0,-0.4,0)"> 
+							<branch name="right-forearm" xyz="(0,0,40)" rev="(0,-0.8,0)"> 
+								<branch name="right-hand" xyz="(0,0,40)" /> 
+							</branch> 
+						</branch> 
+					</branch> 
+				</branch> 
+				<branch name="left-low" xyz="(0,0,0)" rev="(0,1.57,0)"> 
+					<branch name="left-femur" xyz="(0,0,20)" rev="(0,1.57,0)"> 
+						<branch name="left-leg" xyz="(0,0,60)" rev="(0,0,0)"> 
+							<branch name="left-foot" xyz="(0,0,60)" rev="(-1.57,0,0)" /> 
+						</branch> 
+					</branch> 
+				</branch> 
+				<branch name="right-low" xyz="(0,0,0)" rev="(0,-1.57,0)"> 
+					<branch name="right-femur" xyz="(0,0,20)" rev="(0,-1.57,0)"> 
+						<branch name="right-leg" xyz="(0,0,60)" rev="(0,0,0)"> 
+							<branch name="right-foot" xyz="(0,0,60)" rev="(-1.57,0,0)" /> 
+						</branch> 
+					</branch> 
+				</branch> 
+			</figure> 
+			<figure name="laptop" rev="(0,0,3.1415)"> 
+				<branch name="lid" xyz="(0,-10,10)" rev="(-1.57,0,0)" /> 
+			</figure> -->
+		</frame> 
+		<frame number="1000"> <!--
+			<figure name="figure1"> 
+				<branch name="branch1" rev="(0, 0, 50)" /> 
+			</figure> 
+			<figure name="stick-figure-1" rev="(120, 0, 0)" xyz="(100,0,0)" /> -->
+		</frame> 
+	</animation> 
+</file> 

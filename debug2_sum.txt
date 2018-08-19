@@ -1,0 +1,615 @@
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 109
+		Roots: 19.446428, 2.002998, 0.020452
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 115.980224
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 109
+		Roots: 0.980517, 0.980470, 0.980467
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 130.351124, 130.351198, 130.351202
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 109
+		Roots: 19.446428, 2.002998, 0.020452
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 115.980224
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 109
+		Roots: 0.980517, 0.980470, 0.980467
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 130.351124, 130.351198, 130.351202
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 109
+		Roots: 19.446428, 2.002998, 0.020452
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 100
+		Roots: 19.464286, 1.810990, 0.194600
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 115.867582
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 100
+		Roots: 0.832358, 0.832420, 0.832371
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 130.386676, 130.386743, 130.386691
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 101
+		Roots: 19.462305, 1.834294, 0.173278
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 115.843353
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 101
+		Roots: 0.850888, 0.850888, 0.850918
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 130.403817, 130.403817, 130.403839
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 102
+		Roots: 19.460323, 1.857020, 0.152534
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 115.829725
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 102
+		Roots: 0.868814, 0.868806, 0.868855
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 130.414520, 130.414516, 130.414538
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 103
+		Roots: 19.458341, 1.879211, 0.132325
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 115.825984
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 103
+		Roots: 0.886157, 0.886157, 0.886234
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 130.419375, 130.419375, 130.419385
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 104
+		Roots: 19.456358, 1.900907, 0.112614
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 115.831503
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 104
+		Roots: 0.903009, 0.998193, 0.902984
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 130.418915, 130.320570, 130.418919
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 105
+		Roots: 19.454373, 1.922139, 0.093366
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 115.845718
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 105
+		Roots: 0.919326, 0.943771, 0.919326
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 130.413606, 130.396706, 130.413606
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 106
+		Roots: 19.452388, 1.942938, 0.074551
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 115.868128
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 106
+		Roots: 0.935217, 0.935220, 0.935216
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 130.403840, 130.403838, 130.403841
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 107
+		Roots: 19.450402, 1.963332, 0.056143
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 115.898282
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 107
+		Roots: 0.950690, 0.950686, 0.950686
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 130.389975, 130.389979, 130.389979
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 108
+		Roots: 19.448416, 1.983345, 0.038118
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 115.935771
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 108
+		Roots: 0.965778, -3.213173, 0.965761
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 130.372317, -nan, 130.372339
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 109
+		Roots: 19.446428, 2.002998, 0.020452
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 115.980224
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 109
+		Roots: 0.980517, 0.980470, 0.980467
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 130.351124, 130.351198, 130.351202
+		Root 1 exists. 
+Working... 
+bezier (157, 111), (158, 92), (155, 83), (150, 83); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.311590, 30.128114, -56.782167, 111.186045; 
+		For y = 110
+		Roots: 20.901486, 2.048077, 0.021123
+	X part. 
+		Cubic Coefficients (a, b, c, d): 1.953485, -12.003811, 3.115548, 111.186045; 
+		Roots: -nan, -nan, 157.125579
+		Root 2 exists. 
+bezier (150, 83), (144, 82), (142, 87), (143, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.573375, 14.041303, -1.153878, 83.220402; 
+		For y = 110
+		Roots: 0.990292, 0.990304, 0.990284
+	X part. 
+		Cubic Coefficients (a, b, c, d): -0.032133, 8.945546, -15.897218, 83.220402; 
+		Roots: 143.128934, 143.128955, 143.128920
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 81
+		Roots: 19.501761, 1.047761, 0.834201
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 120.814493
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 81
+		Roots: -0.976146, -0.976149, -0.976217
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: -nan, -nan, -nan
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 82
+		Roots: 19.499796, 0.661673, 0.959386
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, 118.757102, 122.582700
+		Root 1 exists. 
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 82
+		Roots: -0.905070, -0.904947, -0.063470
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: -nan, -nan, -nan
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 83
+		Roots: 19.497830, 1.167836, 0.804210
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 120.423895
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 83
+		Roots: -0.798837, -0.338491, 0.227146
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: -nan, -nan, 126.413674
+		Root 2 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 84
+		Roots: 19.495865, 1.250601, 0.723346
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 119.438693
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 84
+		Roots: -0.964747, 0.319405, 0.319410
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: -nan, 127.449040, 127.449095
+		Root 1 exists. 
+		Root 2 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 85
+		Roots: 19.493900, 1.313366, 0.662603
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 118.766909
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 85
+		Roots: 0.385570, -0.710607, 0.385571
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 128.096048, -nan, 128.096057
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 86
+		Roots: 19.491935, 1.366182, 0.611766
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 118.251968
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 86
+		Roots: 0.438982, 0.439009, 0.439003
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 128.560246, 128.560465, 128.560417
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 87
+		Roots: 19.489969, 1.412704, 0.567214
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 117.837497
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 87
+		Roots: 0.484526, 0.484529, 0.484526
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 128.915111, 128.915139, 128.915111
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 88
+		Roots: 19.487989, 1.454789, 0.527100
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 117.494668
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 88
+		Roots: 0.524647, 0.524649, 0.524647
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 129.196542, 129.196550, 129.196539
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 89
+		Roots: 19.486019, 1.493527, 0.490333
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 117.206421
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 89
+		Roots: -0.917235, 0.783252, 0.560745
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: -nan, 130.311357, 129.424802
+		Root 1 exists. 
+		Root 2 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 90
+		Roots: 19.484047, 1.529712, 0.456206
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 116.961666
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 90
+		Roots: 0.593800, 0.593710, 0.593721
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 129.613116, 129.612625, 129.612686
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 91
+		Roots: 19.482075, 1.563624, 0.424231
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 116.752708
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 91
+		Roots: 0.624159, 0.624159, 0.624194
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 129.768645, 129.768645, 129.768812
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 92
+		Roots: 19.480102, 1.595754, 0.393975
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 116.573499
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 92
+		Roots: 0.652532, 0.652532, 0.652616
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 129.898925, 129.898925, 129.899292
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 93
+		Roots: 19.478128, 1.626363, 0.365356
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 116.420875
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 93
+		Roots: 0.679191, 0.679154, 0.679153
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 130.008078, 130.007934, 130.007934
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 94
+		Roots: 19.476153, 1.655652, 0.338052
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 116.290835
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 94
+		Roots: 0.704276, 0.704287, 0.704276
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 130.099064, 130.099100, 130.099063
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 95
+		Roots: 19.474177, 1.683784, 0.311902
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 116.180788
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 95
+		Roots: 0.728097, 0.728097, 0.728098
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 130.174946, 130.174946, 130.174947
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 96
+		Roots: 19.472201, 1.710891, 0.286777
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 116.088620
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 96
+		Roots: 0.750776, 0.750777, 0.750777
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 130.237677, 130.237679, 130.237679
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 97
+		Roots: 19.470223, 1.737081, 0.262568
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 116.012579
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 97
+		Roots: 0.772464, 0.772442, 0.772444
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 130.288990, 130.288943, 130.288946
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 98
+		Roots: 19.468245, 1.762444, 0.239184
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 115.951195
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 98
+		Roots: 0.793203, 0.793202, 0.793207
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 130.330127, 130.330127, 130.330135
+		Root 1 exists. 
+Working... 
+bezier (116, 110), (114, 90), (118, 81), (123, 82); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.484401, 31.869919, -58.470361, 110.182572; 
+		For y = 99
+		Roots: 19.466266, 1.787059, 0.216550
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.070126, 12.471585, -3.241373, 110.182572; 
+		Roots: -nan, -nan, 115.903220
+		Root 2 exists. 
+bezier (123, 82), (128, 82), (130, 86), (130, 110); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 14.702838, 13.385055, 0.180559, 82.097729; 
+		For y = 99
+		Roots: 0.813209, 0.813148, 0.813157
+	X part. 
+		Cubic Coefficients (a, b, c, d): 0.072553, -9.180214, 16.223385, 82.097729; 
+		Roots: 130.362470, 130.362383, 130.362395
+		Root 1 exists. 

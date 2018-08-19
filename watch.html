@@ -1,0 +1,25 @@
+<!DOCTYPE HTML> 
+<html> 
+	<head> 
+		<title> Watch - AnimOv </title> 
+		<script type="text/javascript" src="player.js"></script> 
+	</head> 
+	<body> 
+		<script type="text/javascript"> 
+			var id= 0; 
+			var query= (location + "").split ("?")[1]; 
+			var player; 
+			if (query){ 
+				var arr= query.split ("&"); 
+				var i; 
+				for (i= 0; i < arr.length; i++){ 
+					if (arr[i].split ("=")[0] == "id") id= parseInt (arr[i].split ("=")[1]); 
+				} 
+			} 
+			if (id){ 
+				player= new AnimOvPlayer (id); 
+				
+			} 
+		</script> 
+	</body> 
+</html> 

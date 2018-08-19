@@ -1,0 +1,1 @@
+toon -RenderMode default -SourceFile C:\WBord\wwwroot\AnimOv\data\input1.txt -OutputBitmap C:\WBord\wwwroot\AnimOv\data\bmp1_0068.bmp -ExportBitmap color -cx 0.932932932932933 -cy 424.2562562562563 -cz 31.71971971971972 -crx 0 -cry 0 -crz 0 -czm 7.277574818401938 -w 400 -h 300

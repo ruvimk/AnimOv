@@ -1,0 +1,2 @@
+anim -aoc data\id17.aoc -llc llc17 -mps 17 -png png17_ -w 960 -h 720 -start 1 -stop 20 -outline 1
+anim -aoc data\id2.aoc -llc llc2 -mps 2 -png png2_ -w 960 -h 720 -start 1 -stop 1 -outline 1

@@ -1,0 +1,21 @@
+figure1.x=50
+figure1.y=0
+figure1.z=-80
+figure1.aboutX=0
+figure1.aboutY=0
+figure1.aboutZ=0
+figure1.opc=1
+figure1.branch1.x=0
+figure1.branch1.y=0
+figure1.branch1.z=0
+figure1.branch1.aboutX=0.4
+figure1.branch1.aboutY=0.1
+figure1.branch1.aboutZ=0.2
+figure1.branch1.opc=1
+
+vector figure1.branch1 
+
+color 255, 100, 0 
+
+axes 100, 200, 300 
+ellipsoid 

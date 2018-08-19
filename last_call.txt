@@ -1,0 +1,1 @@
+C:\WBord\wwwroot\AnimOv\anim.exe -llc data/llc2.llc -aoc data/id2.aoc -mps id2 -png data/png2_ -w 400 -h 300 -start 1 -stop 1 -outline 1

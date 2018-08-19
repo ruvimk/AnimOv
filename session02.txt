@@ -1,0 +1,25 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="13">
+            <File firstVisibleLine="230" xOffset="0" scrollWidth="1246" startPos="7516" endPos="7516" selMode="0" lang="C" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\toon.c" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="553" startPos="191" endPos="191" selMode="0" lang="Normal Text" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\example01.txt" />
+            <File firstVisibleLine="28" xOffset="0" scrollWidth="714" startPos="1249" endPos="1249" selMode="0" lang="XML" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\data\id1.xml" />
+            <File firstVisibleLine="1330" xOffset="0" scrollWidth="1232" startPos="43953" endPos="43953" selMode="0" lang="C" encoding="-1" filename="C:\WBord\wwwroot\experimental\apps1\dds\main.c" />
+            <File firstVisibleLine="48" xOffset="0" scrollWidth="651" startPos="1001" endPos="1001" selMode="0" lang="C++" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\include\wlib.h" />
+            <File firstVisibleLine="678" xOffset="0" scrollWidth="1120" startPos="22005" endPos="22005" selMode="0" lang="C" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\include\wlib.c" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="567" startPos="188" endPos="188" selMode="0" lang="Javascript" encoding="-1" filename="C:\WBord\wwwroot\experimental\js\part7.js" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="595" startPos="263" endPos="263" selMode="0" lang="Javascript" encoding="-1" filename="C:\WBord\wwwroot\experimental\js\part3.js" />
+            <File firstVisibleLine="326" xOffset="0" scrollWidth="945" startPos="15290" endPos="15290" selMode="0" lang="Javascript" encoding="-1" filename="C:\WBord\wwwroot\experimental\js\part1.js" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="231" startPos="161" endPos="161" selMode="0" lang="Normal Text" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\example02.txt" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="217" startPos="412" endPos="412" selMode="0" lang="Normal Text" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\etc.txt" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="434" startPos="218" endPos="218" selMode="0" lang="C" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\include\cmd.c" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="20202" startPos="54" endPos="54" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Users\Administrator\Pictures\smiley_face_2.bmp" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="182" startPos="200" endPos="200" selMode="0" lang="Normal Text" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\test01.txt" />
+            <File firstVisibleLine="116" xOffset="0" scrollWidth="1190" startPos="4992" endPos="4992" selMode="0" lang="Javascript" encoding="-1" filename="C:\WBord\wwwroot\experimental\js\PackModule.js" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="665" startPos="76" endPos="76" selMode="0" lang="Normal Text" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\cmd1.txt" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="644" startPos="91" endPos="0" selMode="0" lang="Normal Text" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\cmd2.txt" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="931" startPos="90" endPos="90" selMode="0" lang="Normal Text" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\cmd3.txt" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>

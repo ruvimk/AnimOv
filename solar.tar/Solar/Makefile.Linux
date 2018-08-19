@@ -1,0 +1,14 @@
+# makefile for the solarsystem program
+# Linux version
+# Jon McCormack, April 2003
+
+OBJS = material.o solarsystem.o trackball.o text.o
+LIBS = -L/usr/X11R6/lib -lX11 -lXi -lXmu -lglut -lGL -lGLU
+CFLAGS = -Wall -I/usr/include/GL
+
+solarsystem: $(OBJS)
+	$(CC) -o solarsystem $(OBJS) $(LIBS)
+
+
+clean:
+	@rm -f $(OBJS) solarsystem

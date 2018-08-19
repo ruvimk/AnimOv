@@ -1,0 +1,187 @@
+Background.name=Background
+Background.path=figures.Background
+Background.opc=1
+stick-figure-1.body.neck.head.top-of-head.name=top-of-head
+stick-figure-1.body.neck.head.top-of-head.path=figures.stick-figure-1.body.neck.head.top-of-head
+stick-figure-1.body.neck.head.top-of-head.z=20
+stick-figure-1.body.neck.head.top-of-head.opc=1
+stick-figure-1.body.neck.head.face.name=face
+stick-figure-1.body.neck.head.face.path=figures.stick-figure-1.body.neck.head.face
+stick-figure-1.body.neck.head.face.y=-10
+stick-figure-1.body.neck.head.face.z=30
+stick-figure-1.body.neck.head.face.opc=1
+stick-figure-1.body.neck.head.name=head
+stick-figure-1.body.neck.head.path=figures.stick-figure-1.body.neck.head
+stick-figure-1.body.neck.head.x=2.339262187088274
+stick-figure-1.body.neck.head.z=10
+stick-figure-1.body.neck.head.opc=1
+stick-figure-1.body.neck.name=neck
+stick-figure-1.body.neck.path=figures.stick-figure-1.body.neck
+stick-figure-1.body.neck.z=60
+stick-figure-1.body.neck.opc=1
+stick-figure-1.body.left-high.left-arm.left-forearm.left-hand.name=left-hand
+stick-figure-1.body.left-high.left-arm.left-forearm.left-hand.path=figures.stick-figure-1.body.left-high.left-arm.left-forearm.left-hand
+stick-figure-1.body.left-high.left-arm.left-forearm.left-hand.z=40
+stick-figure-1.body.left-high.left-arm.left-forearm.left-hand.opc=1
+stick-figure-1.body.left-high.left-arm.left-forearm.name=left-forearm
+stick-figure-1.body.left-high.left-arm.left-forearm.path=figures.stick-figure-1.body.left-high.left-arm.left-forearm
+stick-figure-1.body.left-high.left-arm.left-forearm.z=40
+stick-figure-1.body.left-high.left-arm.left-forearm.aboutY=0.8
+stick-figure-1.body.left-high.left-arm.left-forearm.opc=1
+stick-figure-1.body.left-high.left-arm.name=left-arm
+stick-figure-1.body.left-high.left-arm.path=figures.stick-figure-1.body.left-high.left-arm
+stick-figure-1.body.left-high.left-arm.z=20
+stick-figure-1.body.left-high.left-arm.aboutY=0.4
+stick-figure-1.body.left-high.left-arm.opc=1
+stick-figure-1.body.left-high.name=left-high
+stick-figure-1.body.left-high.path=figures.stick-figure-1.body.left-high
+stick-figure-1.body.left-high.z=60
+stick-figure-1.body.left-high.aboutY=1.57
+stick-figure-1.body.left-high.opc=1
+stick-figure-1.body.right-high.right-arm.right-forearm.right-hand.name=right-hand
+stick-figure-1.body.right-high.right-arm.right-forearm.right-hand.path=figures.stick-figure-1.body.right-high.right-arm.right-forearm.right-hand
+stick-figure-1.body.right-high.right-arm.right-forearm.right-hand.z=40
+stick-figure-1.body.right-high.right-arm.right-forearm.right-hand.opc=1
+stick-figure-1.body.right-high.right-arm.right-forearm.name=right-forearm
+stick-figure-1.body.right-high.right-arm.right-forearm.path=figures.stick-figure-1.body.right-high.right-arm.right-forearm
+stick-figure-1.body.right-high.right-arm.right-forearm.z=40
+stick-figure-1.body.right-high.right-arm.right-forearm.aboutY=-0.8
+stick-figure-1.body.right-high.right-arm.right-forearm.opc=1
+stick-figure-1.body.right-high.right-arm.name=right-arm
+stick-figure-1.body.right-high.right-arm.path=figures.stick-figure-1.body.right-high.right-arm
+stick-figure-1.body.right-high.right-arm.z=20
+stick-figure-1.body.right-high.right-arm.aboutY=-0.4
+stick-figure-1.body.right-high.right-arm.opc=1
+stick-figure-1.body.right-high.name=right-high
+stick-figure-1.body.right-high.path=figures.stick-figure-1.body.right-high
+stick-figure-1.body.right-high.z=60
+stick-figure-1.body.right-high.aboutY=-1.57
+stick-figure-1.body.right-high.opc=1
+stick-figure-1.body.name=body
+stick-figure-1.body.path=figures.stick-figure-1.body
+stick-figure-1.body.opc=1
+stick-figure-1.left-low.left-femur.left-leg.left-foot.name=left-foot
+stick-figure-1.left-low.left-femur.left-leg.left-foot.path=figures.stick-figure-1.left-low.left-femur.left-leg.left-foot
+stick-figure-1.left-low.left-femur.left-leg.left-foot.z=60
+stick-figure-1.left-low.left-femur.left-leg.left-foot.aboutX=-1.57
+stick-figure-1.left-low.left-femur.left-leg.left-foot.opc=1
+stick-figure-1.left-low.left-femur.left-leg.name=left-leg
+stick-figure-1.left-low.left-femur.left-leg.path=figures.stick-figure-1.left-low.left-femur.left-leg
+stick-figure-1.left-low.left-femur.left-leg.z=60
+stick-figure-1.left-low.left-femur.left-leg.opc=1
+stick-figure-1.left-low.left-femur.name=left-femur
+stick-figure-1.left-low.left-femur.path=figures.stick-figure-1.left-low.left-femur
+stick-figure-1.left-low.left-femur.z=20
+stick-figure-1.left-low.left-femur.aboutY=1.57
+stick-figure-1.left-low.left-femur.opc=1
+stick-figure-1.left-low.name=left-low
+stick-figure-1.left-low.path=figures.stick-figure-1.left-low
+stick-figure-1.left-low.aboutY=1.57
+stick-figure-1.left-low.opc=1
+stick-figure-1.right-low.right-femur.right-leg.right-foot.name=right-foot
+stick-figure-1.right-low.right-femur.right-leg.right-foot.path=figures.stick-figure-1.right-low.right-femur.right-leg.right-foot
+stick-figure-1.right-low.right-femur.right-leg.right-foot.z=60
+stick-figure-1.right-low.right-femur.right-leg.right-foot.aboutX=-1.57
+stick-figure-1.right-low.right-femur.right-leg.right-foot.opc=1
+stick-figure-1.right-low.right-femur.right-leg.name=right-leg
+stick-figure-1.right-low.right-femur.right-leg.path=figures.stick-figure-1.right-low.right-femur.right-leg
+stick-figure-1.right-low.right-femur.right-leg.z=60
+stick-figure-1.right-low.right-femur.right-leg.opc=1
+stick-figure-1.right-low.right-femur.name=right-femur
+stick-figure-1.right-low.right-femur.path=figures.stick-figure-1.right-low.right-femur
+stick-figure-1.right-low.right-femur.z=20
+stick-figure-1.right-low.right-femur.aboutY=-1.57
+stick-figure-1.right-low.right-femur.opc=1
+stick-figure-1.right-low.name=right-low
+stick-figure-1.right-low.path=figures.stick-figure-1.right-low
+stick-figure-1.right-low.aboutY=-1.57
+stick-figure-1.right-low.opc=1
+stick-figure-1.name=stick-figure-1
+stick-figure-1.path=figures.stick-figure-1
+stick-figure-1.x=10.226281617585964
+stick-figure-1.z=22.80252100840336
+stick-figure-1.aboutX=8.048048048048048
+stick-figure-1.aboutY=1.6865471071702715
+stick-figure-1.aboutZ=6.837786629116881
+stick-figure-1.opc=1
+
+color 240,240,240,1 
+path 
+vector stick-figure-1.body.neck.head.face 
+pt -7.74,0,0.64 
+pt -8.14,0,7.58 
+pt -7,0,10.8 
+pt -5.08,0,10.78 
+pt -3.06,0,10.84 
+pt -2.18,0,9.24 
+pt -2.42,0,0.7 
+fill 
+path 
+pt 7.74,0,0.64 
+pt 8.14,0,7.58 
+pt 7,0,10.8 
+pt 5.08,0,10.78 
+pt 3.06,0,10.84 
+pt 2.18,0,9.24 
+pt 2.42,0,0.7 
+fill 
+color 255,220,177,1 
+vector stick-figure-1.body.neck 
+at 0, 0, 10 
+axes 5, 5, 10 
+ellipsoid 
+vector stick-figure-1.body.neck.head 
+at 0, 0, 30 
+axes 15, 18, 22 
+ellipsoid 
+vector stick-figure-1.body.left-high.left-arm 
+axes 8, 8, 15 
+ellipsoid 
+vector stick-figure-1.body.left-high.left-arm.left-forearm 
+at 0, 0, 20 
+axes 8, 8, 20 
+ellipsoid 
+vector stick-figure-1.body.right-high.right-arm 
+at 0, 0, 30 
+axes 8, 8, 15 
+ellipsoid 
+vector stick-figure-1.body.right-high.right-arm.right-forearm 
+at 0, 0, 20 
+axes 8, 8, 20 
+ellipsoid 
+color 255,0,0,1 
+vector stick-figure-1.body 
+at 0, 0, 30 
+axes 20, 10, 30 
+ellipsoid 
+at 0, 0, 55 
+axes 20, 10, 15 
+ellipsoid 
+vector stick-figure-1.body.left-high.left-arm 
+at 0, 0, 10 
+axes 10, 10, 10 
+ellipsoid 
+vector stick-figure-1.body.right-high.right-arm 
+ellipsoid 
+color 0,0,255,1 
+vector stick-figure-1 
+at 0, 0, 0 
+axes 20, 10, 5 
+ellipsoid 
+vector stick-figure-1.left-low.left-femur 
+at 0, 0, 30 
+axes 5, 5, 30 
+ellipsoid 
+vector stick-figure-1.left-low.left-femur.left-leg 
+ellipsoid 
+vector stick-figure-1.right-low.right-femur 
+ellipsoid 
+vector stick-figure-1.right-low.right-femur.right-leg 
+ellipsoid 
+color 68,68,0,1 
+vector stick-figure-1.left-low.left-femur.left-leg.left-foot 
+at 0, 0, 10 
+axes 8, 5, 12 
+ellipsoid 
+vector stick-figure-1.right-low.right-femur.right-leg.right-foot 
+ellipsoid 

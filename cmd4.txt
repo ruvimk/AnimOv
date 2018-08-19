@@ -1,0 +1,1 @@
+toon -RenderMode default -SourceFile data\input1.txt -OutputBitmap bmp1.bmp -ExportBitmap color -OutputMap map1.adm -cy 400 -w 640 -h 480

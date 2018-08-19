@@ -1,0 +1,1 @@
+"C:\WBord\wwwroot\animov\anim.exe"   -id 2 -llc llc2 -mps 2 -zip z2 -w 640 -h 480 -start 1 -stop -1 -outline 1

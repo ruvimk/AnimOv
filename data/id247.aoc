@@ -1,0 +1,7 @@
+1	set figure figures.stick-figure-1.z 100.5 @1<stop>
+2	set figure Background.z 50 @1<stop>
+3	set figure figures.stick-figure-1.z 50 @1<stop>
+4	set figure figures.stick-figure-1.x 15.5 @1<stop>
+5	set figure figures.stick-figure-3.x 97 @1<stop>
+6	set figure figures.stick-figure-3.x 153.5 @1<stop>
+<end of message>

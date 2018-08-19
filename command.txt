@@ -1,0 +1,2 @@
+[id]	set [vector/path] = [value | (new)] in [figures | cameras] for [additional field] = [value] [...] <stop> 
+1	set figure1.branch1.aboutX = 3.1415 in figures for frame = 7 and id = 1 from = user1 <stop> 

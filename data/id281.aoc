@@ -1,0 +1,705 @@
+	new camera camera1<stop>
+	set camera camera1.zoom 10.5 @1$0<stop>
+	fps 24<stop>
+	len 10<stop>
+	cam camera1 @1$0<stop>
+	set camera camera1.x 0 @1$0 <stop>
+	set camera camera1.x 20 @120$10<stop>
+	set figure stick-figure-1.aboutZ 1.57 @31$1 <stop>
+	new camera camera1 <stop>
+	set camera camera1.y 21 @1$0 <stop>
+	
+	new figure one <stop>
+	set figure one.aboutZ 3.1415 @1$0 <stop>
+	new figure one.body <stop>
+	new figure one.body.neck <stop>
+	set figure one.body.neck.z 1.4 @1$0 <stop>
+	new figure one.body.neck.head <stop>
+	set figure one.body.neck.head.z 0.25 @1$0 <stop>
+		new figure one.body.neck.head.face <stop>
+		set figure one.body.neck.head.face.y -0.7 @1$0 <stop>
+		set figure one.body.neck.head.face.z 0.4 @1$0 <stop>
+		new figure one.body.neck.head.face.eyes <stop>
+		set figure one.body.neck.head.face.eyes.y 0 @1$0 <stop>
+			new figure one.body.neck.head.face.eyes.left <stop> 
+			new figure one.body.neck.head.face.eyes.left.point <stop> 
+			set figure one.body.neck.head.face.eyes.left.point.y -0.18 @1$0 <stop> 
+			new figure one.body.neck.head.face.eyes.right <stop> 
+			new figure one.body.neck.head.face.eyes.right.point <stop> 
+			set figure one.body.neck.head.face.eyes.right.point.y -0.18 @1$0 <stop> 
+		new figure one.body.neck.head.face.nose <stop>
+		set figure one.body.neck.head.face.nose.z -0.25 @1$0 <stop>
+		set figure one.body.neck.head.face.nose.y 0 @1$0 <stop> 
+		new figure one.body.neck.head.face.mouth <stop>
+		set figure one.body.neck.head.face.mouth.z -0.35 @1$0 <stop>
+	new figure one.body.left-high <stop>
+	set figure one.body.left-high.z 1.2 @1$0 <stop>
+	set figure one.body.left-high.aboutY 1.57 @1$0 <stop>
+	new figure one.body.left-high.arm <stop>
+	set figure one.body.left-high.arm.z 0.5 @1$0 <stop>
+	set figure one.body.left-high.arm.aboutY 0.4 @1$0 <stop>
+	new figure one.body.left-high.arm.forearm <stop>
+	set figure one.body.left-high.arm.forearm.z 1 @1$0 <stop>
+	set figure one.body.left-high.arm.forearm.aboutY 0.8 @1$0 <stop>
+	new figure one.body.left-high.arm.forearm.hand <stop>
+	set figure one.body.left-high.arm.forearm.hand.z 0.9 @1$0 <stop>
+	new figure one.body.right-high <stop>
+	set figure one.body.right-high.z 1.2 @1$0 <stop>
+	set figure one.body.right-high.aboutY -1.57 @1$0 <stop>
+	new figure one.body.right-high.arm <stop>
+	set figure one.body.right-high.arm.z 0.5 @1$0 <stop>
+	set figure one.body.right-high.arm.aboutY -0.4 @1$0 <stop>
+	new figure one.body.right-high.arm.forearm <stop>
+	set figure one.body.right-high.arm.forearm.z 1 @1$0 <stop>
+	set figure one.body.right-high.arm.forearm.aboutY -0.8 @1$0 <stop>
+	new figure one.body.right-high.arm.forearm.hand <stop>
+	set figure one.body.right-high.arm.forearm.hand.z 0.9 @1$0 <stop>
+	new figure one.left-low <stop>
+	set figure one.left-low.aboutY 1.57 @1$0 <stop>
+	new figure one.left-low.femur <stop>
+	set figure one.left-low.femur.z 0.35 @1$0 <stop>
+	set figure one.left-low.femur.aboutY 1.57 @1$0 <stop>
+	new figure one.left-low.femur.leg <stop>
+	set figure one.left-low.femur.leg.z 1.8 @1$0 <stop>
+	new figure one.left-low.femur.leg.foot <stop>
+	set figure one.left-low.femur.leg.foot.z 1.5 @1$0 <stop>
+	set figure one.left-low.femur.leg.foot.aboutX -1.57 @1$0 <stop>
+	new figure one.right-low <stop>
+	set figure one.right-low.aboutY -1.57 @1$0 <stop>
+	new figure one.right-low.femur <stop>
+	set figure one.right-low.femur.z 0.35 @1$0 <stop>
+	set figure one.right-low.femur.aboutY -1.57 @1$0 <stop>
+	new figure one.right-low.femur.leg <stop>
+	set figure one.right-low.femur.leg.z 1.8 @1$0 <stop>
+	new figure one.right-low.femur.leg.foot <stop>
+	set figure one.right-low.femur.leg.foot.z 1.5 @1$0 <stop>
+	set figure one.right-low.femur.leg.foot.aboutX -1.57 @1$0 <stop>
+	
+	new figure nei <stop>
+	set figure nei.x 4 @1$0 <stop>
+	set figure nei.z 0.1 @1$0 <stop> 
+	set figure nei.aboutZ 3.1415 @1$0 <stop>
+	new figure nei.body <stop>
+	new figure nei.body.neck <stop>
+	set figure nei.body.neck.z 1.5 @1$0 <stop>
+	new figure nei.body.neck.head <stop>
+	set figure nei.body.neck.head.z 0.25 @1$0 <stop>
+		new figure nei.body.neck.head.face <stop>
+		set figure nei.body.neck.head.face.y -0.6 @1$0 <stop>
+		set figure nei.body.neck.head.face.z 0.4 @1$0 <stop>
+		new figure nei.body.neck.head.face.eyes <stop>
+		set figure nei.body.neck.head.face.eyes.y 0 @1$0 <stop>
+			new figure nei.body.neck.head.face.eyes.left <stop> 
+			new figure nei.body.neck.head.face.eyes.left.point <stop> 
+			set figure nei.body.neck.head.face.eyes.left.point.y -0.18 @1$0 <stop> 
+			new figure nei.body.neck.head.face.eyes.right <stop> 
+			new figure nei.body.neck.head.face.eyes.right.point <stop> 
+			set figure nei.body.neck.head.face.eyes.right.point.y -0.18 @1$0 <stop> 
+		new figure nei.body.neck.head.face.nose <stop>
+		set figure nei.body.neck.head.face.nose.z -0.25 @1$0 <stop>
+		set figure nei.body.neck.head.face.nose.y 0 @1$0 <stop> 
+		new figure nei.body.neck.head.face.mouth <stop>
+		set figure nei.body.neck.head.face.mouth.z -0.35 @1$0 <stop>
+	new figure nei.body.left-high <stop>
+	set figure nei.body.left-high.z 1.3 @1$0 <stop>
+	set figure nei.body.left-high.aboutY 1.57 @1$0 <stop>
+	new figure nei.body.left-high.arm <stop>
+	set figure nei.body.left-high.arm.z 0.5 @1$0 <stop>
+	set figure nei.body.left-high.arm.aboutY 0.4 @1$0 <stop>
+	new figure nei.body.left-high.arm.forearm <stop>
+	set figure nei.body.left-high.arm.forearm.z 1 @1$0 <stop>
+	set figure nei.body.left-high.arm.forearm.aboutY 0.8 @1$0 <stop>
+	new figure nei.body.left-high.arm.forearm.hand <stop>
+	set figure nei.body.left-high.arm.forearm.hand.z 0.9 @1$0 <stop>
+	new figure nei.body.right-high <stop>
+	set figure nei.body.right-high.z 1.3 @1$0 <stop>
+	set figure nei.body.right-high.aboutY -1.57 @1$0 <stop>
+	new figure nei.body.right-high.arm <stop>
+	set figure nei.body.right-high.arm.z 0.5 @1$0 <stop>
+	set figure nei.body.right-high.arm.aboutY -0.4 @1$0 <stop>
+	new figure nei.body.right-high.arm.forearm <stop>
+	set figure nei.body.right-high.arm.forearm.z 1 @1$0 <stop>
+	set figure nei.body.right-high.arm.forearm.aboutY -0.8 @1$0 <stop>
+	new figure nei.body.right-high.arm.forearm.hand <stop>
+	set figure nei.body.right-high.arm.forearm.hand.z 0.9 @1$0 <stop>
+	new figure nei.left-low <stop>
+	set figure nei.left-low.aboutY 1.57 @1$0 <stop>
+	new figure nei.left-low.femur <stop>
+	set figure nei.left-low.femur.z 0.35 @1$0 <stop>
+	set figure nei.left-low.femur.aboutY 1.57 @1$0 <stop>
+	new figure nei.left-low.femur.leg <stop>
+	set figure nei.left-low.femur.leg.z 1.9 @1$0 <stop>
+	new figure nei.left-low.femur.leg.foot <stop>
+	set figure nei.left-low.femur.leg.foot.z 1.5 @1$0 <stop>
+	set figure nei.left-low.femur.leg.foot.aboutX -1.57 @1$0 <stop>
+	new figure nei.right-low <stop>
+	set figure nei.right-low.aboutY -1.57 @1$0 <stop>
+	new figure nei.right-low.femur <stop>
+	set figure nei.right-low.femur.z 0.35 @1$0 <stop>
+	set figure nei.right-low.femur.aboutY -1.57 @1$0 <stop>
+	new figure nei.right-low.femur.leg <stop>
+	set figure nei.right-low.femur.leg.z 1.9 @1$0 <stop>
+	new figure nei.right-low.femur.leg.foot <stop>
+	set figure nei.right-low.femur.leg.foot.z 1.5 @1$0 <stop>
+	set figure nei.right-low.femur.leg.foot.aboutX -1.57 @1$0 <stop>
+	
+	new figure nei2 <stop>
+	set figure nei2.x 8 @1$0 <stop>
+	set figure nei2.aboutZ 3.1415 @1$0 <stop>
+	new figure nei2.body <stop>
+	new figure nei2.body.neck <stop>
+	set figure nei2.body.neck.z 1.6 @1$0 <stop>
+	new figure nei2.body.neck.head <stop>
+	set figure nei2.body.neck.head.z 0.25 @1$0 <stop>
+		new figure nei2.body.neck.head.face <stop>
+		set figure nei2.body.neck.head.face.y -0.6 @1$0 <stop>
+		set figure nei2.body.neck.head.face.z 0.4 @1$0 <stop>
+		new figure nei2.body.neck.head.face.eyes <stop>
+		set figure nei2.body.neck.head.face.eyes.y 0 @1$0 <stop>
+			new figure nei2.body.neck.head.face.eyes.left <stop> 
+			new figure nei2.body.neck.head.face.eyes.left.point <stop> 
+			set figure nei2.body.neck.head.face.eyes.left.point.y -0.18 @1$0 <stop> 
+			new figure nei2.body.neck.head.face.eyes.right <stop> 
+			new figure nei2.body.neck.head.face.eyes.right.point <stop> 
+			set figure nei2.body.neck.head.face.eyes.right.point.y -0.18 @1$0 <stop> 
+		new figure nei2.body.neck.head.face.nose <stop>
+		set figure nei2.body.neck.head.face.nose.z -0.25 @1$0 <stop>
+		set figure nei2.body.neck.head.face.nose.y 0 @1$0 <stop> 
+		new figure nei2.body.neck.head.face.mouth <stop>
+		set figure nei2.body.neck.head.face.mouth.z -0.35 @1$0 <stop>
+	new figure nei2.body.left-high <stop>
+	set figure nei2.body.left-high.z 1.4 @1$0 <stop>
+	set figure nei2.body.left-high.aboutY 1.57 @1$0 <stop>
+	new figure nei2.body.left-high.arm <stop>
+	set figure nei2.body.left-high.arm.z 0.4 @1$0 <stop>
+	set figure nei2.body.left-high.arm.aboutY 0.4 @1$0 <stop>
+	new figure nei2.body.left-high.arm.forearm <stop>
+	set figure nei2.body.left-high.arm.forearm.z 1 @1$0 <stop>
+	set figure nei2.body.left-high.arm.forearm.aboutY 0.8 @1$0 <stop>
+	new figure nei2.body.left-high.arm.forearm.hand <stop>
+	set figure nei2.body.left-high.arm.forearm.hand.z 0.9 @1$0 <stop>
+	new figure nei2.body.right-high <stop>
+	set figure nei2.body.right-high.z 1.4 @1$0 <stop>
+	set figure nei2.body.right-high.aboutY -1.57 @1$0 <stop>
+	new figure nei2.body.right-high.arm <stop>
+	set figure nei2.body.right-high.arm.z 0.4 @1$0 <stop>
+	set figure nei2.body.right-high.arm.aboutY -0.4 @1$0 <stop>
+	new figure nei2.body.right-high.arm.forearm <stop>
+	set figure nei2.body.right-high.arm.forearm.z 1 @1$0 <stop>
+	set figure nei2.body.right-high.arm.forearm.aboutY -0.8 @1$0 <stop>
+	new figure nei2.body.right-high.arm.forearm.hand <stop>
+	set figure nei2.body.right-high.arm.forearm.hand.z 0.9 @1$0 <stop>
+	new figure nei2.left-low <stop>
+	set figure nei2.left-low.aboutY 1.57 @1$0 <stop>
+	new figure nei2.left-low.femur <stop>
+	set figure nei2.left-low.femur.z 0.35 @1$0 <stop>
+	set figure nei2.left-low.femur.aboutY 1.57 @1$0 <stop>
+	new figure nei2.left-low.femur.leg <stop>
+	set figure nei2.left-low.femur.leg.z 1.8 @1$0 <stop>
+	new figure nei2.left-low.femur.leg.foot <stop>
+	set figure nei2.left-low.femur.leg.foot.z 1.5 @1$0 <stop>
+	set figure nei2.left-low.femur.leg.foot.aboutX -1.57 @1$0 <stop>
+	new figure nei2.right-low <stop>
+	set figure nei2.right-low.aboutY -1.57 @1$0 <stop>
+	new figure nei2.right-low.femur <stop>
+	set figure nei2.right-low.femur.z 0.35 @1$0 <stop>
+	set figure nei2.right-low.femur.aboutY -1.57 @1$0 <stop>
+	new figure nei2.right-low.femur.leg <stop>
+	set figure nei2.right-low.femur.leg.z 1.8 @1$0 <stop>
+	new figure nei2.right-low.femur.leg.foot <stop>
+	set figure nei2.right-low.femur.leg.foot.z 1.5 @1$0 <stop>
+	set figure nei2.right-low.femur.leg.foot.aboutX -1.57 @1$0 <stop>
+	
+	new figure two <stop>
+	set figure two.x 12 @1$0 <stop>
+	set figure two.aboutZ 3.1415 @1$0 <stop>
+	new figure two.body <stop>
+	new figure two.body.neck <stop>
+	set figure two.body.neck.z 1.4 @1$0 <stop>
+	new figure two.body.neck.head <stop>
+	set figure two.body.neck.head.z 0.25 @1$0 <stop>
+		new figure two.body.neck.head.face <stop>
+		set figure two.body.neck.head.face.y -0.7 @1$0 <stop>
+		set figure two.body.neck.head.face.z 0.4 @1$0 <stop>
+		new figure two.body.neck.head.face.eyes <stop>
+		set figure two.body.neck.head.face.eyes.y 0 @1$0 <stop>
+			new figure two.body.neck.head.face.eyes.left <stop> 
+			new figure two.body.neck.head.face.eyes.left.point <stop> 
+			set figure two.body.neck.head.face.eyes.left.point.y -0.18 @1$0 <stop> 
+			new figure two.body.neck.head.face.eyes.right <stop> 
+			new figure two.body.neck.head.face.eyes.right.point <stop> 
+			set figure two.body.neck.head.face.eyes.right.point.y -0.18 @1$0 <stop> 
+		new figure two.body.neck.head.face.nose <stop>
+		set figure two.body.neck.head.face.nose.z -0.25 @1$0 <stop>
+		set figure two.body.neck.head.face.nose.y 0 @1$0 <stop> 
+		new figure two.body.neck.head.face.mouth <stop>
+		set figure two.body.neck.head.face.mouth.z -0.35 @1$0 <stop>
+	new figure two.body.left-high <stop>
+	set figure two.body.left-high.z 1.2 @1$0 <stop>
+	set figure two.body.left-high.aboutY 1.57 @1$0 <stop>
+	new figure two.body.left-high.arm <stop>
+	set figure two.body.left-high.arm.z 0.4 @1$0 <stop>
+	set figure two.body.left-high.arm.aboutY 0.4 @1$0 <stop>
+	new figure two.body.left-high.arm.forearm <stop>
+	set figure two.body.left-high.arm.forearm.z 1 @1$0 <stop>
+	set figure two.body.left-high.arm.forearm.aboutY 0.8 @1$0 <stop>
+	new figure two.body.left-high.arm.forearm.hand <stop>
+	set figure two.body.left-high.arm.forearm.hand.z 0.9 @1$0 <stop>
+	new figure two.body.right-high <stop>
+	set figure two.body.right-high.z 1.2 @1$0 <stop>
+	set figure two.body.right-high.aboutY -1.57 @1$0 <stop>
+	new figure two.body.right-high.arm <stop>
+	set figure two.body.right-high.arm.z 0.4 @1$0 <stop>
+	set figure two.body.right-high.arm.aboutY -0.4 @1$0 <stop>
+	new figure two.body.right-high.arm.forearm <stop>
+	set figure two.body.right-high.arm.forearm.z 1 @1$0 <stop>
+	set figure two.body.right-high.arm.forearm.aboutY -0.8 @1$0 <stop>
+	new figure two.body.right-high.arm.forearm.hand <stop>
+	set figure two.body.right-high.arm.forearm.hand.z 0.9 @1$0 <stop>
+	new figure two.left-low <stop>
+	set figure two.left-low.aboutY 1.57 @1$0 <stop>
+	new figure two.left-low.femur <stop>
+	set figure two.left-low.femur.z 0.35 @1$0 <stop>
+	set figure two.left-low.femur.aboutY 1.57 @1$0 <stop>
+	new figure two.left-low.femur.leg <stop>
+	set figure two.left-low.femur.leg.z 1.8 @1$0 <stop>
+	new figure two.left-low.femur.leg.foot <stop>
+	set figure two.left-low.femur.leg.foot.z 1.5 @1$0 <stop>
+	set figure two.left-low.femur.leg.foot.aboutX -1.57 @1$0 <stop>
+	new figure two.right-low <stop>
+	set figure two.right-low.aboutY -1.57 @1$0 <stop>
+	new figure two.right-low.femur <stop>
+	set figure two.right-low.femur.z 0.35 @1$0 <stop>
+	set figure two.right-low.femur.aboutY -1.57 @1$0 <stop>
+	new figure two.right-low.femur.leg <stop>
+	set figure two.right-low.femur.leg.z 1.8 @1$0 <stop>
+	new figure two.right-low.femur.leg.foot <stop>
+	set figure two.right-low.femur.leg.foot.z 1.5 @1$0 <stop>
+	set figure two.right-low.femur.leg.foot.aboutX -1.57 @1$0 <stop>
+	
+	new figure nei2-GrayCart <stop> 
+	set figure nei2-GrayCart.opc 0 @1$0 <stop> 
+	set figure nei2-GrayCart.x 16 @1$0 <stop> 
+	set figure nei2-GrayCart.z -2.5 @1$0 <stop> 
+	set figure nei2-GrayCart.aboutZ 3.14159265 @1$0 <stop> 
+	new figure nei2-GrayCart.lid <stop> 
+	set figure nei2-GrayCart.lid.y 1 @1$0 <stop> 
+	set figure nei2-GrayCart.lid.z 3.25 @1$0 <stop> 
+	
+	new figure nei-car <stop> 
+	set figure nei-car.x 18 @1$0 <stop> 
+	set figure nei-car.z -2.5 @1$0 <stop> 
+	
+	set figure Background.opc 0 @1$0<stop>
+	set figure BG %2Chttp%3A//wbord.net/AnimOv/Backgrounds/100_2538.JPG%2Chttp%3A//wbord.net/AnimOv/Backgrounds/100_2539.JPG%2Chttp%3A//wbord.net/AnimOv/Backgrounds/100_2545.JPG%2Chttp%3A//wbord.net/AnimOv/Backgrounds/100_2546.JPG%2Chttp%3A//wbord.net/AnimOv/Backgrounds/100_2556.JPG @1$0<stop>
+	
+	set figure one.z 1 @1$0<stop>
+	set figure one.z 0 @1$0<stop>
+	set figure one.z 1 @27.192904000000002$1.091371<stop>
+	set figure nei.z -0.25 @27.192904000000002$1.091371<stop>
+	set figure nei.z 0 @40.593903999999995$1.6497459999999997<stop>
+	set figure one.z 0 @40.593903999999995$1.6497459999999997<stop>
+	set figure Background.x 3 @40.593903999999995$1.6497459999999997<stop>
+264	set camera camera1.aboutZ 0.3141592653589793 @114.299488$4.720812<stop>
+265	set camera camera1.aboutZ 0.9424777960769379 @114.299488$4.720812<stop>
+266	set camera camera1.aboutZ 0.6283185307179586 @150.03553599999998$6.209813999999999<stop>
+267	set camera camera1.x 30 @239.984776$9.957699<stop>
+268	del key [CAM]camera1.aboutZ @114.28$4.72<stop>
+269	set figure nei.z 0.1 @40.36$1.64<stop>
+270	set camera camera1.x 35 @236.32996$9.805415<stop>
+271	set figure nei-car.opc 0 @1$0<stop>
+272	set figure Background.opc 0.125 @1$0<stop>
+273	set figure Background.opc 1 @1$0<stop>
+274	set figure Background.opc 2 @1$0<stop>
+275	set figure Background.opc 1 @1$0<stop>
+276	set figure BG %2C/AnimOv/Backgrounds/100_2538.JPG%2C/AnimOv/Backgrounds/100_2539.JPG%2C/AnimOv/Backgrounds/100_2545.JPG%2C/AnimOv/Backgrounds/100_2546.JPG%2C/AnimOv/Backgrounds/100_2556.JPG @1$0<stop>
+277	set figure Background.opc 0 @1$0<stop>
+278	set figure Background.opc 1 @1$0<stop>
+279	set figure BG %2Chttp%3A//normal.wbord.net/AnimOv/Backgrounds/100_2538.JPG%2C/AnimOv/Backgrounds/100_2539.JPG%2C/AnimOv/Backgrounds/100_2545.JPG%2C/AnimOv/Backgrounds/100_2546.JPG%2C/AnimOv/Backgrounds/100_2556.JPG @1$0<stop>
+280	set figure BG %2Chttp%3A//wbord.net/AnimOv/Backgrounds/100_2538.JPG%2Chttp%3A//wbord.net/AnimOv/Backgrounds/100_2539.JPG%2Chttp%3A//wbord.net/AnimOv/Backgrounds/100_2545.JPG%2Chttp%3A//wbord.net/AnimOv/Backgrounds/100_2546.JPG%2Chttp%3A//wbord.net/AnimOv/Backgrounds/100_2556.JPG @1$0<stop>
+281	set figure Background.x 10 @1$0<stop>
+282	set figure Background.x 0 @1$0<stop>
+283	set figure Background.z 10 @1$0<stop>
+284	set figure Background.z 20 @1$0<stop>
+285	set figure Background.z 30 @1$0<stop>
+286	set figure Background.z 40 @1$0<stop>
+287	set figure Background.z 50 @1$0<stop>
+288	set figure Background.z 60 @1$0<stop>
+289	set figure Background.z 70 @1$0<stop>
+290	set figure Background.z 80 @1$0<stop>
+291	set figure Background.z 90 @1$0<stop>
+292	set figure Background.z 100 @1$0<stop>
+293	set figure Background.x 10 @1$0<stop>
+294	set figure Background.x 20 @1$0<stop>
+295	set figure Background.x 30 @1$0<stop>
+296	set figure Background.x 40 @1$0<stop>
+297	set figure Background.x 30 @1$0<stop>
+298	set figure Background.z 90 @1$0<stop>
+299	set figure Background.z 80 @1$0<stop>
+300	set figure Background.y -10 @1$0<stop>
+301	set figure Background.y 0 @1$0<stop>
+302	set figure Background.y 10 @1$0<stop>
+303	set figure Background.y 20 @1$0<stop>
+304	set figure Background.y 30 @1$0<stop>
+305	set figure Background.y 40 @1$0<stop>
+306	set figure Background.y 50 @1$0<stop>
+307	set figure Background.y 60 @1$0<stop>
+308	set figure Background.y 50 @1$0<stop>
+309	set figure Background.y 55 @1$0<stop>
+310	set figure Background.y 50 @1$0<stop>
+311	set figure Background.z 100 @1$0<stop>
+312	set figure Background.y 0 @1$0<stop>
+313	set figure Background.x 20 @1$0<stop>
+314	set figure Background.x 10 @1$0<stop>
+315	set figure Background.x 0 @1$0<stop>
+316	set figure one.aboutZ 0 @1$0<stop>
+317	set figure one.aboutZ 3.141592653589793 @1$0<stop>
+318	set figure one.opc 0 @1$0<stop>
+319	set figure nei.opc 0 @1$0<stop>
+320	set figure two.opc 0 @1$0<stop>
+321	set figure Background.x 10 @1$0<stop>
+322	set figure Background.x 20 @1$0<stop>
+323	set figure nei2.x 0 @1$0<stop>
+324	set figure nei2.y 10 @1$0<stop>
+325	set figure nei2.y 0 @1$0<stop>
+326	set figure nei2.y -10 @1$0<stop>
+327	set figure nei2.y -20 @1$0<stop>
+328	set figure nei2.y -30 @1$0<stop>
+329	set figure nei2.y -40 @1$0<stop>
+330	set figure nei2.x -10 @1$0<stop>
+331	set figure nei2.y -50 @1$0<stop>
+332	set figure nei2.y -60 @1$0<stop>
+333	set figure nei2.x -20 @1$0<stop>
+334	set figure nei2.x -18 @1$0<stop>
+335	set figure nei2.x -15 @1$0<stop>
+336	set figure nei2.z -1 @1$0<stop>
+337	set figure nei2.aboutZ 3.5341990816987243 @1$0<stop>
+338	set figure nei2.aboutZ 3.9268980816987247 @1$0<stop>
+339	set figure nei2.aboutZ 4.319597081698724 @1$0<stop>
+340	set figure nei2.aboutZ 4.7122960816987245 @1$0<stop>
+341	set figure nei2.aboutZ 5.104995081698724 @1$0<stop>
+342	set figure nei2.aboutZ 5.497694081698724 @1$0<stop>
+343	del key Background.x @40.593903999999995$1.6497459999999997<stop>
+344	set figure nei2.y -70 @1$0<stop>
+345	set figure nei2.y -80 @1$0<stop>
+346	set figure nei2.y -90 @1$0<stop>
+347	set figure nei2.y -100 @1$0<stop>
+348	set figure nei2.y -90 @1$0<stop>
+349	set figure nei2.y -80 @1$0<stop>
+350	set figure nei2.y -90 @1$0<stop>
+351	set figure nei2.y -100 @1$0<stop>
+352	set figure nei2.z -2 @1$0<stop>
+353	set figure nei2.x -20 @1$0<stop>
+354	set figure nei2.x -22 @1$0<stop>
+355	set figure nei2.z -3 @1$0<stop>
+356	set figure nei2.z -2.5 @1$0<stop>
+357	del key [CAM]camera1.x @236.20000000000002$9.8<stop>
+358	del key [CAM]camera1.x @239.79999999999998$9.95<stop>
+359	del key [CAM]camera1.x @241$10<stop>
+360	del key [CAM]camera1.aboutZ @1$0<stop>
+361	del key [CAM]camera1.aboutZ @149.8$6.2<stop>
+362	set figure nei2.y -110 @49$2<stop>
+363	set figure nei2.x -20 @49$2<stop>
+364	set figure nei2.x -18 @49$2<stop>
+365	set figure nei2.x -17 @49$2<stop>
+366	set figure nei2.opc 0.9 @49$2<stop>
+367	set figure nei2.opc 0 @49.434928$2.018122<stop>
+368	set figure nei2.left-low.femur.opc 1 @1$0<stop>
+369	set figure nei2.opc 1 @1$0<stop>
+370	set figure nei2.left-low.femur.aboutZ 0.39269908169872414 @1$0<stop>
+371	set figure nei2.left-low.femur.aboutZ -8.169872412471265e-8 @1$0<stop>
+372	set figure nei2.left-low.femur.aboutZ 0.39269908169872414 @1$0<stop>
+373	set figure nei2.left-low.femur.aboutZ 0.15707963267948966 @1$0<stop>
+374	set figure nei2.left-low.femur.aboutZ 0 @6.140032$0.214168<stop>
+375	set figure nei2.left-low.femur.aboutZ 0.39269908169872414 @6.140032$0.214168<stop>
+376	set figure nei2.right-low.femur.aboutZ -0.39269908169872414 @6.140032$0.214168<stop>
+377	set figure nei2.right-low.femur.aboutZ 8.169872412471265e-8 @6.140032$0.214168<stop>
+378	set figure nei2.right-low.femur.aboutZ 0.39269908169872414 @6.140032$0.214168<stop>
+379	set figure nei2.left-low.femur.aboutZ -0.392699 @36.189448$1.466227<stop>
+380	set figure nei2.right-low.femur.aboutZ -0.392699 @36.189448$1.466227<stop>
+381	set figure nei2.left-low.femur.aboutZ 0 @49$2<stop>
+382	set figure nei2.left-low.femur.aboutZ 0.39269908169872414 @49$2<stop>
+383	set figure nei2.right-low.femur.aboutZ 0 @49$2<stop>
+384	set figure Background.x 30 @49.434928$2.018122<stop>
+385	set figure Background.x 20 @49.434928$2.018122<stop>
+386	set figure Background.x 10 @49.434928$2.018122<stop>
+387	set figure Background.x 10 @1$0<stop>
+388	set figure Background.x 20 @1$0<stop>
+389	set figure Background.x 20 @49.239999999999995$2.01<stop>
+390	set figure Background.x 30 @49.480000000000004$2.02<stop>
+391	set figure Background.x 40 @49.480000000000004$2.02<stop>
+392	set figure one.opc 1 @49.480000000000004$2.02<stop>
+393	set figure one.opc 0 @49.23724$2.009885<stop>
+394	set figure one.y -10 @49.480000000000004$2.02<stop>
+395	set figure one.y -20 @49.480000000000004$2.02<stop>
+396	set figure one.y -30 @49.480000000000004$2.02<stop>
+397	set figure one.y -40 @49.480000000000004$2.02<stop>
+398	set figure one.y -50 @49.480000000000004$2.02<stop>
+399	set figure one.y -60 @49.480000000000004$2.02<stop>
+400	set figure one.y -70 @49.480000000000004$2.02<stop>
+401	set figure one.y -80 @49.480000000000004$2.02<stop>
+402	set figure one.z -5 @49.480000000000004$2.02<stop>
+403	set figure one.z -1 @49.480000000000004$2.02<stop>
+404	set figure one.body.left-high.arm.aboutY 0.15707963267948966 @49.480000000000004$2.02<stop>
+405	set figure one.body.left-high.arm.aboutY 0 @49.480000000000004$2.02<stop>
+406	set figure one.body.left-high.arm.aboutY 0.39269908169872414 @49.480000000000004$2.02<stop>
+407	set figure one.body.left-high.arm.aboutY 0.7853980816987242 @49.480000000000004$2.02<stop>
+408	set figure one.x 10 @49.480000000000004$2.02<stop>
+409	set figure one.x 0 @49.480000000000004$2.02<stop>
+410	set figure one.x -5 @49.480000000000004$2.02<stop>
+411	set figure one.x 0 @49.480000000000004$2.02<stop>
+412	set figure one.aboutZ 3.5342920816987236 @54.377272000000005$2.224053<stop>
+413	set figure one.aboutZ 3.1415929183012765 @54.377272000000005$2.224053<stop>
+414	set figure one.aboutZ 2.7488939183012753 @54.377272000000005$2.224053<stop>
+415	set figure one.aboutZ 2.356194918301276 @54.377272000000005$2.224053<stop>
+416	set figure one.x 10 @54.377272000000005$2.224053<stop>
+417	set figure one.x 0 @54.377272000000005$2.224053<stop>
+418	set figure one.y -80.001 @54.377272000000005$2.224053<stop>
+419	set figure one.z -1.001 @54.377272000000005$2.224053<stop>
+420	set figure one.x -2 @66.28$2.72<stop>
+421	set figure one.x -3 @66.28$2.72<stop>
+422	set figure one.x -2 @66.28$2.72<stop>
+423	set figure one.z -0.8 @66.28$2.72<stop>
+424	set figure one.z 0.8 @66.28$2.72<stop>
+425	set figure one.z -0.5 @66.28$2.72<stop>
+426	set figure one.z -1.5 @66.28$2.72<stop>
+427	set figure one.left-low.femur.z 10.35 @54.28$2.22<stop>
+428	set figure one.left-low.femur.z 0.34999999999999964 @54.28$2.22<stop>
+429	set figure one.left-low.femur.aboutZ 0.39269908169872414 @54.28$2.22<stop>
+430	set figure one.left-low.femur.aboutZ -8.169872412471265e-8 @54.28$2.22<stop>
+431	set figure one.left-low.femur.aboutZ -0.39269916339744826 @54.28$2.22<stop>
+432	set figure one.left-low.femur.aboutZ 0 @49.480000000000004$2.02<stop>
+433	set figure one.right-low.femur.aboutZ 0.39269908169872414 @49.480000000000004$2.02<stop>
+434	set figure one.right-low.femur.aboutZ -8.169872412471265e-8 @49.480000000000004$2.02<stop>
+435	set figure one.left-low.femur.aboutZ 0 @54.28$2.22<stop>
+436	set figure one.left-low.femur.aboutZ -0.39269908169872414 @66.28$2.72<stop>
+437	set figure one.right-low.femur.aboutZ -0.39269908169872414 @66.28$2.72<stop>
+438	set figure one.x -3 @66.28$2.72<stop>
+439	set figure one.aboutZ 2.356195 @66.28$2.72<stop>
+440	set figure one.aboutZ 3.141592653589793 @69.401968$2.850082<stop>
+441	set figure one.left-low.femur.aboutZ 0 @69.401968$2.850082<stop>
+442	set figure one.right-low.femur.aboutZ 0 @69.401968$2.850082<stop>
+443	set figure one.aboutZ 2.827433388230814 @69.401968$2.850082<stop>
+444	set figure one.y -70.001 @81.4$3.35<stop>
+445	set figure one.x -3.5 @81.4$3.35<stop>
+446	set figure one.left-low.femur.aboutZ 0.39269908169872414 @81.4$3.35<stop>
+447	set figure one.right-low.femur.aboutZ -0.39269908169872414 @81.4$3.35<stop>
+448	set figure one.right-low.femur.aboutZ 8.169872412471265e-8 @81.4$3.35<stop>
+449	set figure one.right-low.femur.aboutZ 0.39269908169872414 @81.4$3.35<stop>
+450	set figure one.z -1.501 @81.4$3.35<stop>
+451	set figure one.z -2 @86.19999999999999$3.5499999999999994<stop>
+452	set figure one.z -2.5 @86.19999999999999$3.5499999999999994<stop>
+453	set figure one.y -80.001 @92.19999999999999$3.7999999999999994<stop>
+454	set figure one.y -70.001 @92.19999999999999$3.7999999999999994<stop>
+455	set figure one.y -60.001000000000005 @92.19999999999999$3.7999999999999994<stop>
+456	set figure one.y -50.001 @92.19999999999999$3.7999999999999994<stop>
+457	set figure one.left-low.femur.aboutZ -0.392699 @92.19999999999999$3.7999999999999994<stop>
+458	set figure one.right-low.femur.aboutZ -0.392699 @92.19999999999999$3.7999999999999994<stop>
+459	set figure two.opc 0.1 @91.96000000000001$3.7900000000000005<stop>
+460	set figure two.opc 0 @91.96000000000001$3.7900000000000005<stop>
+461	set figure two.opc 1 @92.19999999999999$3.7999999999999994<stop>
+462	set figure two.x 2 @92.19999999999999$3.7999999999999994<stop>
+463	set figure two.x 0 @92.19999999999999$3.7999999999999994<stop>
+464	set figure two.y -10 @92.19999999999999$3.7999999999999994<stop>
+465	set figure two.y -20 @92.19999999999999$3.7999999999999994<stop>
+466	set figure two.y -30 @92.19999999999999$3.7999999999999994<stop>
+467	set figure two.y -40 @92.19999999999999$3.7999999999999994<stop>
+468	set figure two.y -50 @92.19999999999999$3.7999999999999994<stop>
+469	set figure two.y -60 @92.19999999999999$3.7999999999999994<stop>
+470	set figure two.y -70 @92.19999999999999$3.7999999999999994<stop>
+471	set figure two.y -80 @92.19999999999999$3.7999999999999994<stop>
+472	set figure two.z -1.5 @92.19999999999999$3.7999999999999994<stop>
+473	set figure two.aboutZ 3.141592653589793 @92.19999999999999$3.7999999999999994<stop>
+474	set figure two.aboutZ 2.7488939183012753 @95.892904$3.953871<stop>
+475	set figure two.aboutZ 2.356194918301276 @95.892904$3.953871<stop>
+476	set figure two.x 10 @95.892904$3.953871<stop>
+477	set figure two.x 0 @95.892904$3.953871<stop>
+478	set figure two.y -70 @95.892904$3.953871<stop>
+479	set figure two.y -80 @95.892904$3.953871<stop>
+480	set figure two.z -1.501 @95.892904$3.953871<stop>
+481	set figure one.aboutZ 2.827433388230814 @92.19999999999999$3.7999999999999994<stop>
+482	set figure one.x -3.51 @92.19999999999999$3.7999999999999994<stop>
+483	set figure one.z -2.4 @92.19999999999999$3.7999999999999994<stop>
+484	set figure one.z -2.6 @92.19999999999999$3.7999999999999994<stop>
+485	set figure one.x -1 @95.80000000000001$3.9500000000000006<stop>
+486	set figure one.x -2 @95.80000000000001$3.9500000000000006<stop>
+487	set figure one.z -3 @95.80000000000001$3.9500000000000006<stop>
+488	set figure one.y -40.001 @95.80000000000001$3.9500000000000006<stop>
+489	set figure one.aboutZ 3.2201320816987242 @95.80000000000001$3.9500000000000006<stop>
+490	set figure one.aboutZ 3.612831081698724 @95.80000000000001$3.9500000000000006<stop>
+491	set figure one.left-low.femur.aboutZ 0.392699 @95.80000000000001$3.9500000000000006<stop>
+492	set figure one.right-low.femur.aboutZ 0.392699 @95.80000000000001$3.9500000000000006<stop>
+493	set figure two.x -1 @104.19999999999999$4.3<stop>
+494	set figure two.x -2 @104.19999999999999$4.3<stop>
+495	set figure two.left-low.femur.aboutZ 0.39269908169872414 @104.19999999999999$4.3<stop>
+496	set figure two.right-low.femur.aboutZ -0.39269908169872414 @104.19999999999999$4.3<stop>
+497	set figure two.right-low.femur.aboutZ 8.169872412471265e-8 @104.19999999999999$4.3<stop>
+498	set figure two.right-low.femur.aboutZ 0.39269908169872414 @104.19999999999999$4.3<stop>
+499	set figure two.x -4 @116.19999999999999$4.8<stop>
+500	set figure two.left-low.femur.aboutZ -0.392699 @116.19999999999999$4.8<stop>
+501	set figure two.right-low.femur.aboutZ -0.392699 @116.19999999999999$4.8<stop>
+502	set figure two.aboutZ 2.356195 @116.19999999999999$4.8<stop>
+503	set figure two.aboutZ 2.748894081698724 @121$5<stop>
+504	set figure two.aboutZ 3.141593081698724 @121$5<stop>
+505	set figure two.aboutZ 2.7488939183012753 @121$5<stop>
+506	set figure two.y -80.1 @121$5<stop>
+507	set figure two.z -1.5 @121$5<stop>
+508	set figure two.y -70.1 @133$5.5<stop>
+509	set figure two.y -60.099999999999994 @133$5.5<stop>
+510	set figure two.z -11.5 @133$5.5<stop>
+511	set figure two.z -1.5 @133$5.5<stop>
+512	set figure two.z -3 @133$5.5<stop>
+513	set figure two.aboutZ 3.141593081698724 @133$5.5<stop>
+514	set figure two.aboutZ 3.5342920816987236 @133$5.5<stop>
+515	set figure two.left-low.femur.aboutZ 0.392699 @133$5.5<stop>
+516	set figure two.right-low.femur.aboutZ 0.392699 @133$5.5<stop>
+517	set figure two.x -4.01 @133$5.5<stop>
+518	set figure two.x -4 @133$5.5<stop>
+519	set figure two.x -3 @145$6<stop>
+520	set figure two.x 0 @145$6<stop>
+521	set figure two.x 2 @145$6<stop>
+522	set figure two.x 5 @145$6<stop>
+523	set figure two.x 7 @145$6<stop>
+524	set figure two.y -50.1 @145$6<stop>
+525	set figure two.aboutZ 3.5342920000000033 @145$6<stop>
+526	set figure two.aboutZ 3.1415929183012765 @151$6.25<stop>
+527	set figure two.aboutZ 2.7488939183012753 @151$6.25<stop>
+528	set figure two.x 7.01 @151$6.25<stop>
+529	set figure two.y -50 @151$6.25<stop>
+530	set figure two.z -3.01 @151$6.25<stop>
+531	del key two.x @145$6<stop>
+532	del key two.y @145$6<stop>
+533	del key two.aboutZ @145$6<stop>
+534	del key two.x @151$6.25<stop>
+535	del key two.y @151$6.25<stop>
+536	del key two.z @151$6.25<stop>
+537	del key two.aboutZ @151$6.25<stop>
+538	set figure two.x 5 @169$7<stop>
+539	set figure two.y -50.1 @169$7<stop>
+540	set figure two.z -3.1 @169$7<stop>
+541	set figure two.aboutZ 3.5342920000000033 @169$7<stop>
+542	set figure two.x 5.01 @175$7.25<stop>
+543	set figure two.y -50 @175$7.25<stop>
+544	set figure two.z -3 @175$7.25<stop>
+545	set figure two.aboutZ 3.1415929183012765 @175$7.25<stop>
+546	set figure two.aboutZ 2.7488939183012753 @175$7.25<stop>
+547	set figure two.x 7 @175$7.25<stop>
+548	set figure two.x 7 @169$7<stop>
+549	set figure two.z -4 @175$7.25<stop>
+550	set figure two.aboutZ 2.356194918301276 @175$7.25<stop>
+551	set figure two.y -40 @175$7.25<stop>
+552	set figure two.y -50 @175$7.25<stop>
+553	set figure two.y -40 @175$7.25<stop>
+554	set figure two.z 0 @175$7.25<stop>
+555	set figure two.z -3 @175$7.25<stop>
+556	set figure two.left-low.femur.aboutZ -0.392699 @145$6<stop>
+557	set figure two.right-low.femur.aboutZ -0.392699 @145$6<stop>
+558	set figure two.right-low.femur.aboutZ 0.392699 @152.2$6.3<stop>
+559	set figure two.left-low.femur.aboutZ 0.392699 @152.2$6.3<stop>
+560	set figure two.left-low.femur.aboutZ -0.392699 @159.39999999999998$6.599999999999999<stop>
+561	set figure two.right-low.femur.aboutZ -0.392699 @159.39999999999998$6.599999999999999<stop>
+562	set figure two.right-low.femur.aboutZ 0.392699 @164.2$6.8<stop>
+563	set figure two.left-low.femur.aboutZ 0.392699 @164.2$6.8<stop>
+564	set figure two.left-low.femur.aboutZ -0.392699 @169$7<stop>
+565	set figure two.right-low.femur.aboutZ -0.392699 @169$7<stop>
+566	set figure two.right-low.femur.aboutZ 8.169872412471265e-8 @175$7.25<stop>
+567	del key two.right-low.femur.aboutZ @175$7.25<stop>
+568	set figure two.right-low.femur.aboutZ -0.3926990000000001 @175$7.25<stop>
+569	set figure two.left-low.femur.aboutZ -0.3926990000000001 @175$7.25<stop>
+570	set figure two.left-low.femur.aboutZ 0 @181$7.5<stop>
+571	set figure two.right-low.femur.aboutZ 0 @181$7.5<stop>
+572	set figure two.x 6.8 @181$7.5<stop>
+573	set figure two.x 6.75 @181$7.5<stop>
+574	set figure two.x 6.5 @181$7.5<stop>
+575	set figure two.x -0.285713 @97$4<stop>
+576	del key two.x @97$4<stop>
+577	set figure one.x -2.01 @97$4<stop>
+578	set figure one.left-low.femur.aboutZ 0.3926990000000001 @97$4<stop>
+579	set figure one.right-low.femur.aboutZ 0.3926990000000001 @97$4<stop>
+580	set figure one.right-low.femur.aboutZ 0 @103$4.25<stop>
+581	set figure one.left-low.femur.aboutZ 0 @103$4.25<stop>
+582	set figure one.x -1.9 @103$4.25<stop>
+583	set figure one.x -1.75 @103$4.25<stop>
+584	set figure one.x -1.5 @103$4.25<stop>
+585	set figure one.aboutZ 3.612830999999999 @97$4<stop>
+586	set figure one.aboutZ 4.005530081698724 @103$4.25<stop>
+587	del key one.aboutZ @103$4.25<stop>
+588	set figure one.aboutZ 4.005530081698724 @103$4.25<stop>
+589	set figure one.body.left-high.arm.aboutZ -0.39269908169872414 @103$4.25<stop>
+590	set figure one.body.left-high.arm.aboutZ 8.169872412471265e-8 @103$4.25<stop>
+591	set figure one.body.left-high.arm.aboutZ -0.39269908169872414 @115$4.75<stop>
+592	set figure one.body.left-high.arm.aboutZ -0.7853980816987242 @115$4.75<stop>
+593	set figure one.body.left-high.arm.aboutZ -1.1780970816987242 @115$4.75<stop>
+594	set figure one.body.right-high.arm.aboutZ 0.0031415926535897933 @103$4.25<stop>
+595	set figure one.body.right-high.arm.aboutZ 0 @103$4.25<stop>
+596	set figure one.body.left-high.arm.aboutZ -1.570796081698724 @115$4.75<stop>
+597	set figure one.body.left-high.arm.aboutZ -1.9634950816987242 @115$4.75<stop>
+598	set figure one.body.right-high.arm.aboutZ -0.39269908169872414 @115$4.75<stop>
+599	set figure one.body.right-high.arm.aboutZ 8.169872412471265e-8 @115$4.75<stop>
+600	set figure one.body.right-high.arm.aboutZ 0.39269908169872414 @115$4.75<stop>
+601	set figure one.body.right-high.arm.aboutZ 0.7853980816987242 @115$4.75<stop>
+602	set figure one.body.right-high.arm.aboutZ 1.1780970816987242 @115$4.75<stop>
+603	set figure one.body.right-high.arm.aboutY -0.7926990816987243 @115$4.75<stop>
+604	set figure one.body.right-high.arm.aboutY -1.1853980816987242 @115$4.75<stop>
+605	set figure one.body.right-high.arm.aboutY -1.5780970816987239 @115$4.75<stop>
+606	set figure one.body.right-high.arm.aboutY -1.970796081698724 @115$4.75<stop>
+607	set figure one.body.right-high.arm.aboutY -1.578096918301276 @115$4.75<stop>
+608	set figure one.body.right-high.arm.aboutY -1.970796081698724 @115$4.75<stop>
+609	del key one.body.right-high.arm.aboutY @115$4.75<stop>
+610	set figure one.body.right-high.arm.aboutY -0.4000000000000001 @103$4.25<stop>
+611	set figure one.body.right-high.arm.aboutY -0.7926990816987243 @115$4.75<stop>
+612	set figure one.body.right-high.arm.aboutY -1.1853980816987242 @115$4.75<stop>
+613	set figure one.body.right-high.arm.aboutY -1.5780970816987239 @115$4.75<stop>
+614	set figure one.body.right-high.arm.aboutY -1.970796081698724 @115$4.75<stop>
+615	set figure one.body.right-high.arm.aboutY -2.363495081698724 @115$4.75<stop>
+616	set figure one.body.right-high.arm.aboutY -1.9707959183012758 @115$4.75<stop>
+617	set figure one.body.right-high.arm.aboutZ 1.570796081698724 @115$4.75<stop>
+618	set figure one.body.right-high.arm.aboutZ 1.178096918301276 @115$4.75<stop>
+619	set figure one.body.right-high.arm.aboutZ 1.2566370614359172 @115$4.75<stop>
+620	set figure one.body.right-high.arm.aboutZ 1.335176877775662 @115$4.75<stop>
+621	set figure one.body.right-high.arm.aboutZ 1.413716694115407 @115$4.75<stop>
+622	set figure one.body.right-high.arm.aboutZ 1.0210179183012758 @116.255344$4.802306<stop>
+623	set figure one.body.right-high.arm.aboutY -2.363495081698724 @116.255344$4.802306<stop>
+624	set figure one.body.right-high.arm.aboutY -1.9707959183012758 @116.255344$4.802306<stop>
+625	set figure one.body.right-high.arm.aboutY -1.578096918301276 @116.255344$4.802306<stop>
+626	set figure one.body.left-high.arm.aboutY 0.3926989183012759 @116.255344$4.802306<stop>
+627	set figure one.body.left-high.arm.aboutZ -1.5707959183012759 @116.255344$4.802306<stop>
+628	set figure one.body.left-high.arm.aboutZ -1.178096918301276 @128.2$5.3<stop>
+629	set figure one.body.left-high.arm.aboutZ -0.7853979183012757 @128.2$5.3<stop>
+630	set figure one.body.left-high.arm.aboutZ -0.3926989183012759 @128.2$5.3<stop>
+631	set figure one.body.left-high.arm.aboutY -8.169872412471265e-8 @128.2$5.3<stop>
+632	set figure one.body.left-high.arm.aboutY 0.39269908169872414 @128.2$5.3<stop>
+633	set figure one.body.left-high.arm.aboutY 0.7853980816987242 @128.2$5.3<stop>
+634	set figure one.body.right-high.arm.aboutY -1.1853979183012757 @128.2$5.3<stop>
+635	set figure one.body.right-high.arm.aboutY -0.7926989183012758 @128.2$5.3<stop>
+636	set figure one.body.right-high.arm.aboutY -1.1853980816987242 @128.2$5.3<stop>
+637	set figure one.body.right-high.arm.aboutZ 0.628318918301276 @128.2$5.3<stop>
+638	set figure one.body.right-high.arm.aboutZ 0.23561991830127582 @128.2$5.3<stop>
+639	set figure one.body.right-high.arm.aboutZ -0.15707908169872417 @128.2$5.3<stop>
+640	set figure one.body.right-high.arm.aboutZ 0.23562008169872414 @128.2$5.3<stop>
+641	set figure one.body.left-high.arm.forearm.aboutY 1.1926990816987242 @130.60000000000002$5.400000000000001<stop>
+642	set figure one.body.left-high.arm.forearm.aboutY 0.7999999183012758 @130.60000000000002$5.400000000000001<stop>
+643	set figure one.body.left-high.arm.forearm.aboutY 1.1926990816987242 @130.60000000000002$5.400000000000001<stop>
+644	set figure one.body.left-high.arm.forearm.aboutY 0.7999999183012758 @130.60000000000002$5.400000000000001<stop>
+645	set figure one.body.left-high.arm.forearm.aboutY 0.40730091830127585 @133$5.5<stop>
+646	set figure one.body.left-high.arm.forearm.aboutY 0.800000081698724 @133$5.5<stop>
+647	set figure one.body.left-high.arm.forearm.aboutY 1.1926990816987242 @133$5.5<stop>
+648	set figure one.body.left-high.arm.forearm.aboutY 1.585398081698724 @133$5.5<stop>
+649	set figure one.body.left-high.arm.aboutZ 8.169872412471265e-8 @135.39999999999998$5.599999999999999<stop>
+650	set figure one.body.left-high.arm.aboutY 0.3926989183012759 @135.39999999999998$5.599999999999999<stop>
+651	set figure one.body.left-high.arm.aboutY 0.7853980816987242 @135.39999999999998$5.599999999999999<stop>
+652	set figure one.body.left-high.arm.aboutY 0.3926989183012759 @135.39999999999998$5.599999999999999<stop>
+653	set figure one.body.left-high.arm.aboutY -8.169872412471265e-8 @135.39999999999998$5.599999999999999<stop>
+654	set figure one.body.left-high.arm.aboutY 0.39269908169872414 @135.39999999999998$5.599999999999999<stop>
+655	set figure one.body.left-high.arm.aboutY 0.7853980816987242 @135.39999999999998$5.599999999999999<stop>
+656	set figure one.body.left-high.arm.aboutY 1.1780970816987242 @135.39999999999998$5.599999999999999<stop>
+657	set figure one.body.left-high.arm.aboutY 1.570796081698724 @135.39999999999998$5.599999999999999<stop>
+658	set figure one.body.left-high.arm.aboutY 1.9634950816987242 @135.39999999999998$5.599999999999999<stop>
+659	set figure one.body.left-high.arm.aboutY 1.5707959183012759 @135.39999999999998$5.599999999999999<stop>
+660	set figure one.body.left-high.arm.aboutY 1.178096918301276 @135.39999999999998$5.599999999999999<stop>
+661	set figure one.body.left-high.arm.aboutY 0.7853979183012757 @135.39999999999998$5.599999999999999<stop>
+662	set figure one.body.left-high.arm.forearm.aboutY 1.192698918301276 @135.39999999999998$5.599999999999999<stop>
+663	set figure one.body.left-high.arm.forearm.aboutY 0.7999999183012758 @135.39999999999998$5.599999999999999<stop>
+664	set figure BG %2C/AnimOv/Backgrounds/100_2538.JPG%2C/AnimOv/Backgrounds/100_2539.JPG%2C/AnimOv/Backgrounds/100_2545.JPG%2C/AnimOv/Backgrounds/100_2546.JPG%2C/AnimOv/Backgrounds/100_2556.JPG @1$0<stop>
+665	set figure BG  @1$0<stop>
+<end of message>

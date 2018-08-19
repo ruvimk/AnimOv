@@ -1,0 +1,179 @@
+color 240,240,240,1 
+path 
+vector stick-figure-1.body.neck.head.face 
+pt -7.74,0,0.64 
+pt -8.14,0,7.58 
+pt -7,0,10.8 
+pt -5.08,0,10.78 
+pt -3.06,0,10.84 
+pt -2.18,0,9.24 
+pt -2.42,0,0.7 
+fill 
+color 33,179,80,1 
+outline 33,179,80,1 
+vector stick-figure-1.body.neck.head.face.eyes 
+at -5, 0, 5.34 
+axes 1.42, 0.01, 4.08 
+ellipsoid 
+color 0,0,0,1 
+outline 0,0,0,1 
+at -5, -0.1, 5.34 
+axes 0.84, 0.01, 2.2 
+ellipsoid 
+color 240,240,240,1 
+path 
+vector stick-figure-1.body.neck.head.face 
+pt 7.74,0,0.64 
+pt 8.14,0,7.58 
+pt 7,0,10.8 
+pt 5.08,0,10.78 
+pt 3.06,0,10.84 
+pt 2.18,0,9.24 
+pt 2.42,0,0.7 
+fill 
+color 33,179,80,1 
+outline 33,179,80,1 
+vector stick-figure-1.body.neck.head.face.eyes 
+at 5, 0, 5.34 
+axes 1.42, 0.01, 4.08 
+ellipsoid 
+color 0,0,0,1 
+outline 0,0,0,1 
+at 5, -0.1, 5.34 
+axes 0.84, 0.01, 2.2 
+ellipsoid 
+color 238,207,175,1 
+path 
+vector stick-figure-1.body.neck.head.face.nose 
+pt 0,-1,1.5 
+pt 0,-1,1.5 
+pt 0,-2,-0.5 
+pt 0,-2,-0.5 
+pt 0,-2,-0.5 
+pt 0,-1,-1.5 
+pt 0,-1,-1.5 
+stroke 
+color 255,85,85,1 
+outline 136,255,136,1 
+path 
+vector stick-figure-1.body.neck.head.face.mouth 
+pt -4.3,-1,0 
+pt -4.3,-1,0 
+pt 4.3,-1,0 
+pt 4.3,-1,0 
+stroke 
+path 
+pt -4.3,-1,0 
+pt -4.3,-1,0 
+pt -2,-2,0 
+pt 0,-2,0 
+pt 2,-2,0 
+pt 4.3,-1,0 
+pt 4.3,-1,0 
+pt 4.3,-1,-2 
+pt 4.3,-1,-2 
+pt 2,-2,-2 
+pt 0,-2,-2 
+pt -2,-2,-2 
+pt -4.3,-1,-2 
+pt -4.3,-1,-2 
+fill 
+color 255,252,193,1 
+outline 0,0,0,1 
+vector stick-figure-1.body.neck.head 
+at 0, 0, 30 
+axes 17, 18, 20 
+ellipsoid 
+color 68,68,68,1 
+at 0, 1.5, 30.8 
+axes 18, 19, 20 
+ellipsoid 
+vector stick-figure-1.body.neck.head.left-antenna 
+at 0, 0, 16 
+axes 2, 2, 16 
+ellipsoid 
+at 0, 0, 32 
+axes 5, 5, 2 
+ellipsoid 
+vector stick-figure-1.body.neck.head.right-antenna 
+at 0, 0, 16 
+axes 2, 2, 16 
+ellipsoid 
+at 0, 0, 32 
+axes 5, 5, 2 
+ellipsoid 
+color 34,34,34,1 
+vector stick-figure-1.body.left-high.left-arm 
+at 0, 0, 11 
+axes 5, 5, 20 
+ellipsoid 
+vector stick-figure-1.body.left-high.left-arm.left-forearm 
+at 0, 0, 20 
+ellipsoid 
+vector stick-figure-1.body.right-high.right-arm 
+at 0, 0, 11 
+ellipsoid 
+vector stick-figure-1.body.right-high.right-arm.right-forearm 
+at 0, 0, 20 
+ellipsoid 
+color 119,119,119,1 
+vector stick-figure-1.body.lwing 
+at 0, 0, 40 
+axes 25, 1, 50 
+ellipsoid 
+vector stick-figure-1.body.rwing 
+ellipsoid 
+color 255,255,0,1 
+vector stick-figure-1.body 
+at 0, 0, 35 
+axes 22, 10, 35 
+ellipsoid 
+color 68,68,68,1 
+axes 24, 12, 18 
+ellipsoid 
+at 0, 0, 18 
+axes 20, 10, 12 
+ellipsoid 
+at 0, 0, 52 
+ellipsoid 
+color 34,34,34,1 
+vector stick-figure-1 
+at 0, 0, 0 
+axes 20, 10, 5 
+ellipsoid 
+vector stick-figure-1.left-low.left-femur 
+at 0, 0, 30 
+axes 5, 5, 30 
+ellipsoid 
+vector stick-figure-1.left-low.left-femur.left-leg 
+ellipsoid 
+vector stick-figure-1.right-low.right-femur 
+ellipsoid 
+vector stick-figure-1.right-low.right-femur.right-leg 
+ellipsoid 
+color 68,68,0,1 
+vector stick-figure-1.left-low.left-femur.left-leg.left-foot 
+at 0, 0, 10 
+axes 8, 5, 12 
+ellipsoid 
+vector stick-figure-1.right-low.right-femur.right-leg.right-foot 
+ellipsoid 
+color 33,179,80,1 
+vector planet 
+at 0, 0, 0 
+axes 65536, 65536, 65536 
+ellipsoid 
+color 255,0,0,1 
+path 
+vector figure1.branch1 
+pt 0,0,0 
+pt 0,0,0 
+pt 0,100,0 
+pt 0,100,0 
+pt 0,100,0 
+pt 100,50,70 
+pt 100,50,70 
+pt 100,50,70 
+pt 0,0,0 
+pt 0,0,0 
+fill 

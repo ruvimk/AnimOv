@@ -1,0 +1,1 @@
+toon -RenderMode toon -SourceFile test01.txt -OutputBitmap bmp1.bmp -cy 1000

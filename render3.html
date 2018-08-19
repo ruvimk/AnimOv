@@ -1,0 +1,138 @@
+<!DOCTYPE HTML> 
+<html> 
+	<head> 
+		<title> Render - AnimOv </title> 
+	</head> 
+	<body> 
+		<h1> Render - AnimOv </h1> 
+		<script type="text/javascript"> 
+			if (typeof (EventSource) !== "undefined"){ 
+				var id= 0; 
+				var query= (location + "").split ("?")[1]; 
+				if (query){ 
+					var arr= query.split ("&"); 
+					var i; 
+					for (i= 0; i < arr.length; i++){ 
+						if (arr[i].split ("=")[0] == "id") id= parseInt (arr[i].split ("=")[1]); 
+					} 
+					if (!id) id= 0; 
+				} 
+				var http1; 
+				var http2; 
+					if (navigator.appName == "Microsoft Internet Explorer"){ 
+						http1= new ActiveXObject ("Microsoft.XMLHTTP"); 
+						http2= new ActiveXObject ("Microsoft.XMLHTTP"); 
+					} else { 
+						http1= new XMLHttpRequest (); 
+						http2= new XMLHttpRequest (); 
+					} 
+				var txt= document.createElement ("div"); 
+					document.body.appendChild (txt); 
+				var inp1= document.createElement ("input"); 
+				var inp2= document.createElement ("input"); 
+				var inp3= document.createElement ("input"); 
+				var inpStart= document.createElement ("input"); 
+				var inpStop= document.createElement ("input"); 
+				var inpOutlines= document.createElement ("input"); 
+					inp1.type= "text"; 
+					inp2.type= "text"; 
+					inp3.type= "text"; 
+					inpStart.type= "text"; 
+					inpStop.type= "text"; 
+					inpOutlines.type= "checkbox"; 
+					inpStop.title= "-1 = end of animation"; 
+					inp1.value= id; 
+					document.body.appendChild (document.createElement ("br")); 
+					document.body.appendChild (document.createTextNode ("ID: ")); 
+					document.body.appendChild (inp1); 
+					document.body.appendChild (document.createElement ("br")); 
+					document.body.appendChild (document.createTextNode ("Target Width: ")); 
+					document.body.appendChild (inp2); 
+					document.body.appendChild (document.createElement ("br")); 
+					document.body.appendChild (document.createTextNode ("Target Height: ")); 
+					document.body.appendChild (inp3); 
+					document.body.appendChild (document.createElement ("br")); 
+					document.body.appendChild (document.createTextNode ("Render Start Frame Number: ")); 
+					document.body.appendChild (inpStart); 
+					document.body.appendChild (document.createElement ("br")); 
+					document.body.appendChild (document.createTextNode ("Render Stop Frame Number: ")); 
+					document.body.appendChild (inpStop); 
+					document.body.appendChild (document.createElement ("br")); 
+					document.body.appendChild (document.createTextNode ("Draw Outlines (Contour): ")); 
+					document.body.appendChild (inpOutlines); 
+					document.body.appendChild (document.createElement ("br")); 
+				var btn= document.createElement ("button"); 
+					document.body.appendChild (btn); 
+				inp2.value= 640; 
+				inp3.value= 480; 
+				inpStart.value= 1; 
+				inpStop.value= -1; 
+				inpOutlines.checked= true; 
+				btn.onclick= start; 
+				btn.appendChild (document.createTextNode ("Start Render")); 
+				var source; 
+			} else { 
+				document.body.appendChild (document.createTextNode ("Sorry, your browser is out-of-date and does not support " + 
+					"one or more features this program requires. Please upgrade your browser or " + 
+					"switch to another one (e.g. Safari, Google Chrome, etc.). ")); 
+			} 
+			function DrawLoadingBar (a, b, msg){ 
+				var pc= 100 * a / b; 
+				var can; 
+				var con; 
+				txt.innerHTML= msg + " " + a + "/" + b + " (" + pc + "%) <BR> <BR> "; 
+					txt.appendChild (can= document.createElement ("canvas")); 
+						can.width= 400; 
+						can.height= 50; 
+						can.style.border= "1px #88FF00 solid"; 
+						con= can.getContext ("2d"); 
+							con.fillStyle= "#F8F8F8"; 
+							con.fillRect (0, 0, 400, 50); 
+							//if (stage.charAt (0) == "c") con.fillStyle= "#888800"; 
+							con.fillStyle= "#FF0000"; 
+							con.fillRect (0, 0, pc * 4, 50); 
+					//if (stage == "r" && pc == 100) btn.disabled= false; 
+			} 
+			var prevB= 0; 
+			function start (){ 
+				var http= new XMLHttpRequest (); 
+				if (id) inp1.value= id; 
+				btn.disabled= true; 
+				/*http.open ("GET", "anim.exe?id=" + id + "&llc=llc" + id + "&mps=" + id + "&png=png" + id + "%5F&w=" + 
+					parseInt (inp2.value) + "&h=" + parseInt (inp3.value) + "&start=" + 
+					parseInt (inpStart.value) + "&stop=" + parseInt (inpStop.value) + "&outline=" + (inpOutlines.checked? 1:0), false); 
+				http.send (); 
+				alert (http.responseText); */
+				source= new EventSource ("anim.exe?id=" + id + "&llc=llc" + id + "&mps=" + id + "&png=png" + id + "%5F&w=" + 
+					parseInt (inp2.value) + "&h=" + parseInt (inp3.value) + "&start=" + 
+					parseInt (inpStart.value) + "&stop=" + parseInt (inpStop.value) + "&outline=" + (inpOutlines.checked? 1:0)); 
+				source.onmessage= function (event){ 
+					var msg= event.data + ""; 
+					try { 
+						var arr= msg.split (" of "); 
+						var a= parseFloat (arr[0]); 
+						var b= parseFloat (arr[1]); 
+						var usr= msg.split ("msg:")[1]; 
+					} catch (err){ 
+						var a= 0; 
+						var b= 1; 
+						var usr= err.message; 
+					} 
+					//document.body.appendChild (document.createTextNode (msg)); 
+					//document.body.appendChild (document.createElement ("br")); 
+					if (msg.split (";")[0].split (" ").join ("").split ("\t").join ("") == "done"){ 
+						a= b= prevB; 
+						btn.disabled= false; 
+						source.close (); 
+					} 
+					DrawLoadingBar (a, b, usr); 
+					prevB= b; 
+				}; 
+				source.onerror= function (event){ 
+					//alert (event.data); 
+				}; 
+				txt.innerHTML= "<i>Waiting on server... </i>"; 
+			} 
+		</script> 
+	</body> 
+</html> 

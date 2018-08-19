@@ -1,0 +1,19 @@
+Working... 
+bezier (106, 98), (104, 81), (106, 74), (111, 74); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): -1.485549, 27.172917, -49.078938, 98.030135; 
+		For y = 77
+		Roots: 16.320332, 1.308023, 0.663149
+	X part. 
+		Cubic Coefficients (a, b, c, d): -2.094248, 14.503372, -8.182753, 98.030135; 
+		Roots: -nan, -nan, 107.280395
+		Root 2 exists. 
+bezier (111, 74), (116, 74), (118, 78), (120, 98); 
+	Y part. 
+		Cubic Coefficients (a, b, c, d): 12.423523, 10.966861, 0.293355, 74.638566; 
+		For y = 77
+		Roots: 0.378902, 0.378902, 0.378902
+	X part. 
+		Cubic Coefficients (a, b, c, d): 1.473290, -7.309102, 15.175583, 74.638566; 
+		Roots: 115.946659, 115.946654, 115.946654
+		Root 1 exists. 

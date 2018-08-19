@@ -1,0 +1,98 @@
+<!DOCTYPE HTML> 
+<html> 
+	<head> 
+		<title> AnimOv Play </title> 
+	</head> 
+	<body> 
+		<script type="text/javascript"> 
+			var txt= document.createElement ("div"); 
+				document.body.appendChild (txt); 
+			var ctrl= document.createElement ("div"); 
+				document.body.appendChild (ctrl); 
+			var a; 
+			var http; 
+			if (navigator.appName == "Microsoft Internet Explorer") http= new ActiveXObject ("Microsoft.XMLHTTP"); 
+			else http= new XMLHttpRequest (); 
+			var n; 
+			var id= 0; 
+			var fps; 
+			var main_w; 
+			var main_h; 
+			var frames; 
+			var query= (location + "").split ("?")[1]; 
+			if (query){ 
+				var arr= query.split ("&"); 
+				var i; 
+				for (i= 0; i < arr.length; i++){ 
+					if (arr[i].split ("=")[0] == "id") id= parseInt (arr[i].split ("=")[1]); 
+				} 
+				if (id){ 
+					txt.innerHTML= "<font color=\"red\">Loading... </font>"; 
+					http.open ("GET", "/AnimOv/data/id" + id + ".aof", false); 
+					http.send (); 
+					if (http.responseText){ 
+						frames= http.responseText.split ("<frame break>"); 
+						delete http.responseText; 
+						http.open ("GET", "/AnimOv/data/id" + id + ".txt", false); 
+						http.send (); 
+						if (http.responseText){ 
+							arr= http.responseText.split ("\r\n"); 
+						} else if (http.response){ 
+							arr= http.response.split ("\r\n"); 
+						} else { 
+							arr= [400, 300, 12]; 
+						} 
+						main_w= parseInt (arr[0]); 
+						main_h= parseInt (arr[1]); 
+						fps= parseInt (arr[2]); 
+						if (isNaN (main_w)) main_w= 400; 
+						if (isNaN (main_h)) main_h= 300; 
+						if (isNaN (fps)) fps= 12; 
+						ctrl.appendChild (a= document.createElement ("a")); 
+							a.href= "javascript: play ();"; 
+							a.appendChild (document.createTextNode ("Play")); 
+						ctrl.appendChild (a= document.createElement ("a")); 
+							a.href= "javascript: pause ();"; 
+							a.appendChild (document.createTextNode ("Pause")); 
+						ctrl.appendChild (a= document.createElement ("a")); 
+							a.href= "javascript: stop ();"; 
+							a.appendChild (document.createTextNode ("Stop")); 
+						txt.innerHTML= "Press play to begin."; 
+						//var main_interval= setInterval ("RenderNext ();", n); 
+						setTimeout ("RenderNext ();", 100); 
+					} 
+				} 
+			} 
+			var s= 1; 
+			var counter= 0; 
+			var paused= true; 
+			function RenderNext (){ 
+				var time1= new Date (); 
+				if (!paused){ 
+					txt.innerHTML= ""; 
+					var can= document.createElement ("canvas"); 
+						can.width= main_w * s; 
+						can.height= main_h * s; 
+					var con= can.getContext ("2d"); 
+					eval (frames[counter] || ""); 
+					txt.appendChild (can); 
+					counter++; 
+				} 
+				n= Math.floor (1000 / fps) - (new Date () - time1); 
+				if (n < 20) n= 20; 
+				setTimeout ("RenderNext ();", n); 
+			} 
+			function play (){ 
+				paused= false; 
+				if (counter >= frames.length) counter= 0; 
+			} 
+			function pause (){ 
+				paused= true; 
+			} 
+			function stop (){ 
+				paused= true; 
+				counter= 0; 
+			} 
+		</script> 
+	</body> 
+</html> 

@@ -1,0 +1,1446 @@
+<!DOCTYPE HTML> 
+<html> 
+	<head> 
+		<title> Animate - AnimOv </title> 
+		<style type="text/css"> 
+			table { 
+				border: none; 
+			} 
+			.no_select::selection { 
+				background: transparent; 
+			} 
+			.no_select::-moz-selection { 
+				background: transparent; 
+			} 
+			.no_select::-webkit-selection { 
+				background: transparent; 
+			} 
+			.allow_select*::selection { 
+				background: #FF0000; 
+			} 
+			.allow_select*::-moz-selection { 
+				background: #FF0000; 
+			} 
+			.allow_select*::-webkit-selection { 
+				background: #FF0000; 
+			} 
+		</style> 
+		<script type="text/javascript" src="ask.js"></script> 
+		<script type="text/javascript" src="StandardEdit.js"></script> 
+		<script type="text/javascript" src="VectorSelect-old.js"></script> 
+		<script type="text/javascript" src="RenderCommands-old.js"></script> 
+		<script type="text/javascript" src="/script.js"></script> 
+	</head> 
+	<body> 
+		<script type="text/javascript"> 
+			var id= 0; 
+			var pro= true; 
+			if (!FourDigit){ 
+				var FourDigit= function (n){ 
+					var txt= n + ""; 
+					var i; 
+					var l; 
+					l= 4 - txt.length; 
+					for (i= 0; i < l; i++) txt= "0" + txt; 
+					return txt; 
+				}; 
+			} 
+			var query= (location + "").split ("?")[1]; 
+				if (query){ 
+					var arr= query.split ("&"); 
+					var i; 
+					for (i= 0; i < arr.length; i++){ 
+						if (arr[i].split ("=")[0] == "id") id= parseInt (arr[i].split ("=")[1]); 
+					} 
+					if (!id) id= 0; 
+				} 
+			var view_w= 400; 
+			var view_h= 300; 
+			var prevW= 640; 
+			var prevH= 480; 
+			var action_size= 17; 
+			var connection_test_buffer_size= 1024; 
+			var dir_small_screen_height= 224; 
+			var dir_large_screen_height= 200; 
+			var left_timeline_arrow; 
+			var right_timeline_arrow; 
+			var pk= new PackModule (); 
+			var fig_cmd= ""; 
+			var pack; 
+			var http; 
+				if (navigator.appName == "Microsoft Internet Explorer") http= new ActiveXObject ("Microsoft.XMLHTTP"); 
+				else http= new XMLHttpRequest (); 
+			var http2; 
+				if (navigator.appName == "Microsoft Internet Explorer") http2= new ActiveXObject ("Microsoft.XMLHTTP"); 
+				else http2= new XMLHttpRequest (); 
+			var http3; 
+				if (navigator.appName == "Microsoft Internet Explorer") http3= new ActiveXObject ("Microsoft.XMLHTTP"); 
+				else http3= new XMLHttpRequest (); 
+			var time1= new Date (); 
+				http3.open ("GET", "ConnectionTestGet.asp?size=" + connection_test_buffer_size + "&cid=" + escape (Math.random ()), false); 
+				http3.send (); 
+			var time2= new Date (); 
+			var random_buffer= ""; 
+			var i; 
+				for (i= 0; i < connection_test_buffer_size; i++) random_buffer += String.fromCharCode (Math.floor (Math.random () * 128) || 1); 
+				http3.open ("POST", "ConnectionTestPost.asp", false); 
+				http3.send (random_buffer); 
+				random_buffer= ""; 
+			var time3= new Date (); 
+				// The following are in bytes/second (approximately). 
+			var get_speed= 1000 * connection_test_buffer_size / (time2 - time1); 
+			var post_speed= 1000 * connection_test_buffer_size / (time3 - time2); 
+			var container= document.createElement ("div"); 
+			var table2, table2p; 
+			var vcan; 
+			var vtxt; 
+			var ttxt; 
+			var standard_controls= new Object (); 
+			var control1, control2, control3, control4; 
+			var third_control, third_control_name, third_control_div; 
+			var third_control_label_node; 
+			var dir_td; 
+			var dir_alt; 
+			var dir_div; 
+			var dir_txt; 
+			var dir_obj; 
+			var changed= true; 
+			var counter= 0; 
+			var tbaseX= 0; 
+			var tbaseY= 0; 
+			var tbaseElem; 
+			var slider_div; 
+			var slider_oversize= 2; 
+			var frame_number_node; 
+			var prev_counter; 
+			var left_arrow_div; 
+			var play_frames= false; 
+			var nextCommand; 
+			var selected_vector= new Object (); 
+				selected_vector.path= ""; 
+				selected_vector.select_type= "*"; 
+			var handler_path; 
+			var draw_figures_profile= "N/A"; 
+			var last_cmd= 0; 
+			var update_cycle_span= 10000; 
+			var last_update= new Date (); 
+			var first_loaded= false; 
+			document.body.appendChild (container); 
+			InitAll (); 
+			function InitAll (){ 
+				var t1, t2, t3, t4; 
+				var t5, t6, t7, t8; 
+				var t9, tA, tB, tC; 
+				var i; 
+				http.open ("GET", "/AnimOv/LoadXML.asp?id=" + id); 
+				http.onreadystatechange= function (){ 
+					if (http.readyState == 4){ 
+						if (http.status == 200){ 
+							pack= ImportFromXML (http.responseText || http.response || ""); 
+						} else { 
+							pack= ImportFromXML (""); 
+						} 
+						pk.SetPack (pack); 
+						dir_obj= new VectorSelect (dir_txt); 
+						dir_obj.onselect= DirSelectAction; 
+						RenderTimeline (); 
+						UpdateSliderPosition (); 
+						UpdateDirPosition (); 
+						RenderDirTxt (); 
+					} 
+				}; 
+				http.send (); 
+				container.style.height= (window.innerHeight - 16) + "px"; 
+				container.appendChild (t1= document.createElement ("table")); 
+					t1.width= "100%"; 
+					t1.style.height= "100%"; 
+					t1.appendChild (t2= document.createElement ("tbody")); 
+						t2.appendChild (t3= document.createElement ("tr")); 
+							t3.appendChild (t4= document.createElement ("td")); 
+								t4.style.verticalAlign= "top"; 
+								t4.width= view_w + 16; 
+								t4.appendChild (t5= document.createElement ("h1")); 
+									t5.style.cursor= "default"; 
+									t5.onmouseup= function (e){ 
+										AboutAnimate (); 
+									}; 
+									t5.appendChild (document.createTextNode ("Animate - AnimOv")); 
+								t4.appendChild (t5= document.createElement ("div")); 
+									vtxt= t5; 
+								t4.appendChild (tA= document.createElement ("table")); 
+									tA.appendChild (tB= document.createElement ("tbody")); 
+										tB.appendChild (tC= document.createElement ("tr")); 
+											tC.appendChild (t5= document.createElement ("td")); 
+												t5.width= "74%"; 
+												t5.appendChild (t6= document.createElement ("img")); 
+													t6.style.cursor= "pointer"; 
+													t6.style.width= "25px"; 
+													t6.style.height= "18px"; 
+													t6.style.marginBottom= "-4px"; 
+													t6.onclick= function (e){}; 
+													t6.onmouseup= function (e){ 
+														UserRender (); 
+													}; 
+													t6.title= "Render animation."; 
+													t6.src= "render_btn.png"; 
+												t5.appendChild (t6= document.createElement ("a")); 
+													t6.style.marginLeft= "5px"; 
+													t6.href= "javascript: preview_image ();"; 
+													t6.appendChild (document.createTextNode ("Preview Image")); 
+												t5.appendChild (document.createTextNode (" (frame ")); 
+												t5.appendChild (frame_number_node= document.createTextNode (counter + 1)); 
+												t5.appendChild (document.createTextNode (")")); 
+											tC.appendChild (t6= document.createElement ("td")); 
+												t6.style.marginLeft= "50px"; 
+												t6.appendChild (t7= document.createElement ("img")); 
+													t7.style.width= "27px"; 
+													t7.style.height= "15px"; 
+													t7.style.border= "2px solid"; 
+													t7.style.borderColor= "RGBA(0,0,0,0)"; 
+													t7.title= "Jump to previous key frame."; 
+													t7.src= "key_left.png"; 
+													t7.onclick= function (e){}; 
+													t7.onmousedown= function (e){ 
+														this.style.borderColor= "#0000FF"; 
+													}; 
+													t7.onmouseup= function (e){ 
+														this.style.borderColor= "RGBA(0,0,0,0)"; 
+														var i; 
+														for (i= counter - 1; i + 1; i--){ 
+															if (pack.frames[i]){ 
+																counter= i; 
+																break; 
+															} 
+														} 
+													}; 
+													t7.onmouseout= function (e){ 
+														this.style.borderColor= "RGBA(0,0,0,0)"; 
+													}; 
+												t6.appendChild (document.createTextNode (" ")); 
+												t6.appendChild (t7= document.createElement ("img")); 
+													t7.style.width= "27px"; 
+													t7.style.height= "15px"; 
+													t7.style.border= "2px solid"; 
+													t7.style.borderColor= "RGBA(0,0,0,0)"; 
+													t7.title= "Jump to next key frame."; 
+													t7.src= "key_right.png"; 
+													t7.onclick= function (e){}; 
+													t7.onmousedown= function (e){ 
+														this.style.borderColor= "#0000FF"; 
+													}; 
+													t7.onmouseup= function (e){ 
+														this.style.borderColor= "RGBA(0,0,0,0)"; 
+														var i; 
+														for (i= counter + 1; i < pack.frames.length; i++){ 
+															if (pack.frames[i]){ 
+																counter= i; 
+																break; 
+															} 
+														} 
+													}; 
+													t7.onmouseout= function (e){ 
+														this.style.borderColor= "RGBA(0,0,0,0)"; 
+													}; 
+												t6.appendChild (document.createTextNode (" ")); 
+												t6.appendChild (t7= document.createElement ("img")); 
+													t7.style.marginLeft= "7px"; 
+													t7.style.width= "21px"; 
+													t7.style.height= "15px"; 
+													t7.style.border= "2px solid"; 
+													t7.style.borderColor= "RGBA(0,0,0,0)"; 
+													t7.title= "Delete key frame."; 
+													t7.src= "x_key.png"; 
+													t7.onclick= function (e){}; 
+													t7.onmousedown= function (e){ 
+														this.style.borderColor= "#0000FF"; 
+													}; 
+													t7.onmouseup= function (e){ 
+														this.style.borderColor= "RGBA(0,0,0,0)"; 
+														SendAnimationCommand ("del frame " + (counter + 1)); 
+													}; 
+													t7.onmouseout= function (e){ 
+														this.style.borderColor= "RGBA(0,0,0,0)"; 
+													}; 
+							t3.appendChild (t4= document.createElement ("td")); 
+								t4.id= "no_select"; 
+								if (typeof (t4.onselectstart) != "undefined"){ 
+									t4.onselectstart= function (){ return false; }; 
+								} else if (typeof (t4.style.MozUserSelect) != "undefined"){ 
+									t4.style.MozUserSelect= "none"; 
+								} else { 
+									t4.onmousedown= function (){ return false; }; 
+								} 
+								t4.appendChild (t5= document.createElement ("table")); 
+									t5.width= "100%"; 
+									table2= t5; 
+									table2p= t4; 
+									t5.appendChild (t6= document.createElement ("tbody")); 
+										t6.appendChild (t7= document.createElement ("tr")); 
+											t7.appendChild (t8= document.createElement ("td")); 
+												t8.appendChild (t9= document.createElement ("div")); 
+													control1= t9; 
+													t9.style.margin= "4px"; 
+													t9.style.display= "inline-table"; 
+													t9.appendChild (tA= document.createElement ("div")); 
+														tA.style.fontWeight= "bold"; 
+														tA.style.textAlign= "center"; 
+														// Temporary: 
+															tA.onmouseup= function (e){ 
+																var text= prompt ("Enter command: "); 
+																if (text){ 
+																	text += "<stop>"; 
+																	text += "\r\n<end of message>"; 
+																	RenderCommands (text, pack); 
+																	changed= true; 
+																	dir_obj.render (); 
+																} 
+															}; 
+														// ... 
+														tA.appendChild (document.createTextNode ("Position")); 
+													t9.appendChild (tA= document.createElement ("div")); 
+														tA.appendChild (tB= document.createElement ("table")); 
+															tB.appendChild (tC= document.createElement ("tbody")); 
+														tB.appendChild (tA= document.createElement ("tr")); 
+														tA.appendChild (tB= document.createElement ("td")); 
+															tB.title= "X"; 
+															standard_controls.div_x= tB; 
+															standard_controls.x= new StandardEdit (tB); 
+															standard_controls.x.pslope= 10; 
+															standard_controls.x.slope= 0.5; 
+														tA.appendChild (tB= document.createElement ("td")); 
+															tB.title= "Y"; 
+															standard_controls.div_y= tB; 
+															standard_controls.y= new StandardEdit (tB); 
+															standard_controls.y.pslope= 10; 
+															standard_controls.y.slope= 0.5; 
+														tA.appendChild (tB= document.createElement ("td")); 
+															tB.title= "Z"; 
+															standard_controls.div_z= tB; 
+															standard_controls.z= new StandardEdit (tB); 
+															standard_controls.z.pslope= 10; 
+															standard_controls.z.slope= 0.5; 
+												t8.appendChild (t9= document.createElement ("div")); 
+													control2= t9; 
+													t9.style.margin= "4px"; 
+													t9.style.display= "inline-table"; 
+													t9.appendChild (tA= document.createElement ("div")); 
+														tA.style.fontWeight= "bold"; 
+														tA.style.textAlign= "center"; 
+														tA.appendChild (document.createTextNode ("Rotation (in " + unescape ("%u03C0") + ")")); 
+													t9.appendChild (tA= document.createElement ("div")); 
+														tA.appendChild (tB= document.createElement ("table")); 
+															tB.appendChild (tC= document.createElement ("tbody")); 
+														tB.appendChild (tA= document.createElement ("tr")); 
+														tA.appendChild (tB= document.createElement ("td")); 
+															tB.title= "About X"; 
+															standard_controls.div_aboutX= tB; 
+															standard_controls.aboutX= new StandardEdit (tB); 
+														tA.appendChild (tB= document.createElement ("td")); 
+															tB.title= "About Y"; 
+															standard_controls.div_aboutY= tB; 
+															standard_controls.aboutY= new StandardEdit (tB); 
+														tA.appendChild (tB= document.createElement ("td")); 
+															tB.title= "About Z"; 
+															standard_controls.div_aboutZ= tB; 
+															standard_controls.aboutZ= new StandardEdit (tB); 
+												t8.appendChild (t9= document.createElement ("div")); 
+													control3= t9; 
+													t9.style.margin= "4px"; 
+													t9.style.display= "inline-table"; 
+													t9.appendChild (tA= document.createElement ("div")); 
+														tA.style.fontWeight= "bold"; 
+														tA.style.textAlign= "center"; 
+														tA.appendChild (tB= document.createElement ("span")); 
+															third_control_name= tB; 
+															tB.appendChild (third_control_label_node= document.createTextNode ("Opacity")); 
+													t9.appendChild (tA= document.createElement ("div")); 
+														tA.appendChild (tB= document.createElement ("table")); 
+															tB.appendChild (tC= document.createElement ("tbody")); 
+														tB.appendChild (tA= document.createElement ("tr")); 
+														tA.appendChild (tB= document.createElement ("td")); 
+															third_control_div= tB; 
+															tB.title= "0 = Transparent, 1 = Opaque"; 
+															standard_controls.div_opc= tB; 
+															standard_controls.opc= tC= third_control= new StandardEdit (tB); 
+															tC.min= 0; 
+															tC.max= 1; 
+												t8.appendChild (t9= document.createElement ("div")); 
+													control4= t9; 
+													t9.style.display= "inline-table"; 
+													t9.style.marginLeft= "7px"; 
+													t9.style.borderLeft= "1px #000000 solid"; 
+													t9.style.paddingLeft= "2px"; 
+													t9.appendChild (tA= document.createElement ("div")); 
+														tA.style.borderBottom= "1px #444444 solid"; 
+														tA.appendChild (document.createTextNode ("Actions: ")); 
+													t9.appendChild (tA= document.createElement ("div")); 
+														tA.style.fontSize= action_size + "px"; 
+														tA.appendChild (tB= document.createElement ("a")); 
+															tB.href= "javascript: new_camera ();"; 
+															tB.appendChild (document.createTextNode ("New Camera")); 
+													t9.appendChild (tA= document.createElement ("div")); 
+														tA.style.fontSize= action_size + "px"; 
+														tA.appendChild (tB= document.createElement ("a")); 
+															tB.href= "javascript: new_figure ();"; 
+															tB.appendChild (document.createTextNode ("New Figure")); 
+													t9.appendChild (tA= document.createElement ("div")); 
+														tA.style.fontSize= action_size + "px"; 
+														tA.appendChild (tB= document.createElement ("a")); 
+															tB.href= "javascript: new_branch ();"; 
+															tB.appendChild (document.createTextNode ("New Branch")); 
+													t9.appendChild (tA= document.createElement ("div")); 
+														tA.style.fontSize= action_size + "px"; 
+														tA.appendChild (tB= document.createElement ("a")); 
+															tB.href= "javascript: ren_branch ();"; 
+															tB.appendChild (document.createTextNode ("Rename")); 
+													t9.appendChild (tA= document.createElement ("div")); 
+														tA.style.marginTop= "5px"; 
+														tA.style.fontSize= action_size + "px"; 
+														tA.appendChild (tB= document.createElement ("a")); 
+															tB.href= "javascript: del_branch ();"; 
+															tB.appendChild (document.createTextNode ("Delete")); 
+										t6.appendChild (t7= document.createElement ("tr")); 
+											t7.appendChild (t8= document.createElement ("td")); 
+												t8.appendChild (t9= document.createElement ("div")); 
+													dir_td= t8; 
+													dir_div= t9; 
+													t9.appendChild (tA= document.createElement ("div")); 
+														tA.style.fontWeight= "bold"; 
+														tA.appendChild (document.createTextNode ("Cameras, Figures, & Branches: ")); 
+													t9.appendChild (tA= document.createElement ("div")); 
+														tA.style.width= "100%"; 
+														tA.style.height= "250px"; 
+														tA.style.background= "#FF0000"; 
+														tA.style.overflow= "auto"; 
+														dir_txt= tA; 
+						t2.appendChild (t3= document.createElement ("tr")); 
+							t3.appendChild (t4= document.createElement ("td")); 
+								t4.colSpan= 2; 
+								t4.align= "left"; 
+								t4.verticalAlign= "middle"; 
+								t4.appendChild (t5= document.createElement ("div")); 
+									left_timeline_arrow= t5; 
+									t5.style.display= "inline-block"; 
+									t5.style.fontSize= "40px"; 
+									t5.style.cursor= "default"; 
+									t5.style.verticalAlign= "middle"; 
+									t5.onclick= function (e){}; 
+									t5.onmouseup= function (e){ 
+										counter--; 
+									}; 
+									t5.appendChild (document.createTextNode (unescape ("%u25C0"))); 
+									left_arrow_div= t5; 
+								t4.appendChild (ttxt= document.createElement ("div")); 
+									ttxt.style.display= "inline-block"; 
+									ttxt.style.width= (window.innerWidth - t5.offsetWidth * 4) + "px"; 
+									ttxt.style.height= "33px"; 
+									ttxt.style.background= "#00AAAA"; 
+									ttxt.appendChild (document.createTextNode (" ")); 
+								t4.appendChild (t5= document.createElement ("div")); 
+									right_timeline_arrow= t5; 
+									t5.style.display= "inline-block"; 
+									t5.style.fontSize= "40px"; 
+									t5.style.cursor= "default"; 
+									t5.style.verticalAlign= "middle"; 
+									t5.onclick= function (e){}; 
+									t5.onmouseup= function (e){ 
+										counter++; 
+									}; 
+									t5.appendChild (document.createTextNode (unescape ("%u25B6"))); 
+						t2.appendChild (t3= document.createElement ("tr")); 
+							t3.appendChild (t4= document.createElement ("td")); 
+								t4.colSpan= 2; 
+								t4.align= "left"; 
+								t4.verticalAlign= "top"; 
+								dir_alt= t4; 
+				window.onmousemove= function (e){ 
+					var i; 
+					for (i= 0; i < standard_edits.length; i++) standard_edits[i].input.onmousemove (e); 
+					return false; 
+				}; 
+				window.onmouseup= function (e){ 
+					var i; 
+					for (i= 0; i < standard_edits.length; i++) standard_edits[i].input.onmouseup (e, true); 
+					return false; 
+				}; 
+				window.onresize= function (){ 
+					container.style.height= (window.innerHeight - 16) + "px"; 
+					ttxt.style.width= (window.innerWidth - left_arrow_div.offsetWidth * 3) + "px"; 
+					UpdateDirPosition (); 
+				}; 
+				for (i= 0; i < standard_edits.length; i++){ 
+					standard_edits[i].width= "50px"; 
+					standard_edits[i].size= "20px"; 
+					standard_edits[i].setValue (0); 
+				} 
+				standard_controls.opc.setValue (1); 
+				RenderStandardControls (); 
+				setTimeout ("UpdateDirPosition ();", 100); 
+				setTimeout ("UpdateScreen ();", 500); 
+				setTimeout ("RunPlay ();", 400); 
+				setTimeout ("InitUpdateCycle2 ();", 900); 
+			} 
+			function UpdateStandardControlValues (){ 
+				var frame= pk.GetKeyFrame (counter + 1); 
+				var p= frame.cameras; 
+				if (!handler_path) return; 
+				if (handler_path.split ("figures.").length == 2 && !handler_path.split ("figures.")[0].length) p= frame; 
+				standard_controls.x.setValue (GetSubKey (p, handler_path + ".x")); 
+				standard_controls.y.setValue (GetSubKey (p, handler_path + ".y")); 
+				standard_controls.z.setValue (GetSubKey (p, handler_path + ".z")); 
+				standard_controls.aboutX.setValue (GetSubKey (p, handler_path + ".aboutX") / Math.PI); 
+				standard_controls.aboutY.setValue (GetSubKey (p, handler_path + ".aboutY") / Math.PI); 
+				standard_controls.aboutZ.setValue (GetSubKey (p, handler_path + ".aboutZ") / Math.PI); 
+				standard_controls.opc.setValue (GetSubKey (p, handler_path + ".opc")); 
+				RenderStandardControls (); 
+			} 
+			function SetStandardControlHandler (type, path){ 
+				var frame= pk.GetKeyFrame (counter + 1); 
+				handler_path= path; 
+				if (handler_path){ 
+					if (type == "camera"){ 
+						standard_controls.x.onupdate= function (edit){ 
+							var frame= EnsureKey (); 
+							SetSubKey (frame.cameras, handler_path + ".x", edit.value * 1); 
+						}; 
+						standard_controls.x.onchange= function (edit){ 
+							if (!edit.value && edit.value !== 0) return; 
+							SendAnimationCommand ("set camera " + handler_path + ".x " + edit.value + " @" + (counter + 1)); 
+						}; 
+						standard_controls.y.onupdate= function (edit){ 
+							var frame= EnsureKey (); 
+							SetSubKey (frame.cameras, handler_path + ".y", edit.value * 1); 
+						}; 
+						standard_controls.y.onchange= function (edit){ 
+							if (!edit.value && edit.value !== 0) return; 
+							SendAnimationCommand ("set camera " + handler_path + ".y " + edit.value + " @" + (counter + 1)); 
+						}; 
+						standard_controls.z.onupdate= function (edit){ 
+							var frame= EnsureKey (); 
+							SetSubKey (frame.cameras, handler_path + ".z", edit.value * 1); 
+						}; 
+						standard_controls.z.onchange= function (edit){ 
+							if (!edit.value && edit.value !== 0) return; 
+							SendAnimationCommand ("set camera " + handler_path + ".z " + edit.value + " @" + (counter + 1)); 
+						}; 
+						standard_controls.aboutX.onupdate= function (edit){ 
+							var frame= EnsureKey (); 
+							SetSubKey (frame.cameras, handler_path + ".aboutX", edit.value * Math.PI); 
+						}; 
+						standard_controls.aboutX.onchange= function (edit){ 
+							if (!edit.value && edit.value !== 0) return; 
+							SendAnimationCommand ("set camera " + handler_path + ".aboutX " + (edit.value * Math.PI) + " @" + (counter + 1)); 
+						}; 
+						standard_controls.aboutY.onupdate= function (edit){ 
+							var frame= EnsureKey (); 
+							SetSubKey (frame.cameras, handler_path + ".aboutY", edit.value * Math.PI); 
+						}; 
+						standard_controls.aboutY.onchange= function (edit){ 
+							if (!edit.value && edit.value !== 0) return; 
+							SendAnimationCommand ("set camera " + handler_path + ".aboutY " + (edit.value * Math.PI) + " @" + (counter + 1)); 
+						}; 
+						standard_controls.aboutZ.onupdate= function (edit){ 
+							var frame= EnsureKey (); 
+							SetSubKey (frame.cameras, handler_path + ".aboutZ", edit.value * Math.PI); 
+						}; 
+						standard_controls.aboutZ.onchange= function (edit){ 
+							if (!edit.value && edit.value !== 0) return; 
+							SendAnimationCommand ("set camera " + handler_path + ".aboutZ " + (edit.value * Math.PI) + " @" + (counter + 1)); 
+						}; 
+						standard_controls.opc.onupdate= function (edit){ 
+							var frame= EnsureKey (); 
+							SetSubKey (frame.cameras, handler_path + ".zoom", edit.value * 1); 
+						}; 
+						standard_controls.opc.onchange= function (edit){ 
+							if (!edit.value && edit.value !== 0) return; 
+							SendAnimationCommand ("set camera " + handler_path + ".zoom " + edit.value + " @" + (counter + 1)); 
+						}; 
+						standard_controls.x.setValue (GetSubKey (frame.cameras, handler_path + ".x")); 
+						standard_controls.y.setValue (GetSubKey (frame.cameras, handler_path + ".y")); 
+						standard_controls.z.setValue (GetSubKey (frame.cameras, handler_path + ".z")); 
+						standard_controls.aboutX.setValue (GetSubKey (frame.cameras, handler_path + ".aboutX") / Math.PI); 
+						standard_controls.aboutY.setValue (GetSubKey (frame.cameras, handler_path + ".aboutY") / Math.PI); 
+						standard_controls.aboutZ.setValue (GetSubKey (frame.cameras, handler_path + ".aboutZ") / Math.PI); 
+						standard_controls.opc.setValue (GetSubKey (frame.cameras, handler_path + ".zoom") || 1); 
+						standard_controls.opc.min= 0; 
+						standard_controls.opc.max= "none"; 
+					} else if (type == "vector" || type == "figure"){ 
+						standard_controls.x.onupdate= function (edit){ 
+							var frame= EnsureKey (); 
+							SetSubKey (frame, handler_path + ".x", edit.value * 1); 
+						}; 
+						standard_controls.x.onchange= function (edit){ 
+							if (!edit.value && edit.value !== 0) return; 
+							SendAnimationCommand ("set figure " + handler_path + ".x " + edit.value + " @" + (counter + 1)); 
+						}; 
+						standard_controls.y.onupdate= function (edit){ 
+							var frame= EnsureKey (); 
+							SetSubKey (frame, handler_path + ".y", edit.value * 1); 
+						}; 
+						standard_controls.y.onchange= function (edit){ 
+							if (!edit.value && edit.value !== 0) return; 
+							SendAnimationCommand ("set figure " + handler_path + ".y " + edit.value + " @" + (counter + 1)); 
+						}; 
+						standard_controls.z.onupdate= function (edit){ 
+							var frame= EnsureKey (); 
+							SetSubKey (frame, handler_path + ".z", edit.value * 1); 
+						}; 
+						standard_controls.z.onchange= function (edit){ 
+							if (!edit.value && edit.value !== 0) return; 
+							SendAnimationCommand ("set figure " + handler_path + ".z " + edit.value + " @" + (counter + 1)); 
+						}; 
+						standard_controls.aboutX.onupdate= function (edit){ 
+							var frame= EnsureKey (); 
+							SetSubKey (frame, handler_path + ".aboutX", edit.value * Math.PI); 
+						}; 
+						standard_controls.aboutX.onchange= function (edit){ 
+							if (!edit.value && edit.value !== 0) return; 
+							SendAnimationCommand ("set figure " + handler_path + ".aboutX " + (edit.value * Math.PI) + " @" + (counter + 1)); 
+						}; 
+						standard_controls.aboutY.onupdate= function (edit){ 
+							var frame= EnsureKey (); 
+							SetSubKey (frame, handler_path + ".aboutY", edit.value * Math.PI); 
+						}; 
+						standard_controls.aboutY.onchange= function (edit){ 
+							if (!edit.value && edit.value !== 0) return; 
+							SendAnimationCommand ("set figure " + handler_path + ".aboutY " + (edit.value * Math.PI) + " @" + (counter + 1)); 
+						}; 
+						standard_controls.aboutZ.onupdate= function (edit){ 
+							var frame= EnsureKey (); 
+							SetSubKey (frame, handler_path + ".aboutZ", edit.value * Math.PI); 
+						}; 
+						standard_controls.aboutZ.onchange= function (edit){ 
+							if (!edit.value && edit.value !== 0) return; 
+							SendAnimationCommand ("set figure " + handler_path + ".aboutZ " + (edit.value * Math.PI) + " @" + (counter + 1)); 
+						}; 
+						standard_controls.opc.onupdate= function (edit){ 
+							var frame= EnsureKey (); 
+							SetSubKey (frame, handler_path + ".opc", edit.value * 1); 
+						}; 
+						standard_controls.opc.onchange= function (edit){ 
+							if (!edit.value && edit.value !== 0) return; 
+							SendAnimationCommand ("set figure " + handler_path + ".opc " + edit.value + " @" + (counter + 1)); 
+						}; 
+						standard_controls.x.setValue (GetSubKey (frame, handler_path + ".x") || GetSubKey (frame.figures, handler_path + ".x")); 
+						standard_controls.y.setValue (GetSubKey (frame, handler_path + ".y") || GetSubKey (frame.figures, handler_path + ".y")); 
+						standard_controls.z.setValue (GetSubKey (frame, handler_path + ".z") || GetSubKey (frame.figures, handler_path + ".z")); 
+						standard_controls.aboutX.setValue ((GetSubKey (frame, handler_path + ".aboutX") || GetSubKey (frame.figures, handler_path + ".aboutX")) / Math.PI); 
+						standard_controls.aboutY.setValue ((GetSubKey (frame, handler_path + ".aboutY") || GetSubKey (frame.figures, handler_path + ".aboutY")) / Math.PI); 
+						standard_controls.aboutZ.setValue ((GetSubKey (frame, handler_path + ".aboutZ") || GetSubKey (frame.figures, handler_path + ".aboutZ")) / Math.PI); 
+						standard_controls.opc.setValue (GetSubKey (frame, handler_path + ".opc") || GetSubKey (frame.figures, handler_path + ".opc")); 
+						standard_controls.opc.min= 0; 
+						standard_controls.opc.max= 1; 
+					} else { 
+						
+					} 
+				} 
+				if (changed) UpdateStandardControlValues (); 
+			} 
+			function EnsureKey (){ 
+				if (!pack) return false; 
+				if (pack.frames[counter]) return pack.frames[counter]; 
+				var frame= pk.GetKeyFrame (counter + 1); 
+				pack.frames[counter]= frame; 
+				return frame; 
+			} 
+			function SetSubKey (parent, path, value){ 
+				var arr= path.split ("."); 
+				var p= parent; 
+				var i; 
+				for (i= 0; i + 1 < arr.length; i++) if (p[arr[i]]) p= p[arr[i]]; 
+				p[arr[i]]= value; 
+				changed= true; 
+			} 
+			function GetSubKey (parent, path){ 
+				var arr= path.split ("."); 
+				var p= parent; 
+				var i; 
+				for (i= 0; i + 1 < arr.length; i++) if (p[arr[i]]) p= p[arr[i]]; 
+				return p[arr[i]]; 
+			} 
+			function UpdateDirPosition (){ 
+				var i; 
+				var target= 0; 
+				var c= control1.offsetTop; 
+				if (Math.floor (Math.abs ((c - control2.offsetTop) / 50))) target= 1; 
+				else if (Math.floor (Math.abs ((c - control3.offsetTop) / 50))) target= 1; 
+				else if (Math.floor (Math.abs ((c - control4.offsetTop) / 50))) target= 1; 
+				if (target){ 
+					for (i= 0; i < dir_td.childNodes.length; i++){ 
+						if (dir_td.childNodes[i] == dir_div){ 
+							dir_td.removeChild (dir_div); 
+							dir_alt.appendChild (dir_div); 
+							break; 
+						} 
+					} 
+					dir_txt.style.height= dir_small_screen_height + "px"; 
+					if (dir_obj) dir_obj.smallScreen= true; 
+				} else { 
+					for (i= 0; i < dir_alt.childNodes.length; i++){ 
+						if (dir_alt.childNodes[i] == dir_div){ 
+							dir_alt.removeChild (dir_div); 
+							dir_td.appendChild (dir_div); 
+							break; 
+						} 
+					} 
+					dir_txt.style.height= dir_large_screen_height + "px"; 
+					if (dir_obj) dir_obj.smallScreen= false; 
+				} 
+				if (dir_obj) changed= true; 
+			} 
+			function RenderTimeline (){ 
+				var oversize= slider_oversize; 
+				ttxt.style.position= "absolute"; 
+				tstopX= ttxt.offsetLeft + ttxt.offsetWidth; 
+				tstopY= ttxt.offsetTop - oversize; 
+				ttxt.style.position= "relative"; 
+				ClearElement (ttxt); 
+				var e1; 
+				var t1, t2, t3, t4; 
+				var t5, t6, t7, t8; 
+				var i; 
+				t1= document.createElement ("div"); 
+					t1.onmouseup= function (e){ 
+						if (!e) e= window.event; 
+						var x= 0; 
+						var y= 0; 
+						var p= 0; 
+						var d= 0; 
+						var c= pack.frames.length; 
+						if (e.pageX || e.pageY){ 
+							x= e.pageX; 
+							y= e.pageY; 
+						} else { 
+							x= e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft; 
+							y= e.clientY + document.body.scrollTop + document.documentElement.scrollTop; 
+						} 
+						if (x < tbaseX) return; 
+						if (x > tstopX) return; 
+						//if (y < tbaseY) return; 
+						p= (x - tbaseX) / (tstopX - tbaseX); 
+						d= Math.floor (c * p); 
+						if (d == c) counter= c - 1; 
+						else if (d > c) p= p; 
+						else if (d < 0) p= p; 
+						else counter= d; 
+					}; 
+					t1.appendChild (t2= document.createElement ("div")); 
+						t2.style.width= "20px"; 
+						t2.style.fontSize= "24px"; 
+						t2.style.border= "2px #004444 solid"; 
+						t2.style.background= "#FF8888"; 
+						t2.style.cursor= "default"; 
+						t2.style.textAlign= "center"; 
+						t2.onclick= function (e){}; 
+						t2.onmouseup= function (e){ 
+							ask_frame (); 
+						}; 
+						t2.appendChild (document.createTextNode ("#")); 
+						e1= t2; 
+					t1.appendChild (t2= document.createElement ("div")); 
+						slider_div= t2; 
+						t2.style.position= "absolute"; 
+						t2.style.width= "1px"; 
+						t2.style.height= (oversize * 2 + 33) + "px"; 
+						t2.style.background= "#FF0000"; /*
+					if (pack.frames.length < 30){ 
+						for (i= 0; i < pack.frames.length; i++){ 
+							t1.appendChild (t2= document.createElement ("a")); 
+								t2.style.position= "relative"; 
+								t2.href= "javascript:;"; 
+								t2.style.display= "inline"; 
+								t2.style.width= "1px"; 
+								t2.style.height= "33px"; 
+								t2.style.fontSize= "24px"; 
+								t2.style.marginLeft= (24 + (tstopX - tbaseX) / pack.frames.length - 1) + "px"; 
+								t2.appendChild (document.createTextNode ("|")); 
+						} 
+					} else { 
+						for (i= 0; i < 30; i++){ 
+							t1.appendChild (t2= document.createElement ("a")); 
+								t2.style.position= "relative"; 
+								t2.href= "javascript:;"; 
+								t2.style.display= "inline"; 
+								t2.style.width= "1px"; 
+								t2.style.height= "33px"; 
+								t2.style.fontSize= "24px"; 
+								t2.style.marginLeft= (24 + (tstopX - tbaseX) / 30 - 1) + "px"; 
+								t2.appendChild (document.createTextNode (" ")); 
+						} 
+					} */
+				ttxt.appendChild (t1); 
+				tbaseElem= e1; 
+				tbaseX2= slider_div.offsetLeft + 24; 
+				tbaseY= slider_div.offsetTop - 34; 
+				tstopX2= tstopX; 
+				ttxt.style.position= "aboslute"; 
+				setTimeout ("tstopX= ttxt.offsetLeft + ttxt.offsetWidth;", 800); 
+				setTimeout ("tbaseX= ttxt.offsetLeft + tbaseElem.offsetWidth;", 800); 
+				setTimeout ("tstopX2= ttxt.offsetLeft + ttxt.offsetWidth - 42;", 800); 
+				setTimeout ("tstopX2= GetAbsoluteXPosition (right_timeline_arrow) - 10;", 900); 
+			} 
+			function GetAbsoluteXPosition (element){ 
+				var a= new Object (); 
+				var obj= element; 
+				a.x= 0; 
+				do { 
+					a.x += obj.offsetLeft; 
+				} while (obj= obj.offsetParent); 
+				return a.x - element.offsetWidth; 
+			} 
+			function RenderDirTxt (){ 
+				
+			} 
+			function UpdateScreen (){ 
+				var a; 
+				var can= vcan; 
+				var con; 
+				var edit= new Object (); 
+				var frame= pk.GetKeyFrame (counter + 1); 
+				var time1; 
+				var time2; 
+				var whether_key= ""; 
+				if (!prev_counter) prev_counter= 0; 
+				if ((!changed && prev_counter == counter) || !pack){ 
+					if (navigator.userAgent.split ("Kindle").length > 1){ 
+						if (navigator.userAgent.split ("Fire").length < 2){ 
+							setTimeout ("UpdateScreen ();", 1000); 
+						} else setTimeout ("UpdateScreen ();", 100); 
+					} else setTimeout ("UpdateScreen ();", 100); 
+					return; 
+				} 
+				if (pack.frames[counter]) whether_key= ", key"; 
+				prev_counter= counter; 
+				if (window) if (window.gc) window.gc (); 
+				frame_number_node.nodeValue= (counter + 1) + whether_key; 
+				pk.ClearFrameCache (); 
+				dir_obj.figures= frame.figures; 
+				dir_obj.cameras= frame.cameras; 
+				dir_obj.render (); 
+				DirSelectAction (selected_vector.path); 
+				changed= false; 
+				if (!can){ 
+					ClearElement (vtxt); 
+					can= vcan= document.createElement ("canvas"); 
+					can.onmouseup= function (e){ 
+						play_frames= !play_frames; 
+					}; 
+					vtxt.appendChild (can); 
+				} 
+				time1= new Date (); 
+				//can.style.cursor= "pointer"; 
+				can.style.border= "1px #000000 solid"; 
+				can.width= view_w; 
+				can.height= view_h; 
+				con= can.getContext ("2d"); 
+				//con.fillStyle= "#888844"; 
+				//con.fillRect (0, 0, view_w, view_h); 
+				edit.width= view_w; 
+				edit.height= view_h;  
+				edit.notes= ""; 
+				edit.selected= selected_vector; 
+				edit.labelBranches= false; 
+				edit.labelFigures= true; 
+				ClearVectorCache (); 
+				DrawFigures5 (con, frame.cameras[frame.properties.camname], frame.figures, edit); 
+				time2= new Date (); 
+				draw_figures_profile= time2 - time1; 
+				if (navigator.userAgent.split ("Kindle").length > 1){ 
+					if (navigator.userAgent.split ("Fire").length < 2){ 
+						setTimeout ("UpdateScreen ();", 1000); 
+					} else setTimeout ("UpdateScreen ();", 100); 
+				} else setTimeout ("UpdateScreen ();", 100); 
+			} 
+			function UpdateSliderPosition (){ 
+				var c= pack.frames.length; 
+				tstopY= tbaseY; 
+				slider_div.style.left= ((tstopX2 - tbaseX2) * counter / c + tbaseX2) + "px"; 
+				slider_div.style.top= tbaseY + "px"; 
+				if (navigator.userAgent.split ("Kindle").length > 1){ 
+					if (navigator.userAgent.split ("Fire").length < 2){ 
+						setTimeout ("UpdateSliderPosition ();", 1000); 
+					} else setTimeout ("UpdateSliderPosition ();", 100); 
+				} else setTimeout ("UpdateSliderPosition ();", 100); 
+			} 
+			function RunPlay (){ 
+				var n; 
+				var whether_key= ""; 
+				if (pack){ 
+					if (pack.frames[counter]) whether_key= ", key"; 
+					if (play_frames){ 
+						if (pack.fps) counter++; 
+						if (counter >= pack.frames.length){ 
+							counter= 0; 
+							play_frames= false; 
+						} 
+					} 
+					n= 1000 / pack.fps; 
+					if (n && n < 20) n= 20; 
+				} else n= 1000; 
+				frame_number_node.nodeValue= (counter + 1) + whether_key; 
+				if (navigator.userAgent.split ("Kindle").length > 1){ 
+					if (navigator.userAgent.split ("Fire").length < 2){ 
+						setTimeout ("RunPlay ();", 1000); 
+					} else { 
+						if (n) setTimeout ("RunPlay ();", n); 
+						else setTimeout ("RunPlay ();", 1000); 
+					} 
+				} else { 
+					if (n) setTimeout ("RunPlay ();", n); 
+					else setTimeout ("RunPlay ();", 1000); 
+				} 
+			} 
+			function DirSelectAction (path){ 
+				selected_vector.path= path; 
+				changed= true; 
+				if ((path.split ("figures.").length == 2 && !path.split ("figures.")[0].length) || path == "Background"){ 
+					// Vector. 
+					if (path == "Background" || path == "figures.Background"){ 
+						third_control_label_node.nodeValue= "Extra"; 
+						third_control_div.title= null; 
+					} else { 
+						third_control_label_node.nodeValue= "Opacity"; 
+						third_control_div.title= "0 = Transparent, 1 = Opaque"; 
+					} 
+					SetStandardControlHandler ("vector", path); 
+				} else { 
+					// Camera. 
+					third_control_label_node.nodeValue= "Zoom"; 
+					third_control_div.title= "1 = Default"; 
+					SetStandardControlHandler ("camera", path); 
+				} 
+			} 
+			var previewHTTP; 
+				if (navigator.appName == "Microsoft Internet Explorer") previewHTTP= new ActiveXObject ("Microsoft.XMLHTTP"); 
+				else previewHTTP= new XMLHttpRequest (); 
+			var loading_preview_msg; 
+			var preview_txt; 
+			function preview_image (){ 
+				var t1; 
+				if (preview_txt) document.body.removeChild (preview_txt); 
+				document.body.appendChild (t1= preview_txt= document.createElement ("div")); 
+				t1.style.position= "absolute"; 
+				t1.style.left= "0px"; 
+				t1.style.top= "0px"; 
+				t1.style.visibility= "hidden"; 
+				PutLoadingPreviewMessage (); 
+				if (previewHTTP.abort) previewHTTP.abort (); 
+				if (pro){ 
+					previewHTTP.open ("GET", "cllc.asp?id=" + id + "&EnableToon=1&EnableMesh=1", false); 
+					previewHTTP.onreadystatechange= function (){}; 
+					previewHTTP.send (); 
+					previewHTTP.open ("GET", "anim.exe?id=" + id + "&llc=llc" + id + "&mps=" + id + "&png=png" + id + "%5F&w=" + 
+						prevW + "&h=" + prevH + "&start=" + (counter + 1) + "&stop=" + (counter + 1) + "&outline=1", true); 
+				} else { 
+					previewHTTP.open ("POST", "RenderPreviewImage.asp", true); 
+					previewHTTP.setRequestHeader ("content-type", "application/x-www-form-urlencoded"); 
+				} 
+				previewHTTP.onreadystatechange= function (){ 
+					var t1, t2, t3, t4; 
+					var t5, t6, t7, t8; 
+					if (previewHTTP.readyState == 4){ 
+						try { 
+							preview_load= null; 
+							document.body.removeChild (loading_preview_msg); 
+						} catch (err){ 
+							
+						} 
+						if (previewHTTP.status == 200){ 
+							t1= preview_txt; 
+							//t1.style.width= (view_w + 10) + "px"; 
+							t1.style.border= "1px #000000 solid"; 
+							t1.style.padding= "2px"; 
+							if (pro){ 
+								t1.appendChild (t2= document.createElement ("img")); 
+									t2.src= "data/png" + id + "_" + (counter + 1)/*FourDigit (counter + 1)*/ + ".png"; 
+							} else { 
+								t1.appendChild (t2= document.createElement ("canvas")); 
+									t2.width= view_w; 
+									t2.height= view_h; 
+									var con= t2.getContext ("2d"); 
+									var mt= function (x, y){ 
+										con.moveTo (x, y); 
+									}; 
+									var lt= function (x, y){ 
+										con.lineTo (x, y); 
+									}; 
+									var qc= function (a, b, c, d){ 
+										con.quadraticCurveTo (a, b, c, d); 
+									}; 
+									var bc= function (a, b, c, d, e, f){ 
+										con.bezierCurveTo (a, b, c, d, e, f); 
+									}; 
+									var ar= function (a, b, c, d, e, f){ 
+										con.arc (a, b, c, d, e, f); 
+									}; 
+									var fr= function (a, b, c, d){ 
+										con.fillRect (a, b, c, d); 
+									}; 
+									var sr= function (a, b, c, d){ 
+										con.strokeRect (a, b, c, d); 
+									}; 
+									var ff= function (){ 
+										con.fill (); 
+									}; 
+									var sf= function (){ 
+										con.stroke (); 
+									}; 
+									var fst= function (x){ con.fillStyle= x; }; 
+									var sst= function (x){ con.strokeStyle= x; }; 
+									var lwd= function (x){ con.lineWidth= x; }; 
+									var s= 1; 
+									con.fillRect (0, 0, view_w, view_h); 
+									try { 
+										eval (previewHTTP.responseText); 
+									} catch (err){ 
+										alert (err.message); 
+									} 
+							} 
+							t1.appendChild (t2= document.createElement ("div")); 
+									t2.style.textAlign= "center"; 
+									t2.appendChild (t3= document.createElement ("button")); 
+										t3.onclick= function (e){ 
+											document.body.removeChild (this.parentNode.parentNode); 
+											preview_txt= null; 
+										}; 
+										t3.appendChild (document.createTextNode ("Close")); 
+								//t1.style.left= (window.innerWidth / 2 - t1.offsetWidth / 2) + "px"; 
+								//t1.style.top= (window.innerHeight / 2 - t1.offsetHeight / 2) + "px"; 
+								t1.style.background= "#EECCEE"; 
+								t1.style.visibility= "visible"; 
+								t1.style.position= "fixed"; 
+								t1.style.top= "50%"; 
+								t1.style.left= "50%"; 
+								t1.style.marginTop= "-150px"; 
+								t1.style.marginLeft= "-200px"; 
+										t3.focus (); 
+							setTimeout ("UpdatePreviewPosition ();", 100); 
+						} else { 
+							
+						} 
+					} 
+				}; 
+				if (pro) previewHTTP.send (); 
+				else previewHTTP.send ("id=" + id + "&w=" + view_w + "&h=" + view_h + "&f=" + (counter + 1) + "&EnableToon=1"); 
+			} 
+			function UpdatePreviewPosition (){ 
+				var t1= preview_txt; 
+				if (!t1) return; 
+				t1.style.marginTop= (0 - t1.offsetHeight / 2) + "px"; 
+				t1.style.marginLeft= (0 - t1.offsetWidth / 2) + "px"; 
+				if (t1.offsetWidth + t1.offsetHeight < 100){ 
+					t1.style.marginTop= "-150px"; 
+					t1.style.marginLeft= "-200px"; 
+				} 
+				setTimeout ("UpdatePreviewPosition ();", 500); 
+			} 
+			var preview_load; 
+			var prevLoadHTTP; 
+				if (navigator.appName == "Microsoft.XMLHTTP") prevLoadHTTP= new ActiveXObject ("Microsoft.XMLHTTP"); 
+				else prevLoadHTTP= new XMLHttpRequest (); 
+			function UpdatePreviewLoadingStatus (){ 
+				if (preview_load){ 
+					try { 
+						prevLoadHTTP.open ("GET", "data/preview_progress" + id + ".txt?cid=" + escape (Math.random ()), true); 
+						prevLoadHTTP.onreadystatechange= function (){ 
+							var arr; 
+							var a; 
+							var b; 
+							var con; 
+							if (prevLoadHTTP.readyState == 4){ 
+								if (preview_load){ 
+									con= preview_load.getContext ("2d"); 
+									if (prevLoadHTTP.status == 200){ 
+										arr= prevLoadHTTP.responseText.split ("/"); 
+										a= parseInt (arr[0]); 
+										b= parseInt (arr[1]); 
+										con.fillRect (0, 0, preview_load.width * a / b, 50); 
+									} 
+									setTimeout ("UpdatePreviewLoadingStatus ();", 1000); 
+								} 
+							} 
+						}; 
+						prevLoadHTTP.send (); 
+					} catch (err){ 
+						
+					} 
+				} 
+			} 
+			function PutLoadingPreviewMessage (){ 
+				var t1, t2, t3, t4; 
+				var t5, t6, t7, t8; 
+				var btn; 
+				if (loading_preview_msg){ 
+					try { 
+						document.body.removeChild (loading_msg_div); 
+					} catch (err){ 
+						
+					} 
+				} 
+				t1= document.createElement ("div"); 
+					loading_preview_msg= t1; 
+					t1.style.width= "350px"; 
+					t1.style.padding= "2px"; 
+					t1.style.position= "absolute"; 
+					t1.style.visibility= "hidden"; 
+					t1.appendChild (t2= document.createElement ("h2")); 
+						t2.style.marginLeft= "15px"; 
+						t2.appendChild (document.createTextNode ("Loading Preview... ")); 
+					t1.appendChild (t2= document.createElement ("div")); 
+						t2.style.textAlign= "center"; 
+						t2.appendChild (preview_load= document.createElement ("canvas")); 
+							preview_load.width= 280; 
+							preview_load.height= 50; 
+							preview_load.style.border= "1px #000000 solid"; 
+							t3= preview_load.getContext ("2d"); 
+								t3.fillStyle= "#FFFFFF"; 
+								t3.fillRect (0, 0, 280, 50); 
+								t3.fillStyle= "#FF8800"; 
+							setTimeout ("UpdatePreviewLoadingStatus ();", 1000); 
+					t1.style.left= "0px"; 
+					t1.style.top= "0px"; 
+				document.body.appendChild (t1); 
+					t1.style.left= (window.innerWidth / 2 - t1.offsetWidth / 2) + "px"; 
+					t1.style.top= (window.innerHeight / 2 - t1.offsetHeight / 2) + "px"; 
+					t1.style.border= "1px #000000 solid"; 
+					t1.style.background= "#EECCEE"; 
+					t1.style.visibility= "visible"; 
+			} 
+			function new_camera (){ 
+				ask_string ("Enter new camera name (blank = cancel):", "", function (x){ 
+					SendAnimationCommand ("new camera " + x); 
+				}); 
+			} 
+			function new_figure (){ 
+				ask_string ("Enter new figure name (blank = cancel):", "", function (x){ 
+					SendAnimationCommand ("new figure " + x); 
+				}); 
+			} 
+			var the_path= handler_path; 
+			function new_branch (){ 
+				if (handler_path == "Background" || handler_path == "figures.Background" || handler_path.split (".")[0] != "figures") return; 
+				the_path= handler_path; 
+				ask_string ("Enter new branch name (blank = cancel):", "", function (x){ 
+					var p= the_path; 
+					SendAnimationCommand ("new figure " + p + "." + x); 
+				}); 
+			} 
+			function del_branch (){ 
+				if (handler_path == "Background" || handler_path == "figures.Background") return; 
+				if (handler_path.split (".")[0] == "figures"){ 
+					SendAnimationCommand ("del figure " + handler_path); 
+				} else { 
+					SendAnimationCommand ("del camera " + handler_path); 
+				} 
+			} 
+			function ren_branch (){ 
+				var arr; 
+				if (handler_path == "Background" || handler_path == "figures.Background") return; 
+				the_path= handler_path; 
+				arr= the_path.split ("."); 
+				if (!arr.length) arr= [""]; 
+				ask_string ("Enter new name:", arr[arr.length - 1], function (x){ 
+					var p= the_path; 
+					if (p.split (".")[0] == "figures"){ 
+						SendAnimationCommand ("ren figure " + p + " " + x); 
+					} else { 
+						SendAnimationCommand ("ren camera " + p + " " + x); 
+					} 
+				}); 
+			} 
+			function ask_frame (){ 
+				var t1, t2, t3, t4; 
+				var t5, t6, t7, t8; 
+				var inp; 
+				t1= document.createElement ("div"); 
+					t1.style.padding= "2px"; 
+					t1.style.position= "absolute"; 
+					t1.style.visibility= "hidden"; 
+					t1.appendChild (document.createTextNode ("Enter the frame number to jump to ")); 
+					t1.appendChild (document.createElement ("br")); 
+					t1.appendChild (document.createTextNode ("(1 = beginning, " + pack.frames.length + " = end): ")); 
+					t1.appendChild (document.createElement ("br")); 
+					t1.appendChild (t2= document.createElement ("input")); 
+						inp= t2; 
+						t2.style.marginTop= "5px"; 
+						t2.value= counter + 1; 
+						t2.onkeyup= function (e){ 
+							if (!e) e= window.event; 
+							if (e.charCode == 13 || e.keyCode == 13){ 
+								var a= parseInt (this.value); 
+								if (a) counter= a - 1; 
+								document.body.removeChild (this.parentNode); 
+							} 
+						}; 
+					t1.style.left= "0px"; 
+					t1.style.top= "0px"; 
+				document.body.appendChild (t1); 
+					t1.style.left= (window.innerWidth / 2 - t1.offsetWidth / 2) + "px"; 
+					t1.style.top= (window.innerHeight / 2 - t1.offsetHeight / 2) + "px"; 
+					t1.style.border= "1px #000000 solid"; 
+					t1.style.background= "#CCCCFF"; 
+					t1.style.visibility= "visible"; 
+				inp.focus (); 
+				if (inp.setSelectionRange) inp.setSelectionRange (0, inp.value.length); 
+				else inp.value= inp.value; 
+			} 
+			function RenderStandardControls (){ 
+				var arr= ["x", "y", "z", "aboutX", "aboutY", "aboutZ", "opc"]; 
+				var i; 
+				for (i= 0; i < arr.length; i++) standard_controls[arr[i]].render (); 
+			} 
+			function UpdateStandardControlValues (){ 
+				var arr= ["x", "y", "z", "aboutX", "aboutY", "aboutZ", "opc"]; 
+				var i; 
+				for (i= 0; i < arr.length; i++) standard_controls[arr[i]].updateInput (); 
+			} 
+			/*text += "<stop>"; 
+																	text += "\r\n<end of message>"; 
+																	RenderCommands (text, pack); 
+																	changed= true; 
+																	dir_obj.render (); */
+			function SendAnimationCommand (cmd){ 
+				if (!cmd) return; 
+				var text= cmd + "<stop>\r\n"; 
+				var http01; 
+					if (navigator.appName == "Microsoft Internet Explorer") http01= new ActiveXObject ("Microsoft.XMLHTTP"); 
+					else http01= new XMLHttpRequest (); 
+				RenderCommands (text + "<end of message>", pack); 
+				changed= true; 
+				//dir_obj.render (); 
+				//if (text.charAt (0) == "r") alert (text); 
+				http01.open ("POST", "SetCommands.asp"); 
+				http01.setRequestHeader ("content-type", "application/x-www-form-urlencoded"); 
+				http01.onreadystatechange= function (){ 
+					
+				}; 
+				http01.send ("id=" + id + "&last=" + last_cmd + "&text=" + escape (text + "<end of message>")); 
+				//changed= true; 
+				//dir_obj.render (); 
+			} 
+			var loading_msg_div; 
+			function InitUpdateCycle (){ 
+				var time_span= Math.floor (10000 * 1000 / get_speed); 
+				if (time_span < 1000) time_span= 1000; 
+				update_cycle_span= time_span; 
+				RequestCommands (); 
+				setTimeout ("InitUpdateCycle ();", time_span); 
+			} 
+			function InitUpdateCycle2 (){ 
+				var time_span= Math.floor (10000 * 1000 / get_speed); 
+				if (time_span < 1000) time_span= 1000; 
+				update_cycle_span= time_span; 
+				RequestCommands2 (); 
+				setTimeout ("InitUpdateCycle2 ();", time_span); 
+			} 
+			function RequestCommands (){ 
+				http.open ("GET", "GetCommands.asp?id=" + id + "&last=" + (last_cmd || 0) + "&cid=" + escape (Math.random ())); 
+				http.onreadystatechange= ReceiveCommands; 
+				http.send (); 
+				if (!last_cmd && !first_loaded) PutLoadingMessage (); 
+				first_loaded= true; 
+			} 
+			function ReceiveCommands (){ 
+				var arr; 
+				var cmd; 
+				var n; 
+				var last_b= last_cmd; 
+				if (http.readyState == 4){ 
+					if (http.status == 200){ 
+						arr= RenderCommands (cmd= (http.responseText || http.response || ""), pack); 
+						n= parseInt (arr[0]); 
+						if (n) last_cmd= n; 
+						last_update= new Date (); 
+						if (cmd) changed= true; 
+						if (!last_b){ 
+							document.body.removeChild (loading_msg_div); 
+							loading_msg_div= 0; 
+						} 
+					} 
+				} 
+			} 
+			function RequestCommands2 (){ 
+				http2.open ("GET", "GetCommands.asp?id=" + id + "&last=" + (last_cmd || 0) + "&cid=" + escape (Math.random ())); 
+				http2.onreadystatechange= ReceiveCommands2; 
+				http2.send (); 
+				if (!last_cmd && !first_loaded) PutLoadingMessage (); 
+				first_loaded= true; 
+			} 
+			function ReceiveCommands2 (){ 
+				var arr; 
+				var cmd; 
+				var n; 
+				var last_b= last_cmd; 
+				if (http2.readyState == 4){ 
+					if (http2.status == 200){ 
+						arr= RenderCommands (cmd= (http2.responseText || http2.response || ""), pack); 
+						n= parseInt (arr[0]); 
+						if (n) last_cmd= n; 
+						last_update2= new Date (); 
+						if (cmd) changed= true; 
+						if (!last_b){ 
+							document.body.removeChild (loading_msg_div); 
+							loading_msg_div= 0; 
+						} 
+					} 
+				} 
+			} 
+			function load (){ 
+				http.open ("GET", "/AnimOv/LoadXML.asp?id=" + id, false); 
+				http.send (); 
+				if (http.status != 200){ 
+					// An error occurred. 
+					the_xml= ""; 
+					return; 
+				} 
+				try { 
+					if (http.responseText) the_xml= http.responseText; 
+					else if (http.responseText === "") the_xml= ""; 
+					else alert ("An error occurred."); 
+				} catch (err){ 
+					alert ("An error occurred."); 
+				} 
+			} 
+			function save (){ 
+				if (id != 0){ 
+					http.open ("POST", "/AnimOv/SaveXML.asp", false); 
+					http.setRequestHeader ("Content-Type", "application/x-www-form-urlencoded"); 
+					http.send ("id=" + id + "&data=" + escape (the_xml)); 
+				} else { 
+					alert ("Error:  ID can't be NULL."); 
+				} 
+			} 
+			function PutLoadingMessage (){ 
+				var t1, t2, t3, t4; 
+				var t5, t6, t7, t8; 
+				var btn; 
+				if (loading_msg_div){ 
+					try { 
+						document.body.removeChild (loading_msg_div); 
+					} catch (err){ 
+						
+					} 
+				} 
+				t1= document.createElement ("div"); 
+					loading_msg_div= t1; 
+					t1.style.width= "300px"; 
+					t1.style.padding= "2px"; 
+					t1.style.position= "absolute"; 
+					t1.style.visibility= "hidden"; 
+					t1.appendChild (t2= document.createElement ("h2")); 
+						t2.appendChild (document.createTextNode ("Loading... ")); 
+					t1.style.left= "0px"; 
+					t1.style.top= "0px"; 
+				document.body.appendChild (t1); 
+					t1.style.left= (window.innerWidth / 2 - t1.offsetWidth / 2) + "px"; 
+					t1.style.top= (window.innerHeight / 2 - t1.offsetHeight / 2) + "px"; 
+					t1.style.border= "1px #000000 solid"; 
+					t1.style.background= "#CCCCFF"; 
+					t1.style.visibility= "visible"; 
+			} 
+			function UserRender (){ 
+				var t1, t2, t3, t4; 
+				var t5, t6, t7, t8; 
+				var btn; 
+				previewHTTP.open ("GET", "cllc.asp?id=" + id + "&EnableToon=1&EnableMesh=1", true); 
+					previewHTTP.onreadystatechange= function (){}; 
+					previewHTTP.send (); 
+				t1= document.createElement ("div"); 
+					t1.style.width= "500px"; 
+					t1.style.padding= "2px"; 
+					t1.style.position= "absolute"; 
+					t1.style.visibility= "hidden"; 
+					//t1.appendChild (t2= document.createElement ("h2")); 
+						//t2.appendChild (document.createTextNode ("Render - AnimOv")); 
+					t1.appendChild (t2= document.createElement ("iframe")); 
+						t2.style.border= "none"; 
+						t2.style.width= "100%"; 
+						t2.style.height= "400px"; 
+						t2.src= "render3.html?id=" + id; 
+					t1.appendChild (document.createElement ("br")); 
+					t1.appendChild (t2= document.createElement ("div")); 
+						t2.style.textAlign= "center"; 
+						t2.appendChild (t3= document.createElement ("button")); 
+							btn= t3; 
+							t3.style.marginTop= "5px"; 
+							t3.onclick= function (e){ 
+								document.body.removeChild (this.parentNode.parentNode); 
+							}; 
+							t3.appendChild (document.createTextNode ("Close")); 
+					t1.style.left= "0px"; 
+					t1.style.top= "0px"; 
+				document.body.appendChild (t1); 
+					t1.style.left= (window.innerWidth / 2 - t1.offsetWidth / 2) + "px"; 
+					t1.style.top= (window.innerHeight / 2 - t1.offsetHeight / 2) + "px"; 
+					t1.style.border= "1px #000000 solid"; 
+					t1.style.background= "#EEEEFF"; 
+					t1.style.visibility= "visible"; 
+			} 
+			function AboutAnimate (){ 
+				var t1, t2, t3, t4; 
+				var t5, t6, t7, t8; 
+				var btn; 
+				t1= document.createElement ("div"); 
+					t1.style.width= "500px"; 
+					t1.style.padding= "2px"; 
+					t1.style.position= "absolute"; 
+					t1.style.visibility= "hidden"; 
+					t1.appendChild (t2= document.createElement ("h2")); 
+						t2.appendChild (document.createTextNode ("About - Animate - AnimOv")); 
+					t1.appendChild (t2= document.createElement ("div")); 
+						t2.appendChild (document.createTextNode ("AnimOv is an animation studio designed to work with various types of animations. " + 
+							"In particular, it is designed to work with ovals and ellipsoids, while giving the user the flexibility needed for " + 
+							"both, ease of use and ability to expand. ")); 
+						t2.appendChild (t3= document.createElement ("div")); 
+							t3.style.marginTop= "2px"; 
+							t3.appendChild (document.createTextNode ("We hope you enjoy your AnimOv usage experience!")); 
+						t2.appendChild (document.createElement ("br")); 
+						t2.appendChild (document.createElement ("br")); 
+						t2.appendChild (document.createTextNode ("Copyright (C) 2012 by Ruvim Kondratyev")); 
+						t2.appendChild (document.createElement ("br")); 
+						t2.appendChild (document.createElement ("br")); 
+					t1.appendChild (t2= document.createElement ("div")); 
+						t2.appendChild (t3= document.createElement ("div")); 
+							t3.style.fontWeight= "bold"; 
+							t3.appendChild (document.createTextNode ("Technical Information:")); 
+						t2.appendChild (document.createElement ("br")); 
+						t2.appendChild (document.createTextNode ("Approximate Connection Speed:")); 
+						t2.appendChild (document.createElement ("br")); 
+						t2.appendChild (document.createTextNode (get_speed + " bytes/second download, " + post_speed + " bytes/second upload")); 
+						t2.appendChild (document.createElement ("br")); 
+						t2.appendChild (document.createTextNode ("Last Draw Figures Profile (in ms):")); 
+						t2.appendChild (document.createElement ("br")); 
+						t2.appendChild (document.createTextNode ("" + draw_figures_profile)); 
+						t2.appendChild (document.createElement ("br")); 
+					t1.appendChild (document.createElement ("br")); 
+					t1.appendChild (t2= document.createElement ("div")); 
+						t2.style.textAlign= "center"; 
+						t2.appendChild (t3= document.createElement ("button")); 
+							btn= t3; 
+							t3.style.marginTop= "5px"; 
+							t3.onclick= function (e){ 
+								document.body.removeChild (this.parentNode.parentNode); 
+							}; 
+							t3.appendChild (document.createTextNode ("Close")); 
+					t1.style.left= "0px"; 
+					t1.style.top= "0px"; 
+				document.body.appendChild (t1); 
+					t1.style.left= (window.innerWidth / 2 - t1.offsetWidth / 2) + "px"; 
+					t1.style.top= (window.innerHeight / 2 - t1.offsetHeight / 2) + "px"; 
+					t1.style.border= "1px #000000 solid"; 
+					t1.style.background= "#CCCCFF"; 
+					t1.style.visibility= "visible"; 
+			} 
+			function ClearElement (element){ 
+				var arr= []; 
+				var i; 
+				for (i= 0; i < element.childNodes.length; i++) arr[i]= element.childNodes[i]; 
+				for (i= 0; i < arr.length; i++){ 
+					if (arr[i].nodeType != 2){ 
+						element.removeChild (arr[i]); 
+					} 
+				} 
+			} 
+		</script> 
+	</body> 
+</html> 

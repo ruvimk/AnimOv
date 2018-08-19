@@ -1,0 +1,20 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="12">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="553" startPos="191" endPos="191" selMode="0" lang="Normal Text" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\example01.txt" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="231" startPos="78" endPos="78" selMode="0" lang="Normal Text" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\example02.txt" />
+            <File firstVisibleLine="24" xOffset="0" scrollWidth="1043" startPos="613" endPos="613" selMode="0" lang="ASP" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\RenderToon.asp" />
+            <File firstVisibleLine="12" xOffset="0" scrollWidth="476" startPos="147" endPos="147" selMode="0" lang="Javascript" encoding="-1" filename="C:\WBord\wwwroot\experimental\js\PackModule.js" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="973" startPos="104" endPos="104" selMode="0" lang="Javascript" encoding="-1" filename="C:\WBord\wwwroot\experimental\js\ToonModule.js" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="931" startPos="380" endPos="380" selMode="0" lang="Javascript" encoding="-1" filename="C:\WBord\wwwroot\experimental\js\Obj2Txt.js" />
+            <File firstVisibleLine="109" xOffset="0" scrollWidth="1008" startPos="3911" endPos="3911" selMode="0" lang="HTML" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\animate.html" />
+            <File firstVisibleLine="1290" xOffset="0" scrollWidth="1057" startPos="53570" endPos="53570" selMode="0" lang="HTML" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\animate2.html" />
+            <File firstVisibleLine="62" xOffset="0" scrollWidth="1218" startPos="3008" endPos="3008" selMode="0" lang="HTML" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\render2.html" />
+            <File firstVisibleLine="39" xOffset="0" scrollWidth="1085" startPos="937" endPos="937" selMode="0" lang="C" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\toon.c" />
+            <File firstVisibleLine="611" xOffset="0" scrollWidth="1078" startPos="19338" endPos="19338" selMode="0" lang="C" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\include\wlib.c" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="182" startPos="151" endPos="151" selMode="0" lang="Normal Text" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\test01.txt" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1274" startPos="121" endPos="121" selMode="0" lang="ASP" encoding="-1" filename="C:\WBord\wwwroot\AnimOv\RenderToon2.asp" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>

@@ -1,0 +1,84 @@
+<!DOCTYPE HTML> 
+<html> 
+	<head> 
+		<title> Stream Test </title> 
+	</head> 
+	<body> 
+		<h1> Stream Test </h1> 
+		<script type="text/javascript"> 
+			var main_interval; 
+			var img; 
+			var txt= document.createElement ("div"); 
+			var stopped= true; 
+			var paused= true; 
+			var img_type= "png"; 
+			document.body.appendChild (txt); 
+			if (typeof (EventSource) !== "undefined"){ 
+				var id= 0; 
+				var fps= ""; 
+				var start= ""; 
+				var lossy= false; 
+				var small= false; 
+				var query= (location + "").split ("?")[1]; 
+				if (query){ 
+					var arr= query.split ("&"); 
+					var i; 
+					for (i= 0; i < arr.length; i++){ 
+						if (arr[i].split ("=")[0] == "id") id= parseInt (arr[i].split ("=")[1]); 
+						if (arr[i].split ("=")[0] == "fps") fps= parseFloat (arr[i].split ("=")[1]); 
+						if (arr[i].split ("=")[0] == "start") start= parseInt (arr[i].split ("=")[1]); 
+						if (arr[i].split ("=")[0] == "lossy") if (parseInt (arr[i].split ("=")[1]) || arr[i].split ("=")[1] == "true") lossy= true; 
+						if (arr[i].split ("=")[0] == "small") if (parseInt (arr[i].split ("=")[1]) || arr[i].split ("=")[1] == "true") small= true; 
+					} 
+					if (!id) id= 0; 
+				} 
+					if (!fps) fps= 1; 
+					if (!start) start= 0; 
+					if (lossy) img_type= "jpg"; 
+				var done= false; 
+				var counter= 0; 
+				var frames= []; 
+				var source; 
+				img= document.createElement ("img"); 
+				img.src= "stream-load.png"; 
+				img.style.border= "1px #0000FF solid"; 
+				img.onclick= function (){ 
+					paused= !paused; 
+					stopped= false; 
+				}; 
+				txt.appendChild (img); 
+				source= new EventSource ("stream.php?id=" + id + "&start=" + start + "&fps=" + fps + "&lossy=" + lossy + "&small=" + small); 
+				source.onmessage= function (event){ 
+					var msg= event.data + ""; 
+					if (msg == "done"){ 
+						source.close (); 
+						//document.body.appendChild (document.createElement ("br")); 
+						done= true; 
+						//document.body.appendChild (document.createTextNode ("Done!")); 
+					} else { 
+						frames.push (msg); 
+						if (stopped) img.src= "data:image/" + img_type + ";base64," + frames[0]; 
+					} 
+				}; 
+				main_interval= setInterval ("update_image ();", 1000 / fps); 
+			} else { 
+				img= document.createElement ("img"); 
+				img.src= "no-sse.png"; 
+				img.style.border= "1px #0000FF solid"; 
+				txt.appendChild (img); 
+			} 
+			function update_image (){ 
+				if (done && !frames[counter]){ 
+					counter= 0; 
+					paused= true; 
+					img.src= "data:image/" + img_type + ";base64," + frames[counter]; 
+				} 
+				if (!paused && !stopped && frames[counter]){ 
+					//txt.removeChild (img); 
+					img.src= "data:image/" + img_type + ";base64," + frames[counter]; 
+					counter++; 
+				} 
+			} 
+		</script> 
+	</body> 
+</html> 

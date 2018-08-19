@@ -1,0 +1,1683 @@
+// character: one 
+	vector one 
+		color 0, 0, 255 , 1 
+		// The pants: 
+			at 0, 0.08, 0 
+			axes 0.6, 0.33, 0.33 
+				ellipsoid 
+			vector one.left-low.femur 
+				at 0, 0, 0 
+					axes 0.25, 0.25, 0.25 
+					//ellipsoid 
+				at 0, 0, 0.1 
+					axes 0.25, 0.25, 0.25 
+					//ellipsoid 
+				at 0, 0, 0.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at -0.1, 0, 0.3 
+					axes 0.35, 0.25, 0.25 
+					ellipsoid 
+				at -0.09, 0, 0.4 
+					axes 0.33, 0.25, 0.25 
+					ellipsoid 
+				at -0.08, 0, 0.5 
+					axes 0.33, 0.25, 0.25 
+					ellipsoid 
+				at -0.06, 0, 0.6 
+					axes 0.31, 0.25, 0.25 
+					ellipsoid 
+				at -0.05, 0, 0.7 
+					axes 0.29, 0.25, 0.25 
+					ellipsoid 
+				at -0.03, 0, 0.8 
+					axes 0.27, 0.25, 0.25 
+					ellipsoid 
+				at -0.01, 0, 0.9 
+					axes 0.26, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.0 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.3 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.4 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.5 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.6 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.7 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.8 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.9 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+			vector one.right-low.femur 
+				at 0, 0, 0.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0.1, 0, 0.3 
+					axes 0.35, 0.25, 0.25 
+					ellipsoid 
+				at 0.09, 0, 0.4 
+					axes 0.33, 0.25, 0.25 
+					ellipsoid 
+				at 0.08, 0, 0.5 
+					axes 0.33, 0.25, 0.25 
+					ellipsoid 
+				at 0.06, 0, 0.6 
+					axes 0.31, 0.25, 0.25 
+					ellipsoid 
+				at 0.05, 0, 0.7 
+					axes 0.29, 0.25, 0.25 
+					ellipsoid 
+				at 0.03, 0, 0.8 
+					axes 0.27, 0.25, 0.25 
+					ellipsoid 
+				at 0.01, 0, 0.9 
+					axes 0.26, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.0 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.3 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.4 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.5 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.6 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.7 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.8 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.9 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+			vector one.left-low.femur.leg 
+				at 0, 0, 0.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.3 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.4 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.5 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.6 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.7 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.8 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.9 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.0 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.3 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.4 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.5 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+			vector one.right-low.femur.leg 
+				at 0, 0, 0.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.3 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.4 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.5 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.6 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.7 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.8 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.9 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.0 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.3 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.4 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.5 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+		// The shoes: 
+			color 64, 64, 100, 1 
+			at 0, 0, 0.25 
+			axes 0.25, 0.28, 0.5 
+			vector one.left-low.femur.leg.foot 
+				ellipsoid 
+			vector one.right-low.femur.leg.foot 
+				ellipsoid 
+		vector one.body 
+			color 255, 0, 0 , 1 
+			axes 0.6, 0.33, 0.33 
+			// The shirt: 
+				at 0, 0, 0.1 
+					ellipsoid 
+				at 0, 0, 0.2 
+					ellipsoid 
+				at 0, 0, 0.3 
+					ellipsoid 
+				at 0, 0, 0.4 
+					ellipsoid 
+				at 0, 0, 0.5 
+					ellipsoid 
+				at 0, 0, 0.6 
+					ellipsoid 
+				at 0, 0, 0.7 
+					ellipsoid 
+				at 0, 0, 0.8 
+					axes 0.62, 0.33, 0.33 
+					ellipsoid 
+				at 0, 0, 0.9 
+					axes 0.65, 0.33, 0.33 
+					ellipsoid 
+				at 0, 0, 1.0 
+					axes 0.69, 0.33, 0.33 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.7, 0.33, 0.33 
+					ellipsoid 
+				vector one.body.left-high.arm 
+					at 0, 0, 0.33 
+					axes 0.16, 0.16, 0.33 
+						ellipsoid 
+				vector one.body.right-high.arm 
+						ellipsoid 
+		vector one.body.neck 
+			color 255,220,177, 1 
+			at 0, 0, 0 
+			axes 0.14, 0.14, 0.4 
+				ellipsoid 
+			vector one.body.left-high.arm 
+				at 0, 0, 0.55 
+				axes 0.15, 0.125, 0.55 
+					ellipsoid 
+			vector one.body.right-high.arm 
+					ellipsoid 
+			vector one.body.left-high.arm.forearm 
+				at 0, 0, 0.25 
+				axes 0.125, 0.12, 0.25 
+					ellipsoid 
+				at 0, 0, 0.35 
+				axes 0.1, 0.085, 0.35 
+					ellipsoid 
+				at 0, 0, 0.45 
+				axes 0.08, 0.05, 0.45 
+					ellipsoid 
+			vector one.body.right-high.arm.forearm 
+				at 0, 0, 0.25 
+				axes 0.125, 0.12, 0.25 
+					ellipsoid 
+				at 0, 0, 0.35 
+				axes 0.1, 0.085, 0.35 
+					ellipsoid 
+				at 0, 0, 0.45 
+				axes 0.08, 0.05, 0.45 
+					ellipsoid 
+			// The head: 
+				vector one.body.neck.head 
+					//at 0, -3.5, 4.75 
+					at 0, -0.29166667, 0.395833334 
+					//axes 0.25, 0.29166667, 0.395833334 
+					axes 0.3, 0.35, 0.45 
+						ellipsoid 
+				// The nose: 
+					vector one.body.neck.head.face.nose 
+						path 
+						pt 0, 0, 0.08 
+						pt 0, 0, 0.08 
+						pt 0, -0.08, 0.02 
+						pt 0, -0.08, 0.02 
+						pt 0, -0.08, 0.02 
+						pt 0, 0, 0 
+						pt 0, 0, 0 
+						outline 0, 0, 0 , 1 
+						fill 
+						stroke 
+				// The eyes: 
+					vector one.body.neck.head.face.eyes.left 
+						at -0.125, 0, 0 
+						axes 0.0625, 0.03125, 0.125 
+							color 250, 250, 250 , 1 
+							ellipsoid 
+						vector one.body.neck.head.face.eyes.left.point 
+							axes 0.03125, 0.015625, 0.0625 
+								color 4, 180, 49 , 1 
+								ellipsoid 
+							axes 0.015625, 0.0078125, 0.0325 
+								color 8, 8, 8 , 1 
+								ellipsoid 
+					vector one.body.neck.head.face.eyes.right 
+						at 0.125, 0, 0 
+						axes 0.0625, 0.03125, 0.125 
+							color 250, 250, 250 , 1 
+							ellipsoid 
+						vector one.body.neck.head.face.eyes.right.point 
+							axes 0.03125, 0.015625, 0.0625 
+								color 4, 180, 49 , 1 
+								ellipsoid 
+							axes 0.015625, 0.0078125, 0.0325 
+								color 8, 8, 8 , 1 
+								ellipsoid 
+				// The mouth: 
+					path 
+					vector one.body.neck.head.face.mouth.sides.left 
+						pt -0.1, 0, 0 
+						pt -0.1, 0, 0 
+					vector one.body.neck.head.face.mouth 
+						pt -0.05, 0, 0 
+						pt 0, 0, 0 
+						pt 0.05, 0, 0 
+					vector one.body.neck.head.face.mouth.sides.right 
+						pt 0.1, 0, 0 
+						pt 0.1, 0, 0 
+						pt 0.1, 0, 0 
+					vector one.body.neck.head.face.mouth.bottom 
+						pt 0.05, 0, 0 
+						pt 0, 0, 0 
+						pt -0.05, 0, 0 
+					vector one.body.neck.head.face.mouth.sides.left 
+						pt -0.1, 0, 0 
+						pt -0.1, 0, 0 
+					color 128, 22, 22 
+					outline 8, 8, 8 , 1 
+					fill 
+					stroke 
+// ... 
+
+// character: nei 
+	vector nei 
+		color 241, 248, 224 , 1 
+		// The pants: 
+			at 0, 0.08, 0 
+			axes 0.6, 0.33, 0.33 
+				ellipsoid 
+			vector nei.left-low.femur 
+				at 0, 0, 0 
+					axes 0.25, 0.25, 0.25 
+					//ellipsoid 
+				at 0, 0, 0.1 
+					axes 0.25, 0.25, 0.25 
+					//ellipsoid 
+				at 0, 0, 0.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at -0.1, 0, 0.3 
+					axes 0.35, 0.25, 0.25 
+					ellipsoid 
+				at -0.09, 0, 0.4 
+					axes 0.33, 0.25, 0.25 
+					ellipsoid 
+				at -0.08, 0, 0.5 
+					axes 0.33, 0.25, 0.25 
+					ellipsoid 
+				at -0.06, 0, 0.6 
+					axes 0.31, 0.25, 0.25 
+					ellipsoid 
+				at -0.05, 0, 0.7 
+					axes 0.29, 0.25, 0.25 
+					ellipsoid 
+				at -0.03, 0, 0.8 
+					axes 0.27, 0.25, 0.25 
+					ellipsoid 
+				at -0.01, 0, 0.9 
+					axes 0.26, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.0 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.3 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.4 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.5 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.6 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.7 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.8 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.9 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.9 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 2.0 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+			vector nei.right-low.femur 
+				at 0, 0, 0.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0.1, 0, 0.3 
+					axes 0.35, 0.25, 0.25 
+					ellipsoid 
+				at 0.09, 0, 0.4 
+					axes 0.33, 0.25, 0.25 
+					ellipsoid 
+				at 0.08, 0, 0.5 
+					axes 0.33, 0.25, 0.25 
+					ellipsoid 
+				at 0.06, 0, 0.6 
+					axes 0.31, 0.25, 0.25 
+					ellipsoid 
+				at 0.05, 0, 0.7 
+					axes 0.29, 0.25, 0.25 
+					ellipsoid 
+				at 0.03, 0, 0.8 
+					axes 0.27, 0.25, 0.25 
+					ellipsoid 
+				at 0.01, 0, 0.9 
+					axes 0.26, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.0 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.3 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.4 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.5 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.6 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.7 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.8 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.9 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.9 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 2.0 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+			vector nei.left-low.femur.leg 
+				at 0, 0, 0.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.3 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.4 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.5 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.6 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.7 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.8 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.9 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.0 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.3 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.4 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.5 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+			vector nei.right-low.femur.leg 
+				at 0, 0, 0.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.3 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.4 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.5 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.6 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.7 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.8 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 0.9 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.0 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.3 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.4 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.5 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+		// The shoes: 
+			color 64, 64, 100, 1 
+			at 0, 0, 0.25 
+			axes 0.25, 0.28, 0.5 
+			vector nei.left-low.femur.leg.foot 
+				ellipsoid 
+			vector nei.right-low.femur.leg.foot 
+				ellipsoid 
+		vector nei.body 
+			color 219, 21, 21 , 1 
+			axes 0.6, 0.33, 0.33 
+			// The shirt: 
+				at 0, 0, 0.1 
+					ellipsoid 
+				at 0, 0, 0.2 
+					ellipsoid 
+				at 0, 0, 0.3 
+					ellipsoid 
+				at 0, 0, 0.4 
+					ellipsoid 
+				at 0, 0, 0.5 
+					ellipsoid 
+				at 0, 0, 0.6 
+					ellipsoid 
+				at 0, 0, 0.7 
+					ellipsoid 
+				at 0, 0, 0.8 
+					axes 0.61, 0.33, 0.33 
+					ellipsoid 
+				at 0, 0, 0.9 
+					axes 0.63, 0.33, 0.33 
+					ellipsoid 
+				at 0, 0, 1.0 
+					axes 0.67, 0.33, 0.33 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.69, 0.33, 0.33 
+					ellipsoid 
+				at 0, 0, 1.2 
+					axes 0.7, 0.33, 0.33 
+					ellipsoid 
+				vector nei.body.left-high.arm 
+					at 0, 0, 0.33 
+					axes 0.16, 0.16, 0.33 
+						ellipsoid 
+				vector nei.body.right-high.arm 
+						ellipsoid 
+		vector nei.body.neck 
+			color 255,220,177, 1 
+			at 0, 0, 0 
+			axes 0.14, 0.14, 0.4 
+				ellipsoid 
+			vector nei.body.left-high.arm 
+				at 0, 0, 0.55 
+				axes 0.15, 0.125, 0.55 
+					ellipsoid 
+			vector nei.body.right-high.arm 
+					ellipsoid 
+			vector nei.body.left-high.arm.forearm 
+				at 0, 0, 0.25 
+				axes 0.125, 0.12, 0.25 
+					ellipsoid 
+				at 0, 0, 0.35 
+				axes 0.1, 0.085, 0.35 
+					ellipsoid 
+				at 0, 0, 0.45 
+				axes 0.08, 0.05, 0.45 
+					ellipsoid 
+			vector nei.body.right-high.arm.forearm 
+				at 0, 0, 0.25 
+				axes 0.125, 0.12, 0.25 
+					ellipsoid 
+				at 0, 0, 0.35 
+				axes 0.1, 0.085, 0.35 
+					ellipsoid 
+				at 0, 0, 0.45 
+				axes 0.08, 0.05, 0.45 
+					ellipsoid 
+			// The head: 
+				vector nei.body.neck.head 
+					//at 0, -3.5, 4.75 
+					at 0, -0.29166667, 0.395833334 
+					axes 0.25, 0.29166667, 0.395833334 
+						ellipsoid 
+				// The nose: 
+					vector nei.body.neck.head.face.nose 
+						path 
+						pt 0, 0, 0.08 
+						pt 0, 0, 0.08 
+						pt 0, -0.08, 0.02 
+						pt 0, -0.08, 0.02 
+						pt 0, -0.08, 0.02 
+						pt 0, 0, 0 
+						pt 0, 0, 0 
+						outline 0, 0, 0 , 1 
+						fill 
+						stroke 
+				// The eyes: 
+					vector nei.body.neck.head.face.eyes.left 
+						at -0.125, 0, 0 
+						axes 0.0625, 0.03125, 0.125 
+							color 250, 250, 250 , 1 
+							ellipsoid 
+						vector nei.body.neck.head.face.eyes.left.point 
+							axes 0.03125, 0.015625, 0.0625 
+								color 4, 180, 49 , 1 
+								ellipsoid 
+							axes 0.015625, 0.0078125, 0.0325 
+								color 8, 8, 8 , 1 
+								ellipsoid 
+					vector nei.body.neck.head.face.eyes.right 
+						at 0.125, 0, 0 
+						axes 0.0625, 0.03125, 0.125 
+							color 250, 250, 250 , 1 
+							ellipsoid 
+						vector nei.body.neck.head.face.eyes.right.point 
+							axes 0.03125, 0.015625, 0.0625 
+								color 4, 180, 49 , 1 
+								ellipsoid 
+							axes 0.015625, 0.0078125, 0.0325 
+								color 8, 8, 8 , 1 
+								ellipsoid 
+				// The mouth: 
+					path 
+					vector nei.body.neck.head.face.mouth.sides.left 
+						pt -0.1, 0, 0 
+						pt -0.1, 0, 0 
+					vector nei.body.neck.head.face.mouth 
+						pt -0.05, 0, 0 
+						pt 0, 0, 0 
+						pt 0.05, 0, 0 
+					vector nei.body.neck.head.face.mouth.sides.right 
+						pt 0.1, 0, 0 
+						pt 0.1, 0, 0 
+						pt 0.1, 0, 0 
+					vector nei.body.neck.head.face.mouth.bottom 
+						pt 0.05, 0, 0 
+						pt 0, 0, 0 
+						pt -0.05, 0, 0 
+					vector nei.body.neck.head.face.mouth.sides.left 
+						pt -0.1, 0, 0 
+						pt -0.1, 0, 0 
+					color 128, 22, 22 
+					outline 8, 8, 8 , 1 
+					fill 
+					stroke 
+// ... 
+
+// character: nei2 
+	vector nei2 
+		color 63, 58, 213 , 1 
+		// The pants: 
+			at 0, 0.08, 0 
+			axes 0.6, 0.33, 0.33 
+				ellipsoid 
+			vector nei2.left-low.femur 
+				at 0, 0, 0 
+					axes 0.25, 0.25, 0.25 
+					//ellipsoid 
+				at 0, 0.03, 0.1 
+					axes 0.28, 0.28, 0.25 
+					//ellipsoid 
+				at 0, 0.03, 0.2 
+					axes 0.28, 0.28, 0.25 
+					ellipsoid 
+				at -0.1, 0.05, 0.3 
+					axes 0.38, 0.30, 0.25 
+					ellipsoid 
+				at -0.09, 0.04, 0.4 
+					axes 0.38, 0.29, 0.25 
+					ellipsoid 
+				at -0.08, 0.03, 0.5 
+					axes 0.37, 0.28, 0.25 
+					ellipsoid 
+				at -0.06, 0.02, 0.6 
+					axes 0.35, 0.27, 0.25 
+					ellipsoid 
+				at -0.05, 0, 0.7 
+					axes 0.33, 0.25, 0.25 
+					ellipsoid 
+				at -0.03, 0, 0.8 
+					axes 0.30, 0.25, 0.25 
+					ellipsoid 
+				at -0.01, 0, 0.9 
+					axes 0.28, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.0 
+					axes 0.27, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.26, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.26, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.3 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.4 
+					axes 0.24, 0.24, 0.25 
+					ellipsoid 
+				at 0, 0, 1.5 
+					axes 0.23, 0.23, 0.25 
+					ellipsoid 
+				at 0, 0, 1.6 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 1.7 
+					axes 0.22, 0.21, 0.25 
+					ellipsoid 
+				at 0, 0, 1.8 
+					axes 0.22, 0.20, 0.25 
+					ellipsoid 
+			vector nei2.right-low.femur 
+				at 0, 0, 0 
+					axes 0.25, 0.25, 0.25 
+					//ellipsoid 
+				at 0, 0.03, 0.1 
+					axes 0.28, 0.28, 0.25 
+					//ellipsoid 
+				at 0, 0.03, 0.2 
+					axes 0.28, 0.28, 0.25 
+					ellipsoid 
+				at 0.1, 0.05, 0.3 
+					axes 0.38, 0.30, 0.25 
+					ellipsoid 
+				at 0.09, 0.04, 0.4 
+					axes 0.38, 0.29, 0.25 
+					ellipsoid 
+				at 0.08, 0.03, 0.5 
+					axes 0.37, 0.28, 0.25 
+					ellipsoid 
+				at 0.06, 0.02, 0.6 
+					axes 0.35, 0.27, 0.25 
+					ellipsoid 
+				at 0.05, 0, 0.7 
+					axes 0.33, 0.25, 0.25 
+					ellipsoid 
+				at 0.03, 0, 0.8 
+					axes 0.30, 0.25, 0.25 
+					ellipsoid 
+				at 0.01, 0, 0.9 
+					axes 0.28, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.0 
+					axes 0.27, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.26, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.26, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.3 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.4 
+					axes 0.24, 0.24, 0.25 
+					ellipsoid 
+				at 0, 0, 1.5 
+					axes 0.23, 0.23, 0.25 
+					ellipsoid 
+				at 0, 0, 1.6 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 1.7 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 1.8 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+			vector nei2.left-low.femur.leg 
+				at 0, 0, 0.2 
+					axes 0.24, 0.24, 0.25 
+					ellipsoid 
+				at 0, 0, 0.3 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 0.4 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 0.5 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 0.6 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 0.7 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 0.8 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 0.9 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 1.0 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.23, 0.23, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.24, 0.24, 0.25 
+					ellipsoid 
+				at 0, 0, 1.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.3 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.4 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.5 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+			vector nei2.right-low.femur.leg 
+				at 0, 0, 0.2 
+					axes 0.24, 0.24, 0.25 
+					ellipsoid 
+				at 0, 0, 0.3 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 0.4 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 0.5 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 0.6 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 0.7 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 0.8 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 0.9 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 1.0 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.23, 0.23, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.24, 0.24, 0.25 
+					ellipsoid 
+				at 0, 0, 1.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.3 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.4 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.5 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+		// The shoes: 
+			color 64, 64, 100, 1 
+			at 0, 0, 0.25 
+			axes 0.25, 0.28, 0.5 
+			vector nei2.left-low.femur.leg.foot 
+				ellipsoid 
+			vector nei2.right-low.femur.leg.foot 
+				ellipsoid 
+		vector nei2.body 
+			color 241, 143, 51 , 1 
+			axes 0.6, 0.33, 0.33 
+			// The shirt: 
+				at 0, 0, 0.1 
+					axes 0.58, 0.36, 0.33 
+					ellipsoid 
+				at 0, 0, 0.2 
+					axes 0.55, 0.35, 0.33 
+					ellipsoid 
+				at 0, 0, 0.3 
+					axes 0.53, 0.34, 0.33 
+					ellipsoid 
+				at 0, 0, 0.4 
+					axes 0.52, 0.33, 0.33 
+					ellipsoid 
+				at 0, 0, 0.5 
+					axes 0.51, 0.33, 0.33 
+					ellipsoid 
+				at 0, 0, 0.6 
+					axes 0.53, 0.33, 0.33 
+					ellipsoid 
+				at 0, 0, 0.7 
+					axes 0.54, 0.34, 0.33 
+					ellipsoid 
+				at 0, -0.01, 0.8 
+					axes 0.55, 0.35, 0.33 
+					ellipsoid 
+				at 0, -0.02, 0.9 
+					axes 0.58, 0.37, 0.33 
+					ellipsoid 
+				at 0, -0.03, 1.0 
+					axes 0.58, 0.38, 0.33 
+					ellipsoid 
+				at 0, -0.02, 1.1 
+					axes 0.58, 0.37, 0.33 
+					ellipsoid 
+				at 0, 0, 1.2 
+					axes 0.6, 0.35, 0.33 
+					ellipsoid 
+				at 0, 0, 1.3 
+					axes 0.6, 0.33, 0.33 
+					ellipsoid 
+				vector nei2.body.left-high.arm 
+					at 0, 0, 0.33 
+					axes 0.16, 0.16, 0.33 
+						ellipsoid 
+				vector nei2.body.right-high.arm 
+						ellipsoid 
+		vector nei2.body.neck 
+			color 255,220,177, 1 
+			at 0, 0, 0 
+			axes 0.14, 0.14, 0.4 
+				ellipsoid 
+			vector nei2.body.left-high.arm 
+				at 0, 0, 0.55 
+				axes 0.15, 0.125, 0.55 
+					ellipsoid 
+			vector nei2.body.right-high.arm 
+					ellipsoid 
+			vector nei2.body.left-high.arm.forearm 
+				at 0, 0, 0.25 
+				axes 0.125, 0.12, 0.25 
+					ellipsoid 
+				at 0, 0, 0.35 
+				axes 0.1, 0.085, 0.35 
+					ellipsoid 
+				at 0, 0, 0.45 
+				axes 0.08, 0.05, 0.45 
+					ellipsoid 
+			vector nei2.body.right-high.arm.forearm 
+				at 0, 0, 0.25 
+				axes 0.125, 0.12, 0.25 
+					ellipsoid 
+				at 0, 0, 0.35 
+				axes 0.1, 0.085, 0.35 
+					ellipsoid 
+				at 0, 0, 0.45 
+				axes 0.08, 0.05, 0.45 
+					ellipsoid 
+			// The head: 
+				vector nei2.body.neck.head 
+					//at 0, -3.5, 4.75 
+					at 0, -0.29166667, 0.395833334 
+					axes 0.25, 0.29166667, 0.395833334 
+						ellipsoid 
+				// The nose: 
+					vector nei2.body.neck.head.face.nose 
+						path 
+						pt 0, 0, 0.08 
+						pt 0, 0, 0.08 
+						pt 0, -0.08, 0.02 
+						pt 0, -0.08, 0.02 
+						pt 0, -0.08, 0.02 
+						pt 0, 0, 0 
+						pt 0, 0, 0 
+						outline 0, 0, 0 , 1 
+						fill 
+						stroke 
+				// The eyes: 
+					vector nei2.body.neck.head.face.eyes.left 
+						at -0.125, 0, 0 
+						axes 0.0625, 0.03125, 0.125 
+							color 250, 250, 250 , 1 
+							ellipsoid 
+						vector nei2.body.neck.head.face.eyes.left.point 
+							axes 0.03125, 0.015625, 0.0625 
+								color 4, 180, 49 , 1 
+								ellipsoid 
+							axes 0.015625, 0.0078125, 0.0325 
+								color 8, 8, 8 , 1 
+								ellipsoid 
+					vector nei2.body.neck.head.face.eyes.right 
+						at 0.125, 0, 0 
+						axes 0.0625, 0.03125, 0.125 
+							color 250, 250, 250 , 1 
+							ellipsoid 
+						vector nei2.body.neck.head.face.eyes.right.point 
+							axes 0.03125, 0.015625, 0.0625 
+								color 4, 180, 49 , 1 
+								ellipsoid 
+							axes 0.015625, 0.0078125, 0.0325 
+								color 8, 8, 8 , 1 
+								ellipsoid 
+				// The mouth: 
+					path 
+					vector nei2.body.neck.head.face.mouth.sides.left 
+						pt -0.1, 0, 0 
+						pt -0.1, 0, 0 
+					vector nei2.body.neck.head.face.mouth 
+						pt -0.05, 0, 0 
+						pt 0, 0, 0 
+						pt 0.05, 0, 0 
+					vector nei2.body.neck.head.face.mouth.sides.right 
+						pt 0.1, 0, 0 
+						pt 0.1, 0, 0 
+						pt 0.1, 0, 0 
+					vector nei2.body.neck.head.face.mouth.bottom 
+						pt 0.05, 0, 0 
+						pt 0, 0, 0 
+						pt -0.05, 0, 0 
+					vector nei2.body.neck.head.face.mouth.sides.left 
+						pt -0.1, 0, 0 
+						pt -0.1, 0, 0 
+					color 128, 22, 22 
+					outline 8, 8, 8 , 1 
+					fill 
+					stroke 
+// ... 
+
+// character: two 
+	vector two 
+		//color 0, 0, 255 , 1 
+		color 67, 63, 58, 1 
+		// The pants: 
+			at 0, 0.08, 0 
+			axes 0.6, 0.33, 0.33 
+				ellipsoid 
+			vector two.left-low.femur 
+				at 0, 0, 0 
+					axes 0.25, 0.25, 0.25 
+					//ellipsoid 
+				at 0, 0.03, 0.1 
+					axes 0.28, 0.28, 0.25 
+					//ellipsoid 
+				at 0, 0.03, 0.2 
+					axes 0.28, 0.28, 0.25 
+					ellipsoid 
+				at -0.1, 0.05, 0.3 
+					axes 0.38, 0.30, 0.25 
+					ellipsoid 
+				at -0.09, 0.04, 0.4 
+					axes 0.38, 0.29, 0.25 
+					ellipsoid 
+				at -0.08, 0.03, 0.5 
+					axes 0.37, 0.28, 0.25 
+					ellipsoid 
+				at -0.06, 0.02, 0.6 
+					axes 0.35, 0.27, 0.25 
+					ellipsoid 
+				at -0.05, 0, 0.7 
+					axes 0.33, 0.25, 0.25 
+					ellipsoid 
+				at -0.03, 0, 0.8 
+					axes 0.30, 0.25, 0.25 
+					ellipsoid 
+				at -0.01, 0, 0.9 
+					axes 0.28, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.0 
+					axes 0.27, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.26, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.26, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.3 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.4 
+					axes 0.24, 0.24, 0.25 
+					ellipsoid 
+				at 0, 0, 1.5 
+					axes 0.23, 0.23, 0.25 
+					ellipsoid 
+				at 0, 0, 1.6 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 1.7 
+					axes 0.21, 0.21, 0.25 
+					ellipsoid 
+				at 0, 0, 1.8 
+					axes 0.20, 0.20, 0.25 
+					ellipsoid 
+			vector two.right-low.femur 
+				at 0, 0, 0 
+					axes 0.25, 0.25, 0.25 
+					//ellipsoid 
+				at 0, 0.03, 0.1 
+					axes 0.28, 0.28, 0.25 
+					//ellipsoid 
+				at 0, 0.03, 0.2 
+					axes 0.28, 0.28, 0.25 
+					ellipsoid 
+				at 0.1, 0.05, 0.3 
+					axes 0.38, 0.30, 0.25 
+					ellipsoid 
+				at 0.09, 0.04, 0.4 
+					axes 0.38, 0.29, 0.25 
+					ellipsoid 
+				at 0.08, 0.03, 0.5 
+					axes 0.37, 0.28, 0.25 
+					ellipsoid 
+				at 0.06, 0.02, 0.6 
+					axes 0.35, 0.27, 0.25 
+					ellipsoid 
+				at 0.05, 0, 0.7 
+					axes 0.33, 0.25, 0.25 
+					ellipsoid 
+				at 0.03, 0, 0.8 
+					axes 0.30, 0.25, 0.25 
+					ellipsoid 
+				at 0.01, 0, 0.9 
+					axes 0.28, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.0 
+					axes 0.27, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.26, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.26, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.2 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.3 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.4 
+					axes 0.24, 0.24, 0.25 
+					ellipsoid 
+				at 0, 0, 1.5 
+					axes 0.23, 0.23, 0.25 
+					ellipsoid 
+				at 0, 0, 1.6 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 1.7 
+					axes 0.21, 0.21, 0.25 
+					ellipsoid 
+				at 0, 0, 1.8 
+					axes 0.20, 0.20, 0.25 
+					ellipsoid 
+			vector two.left-low.femur.leg 
+				at 0, 0, 0.2 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 0.3 
+					axes 0.20, 0.20, 0.25 
+					ellipsoid 
+				at 0, 0, 0.4 
+					axes 0.20, 0.20, 0.25 
+					ellipsoid 
+				at 0, 0, 0.5 
+					axes 0.20, 0.20, 0.25 
+					ellipsoid 
+				at 0, 0, 0.6 
+					axes 0.20, 0.20, 0.25 
+					ellipsoid 
+				at 0, 0, 0.7 
+					axes 0.20, 0.20, 0.25 
+					ellipsoid 
+				at 0, 0, 0.8 
+					axes 0.20, 0.20, 0.25 
+					ellipsoid 
+				at 0, 0, 0.9 
+					axes 0.20, 0.20, 0.25 
+					ellipsoid 
+				at 0, 0, 1.0 
+					axes 0.20, 0.20, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.21, 0.21, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.23, 0.23, 0.25 
+					ellipsoid 
+				at 0, 0, 1.2 
+					axes 0.24, 0.24, 0.25 
+					ellipsoid 
+				at 0, 0, 1.3 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.4 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.5 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+			vector two.right-low.femur.leg 
+				at 0, 0, 0.2 
+					axes 0.22, 0.22, 0.25 
+					ellipsoid 
+				at 0, 0, 0.3 
+					axes 0.20, 0.20, 0.25 
+					ellipsoid 
+				at 0, 0, 0.4 
+					axes 0.20, 0.20, 0.25 
+					ellipsoid 
+				at 0, 0, 0.5 
+					axes 0.20, 0.20, 0.25 
+					ellipsoid 
+				at 0, 0, 0.6 
+					axes 0.20, 0.20, 0.25 
+					ellipsoid 
+				at 0, 0, 0.7 
+					axes 0.20, 0.20, 0.25 
+					ellipsoid 
+				at 0, 0, 0.8 
+					axes 0.20, 0.20, 0.25 
+					ellipsoid 
+				at 0, 0, 0.9 
+					axes 0.20, 0.20, 0.25 
+					ellipsoid 
+				at 0, 0, 1.0 
+					axes 0.20, 0.20, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.21, 0.21, 0.25 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.23, 0.23, 0.25 
+					ellipsoid 
+				at 0, 0, 1.2 
+					axes 0.24, 0.24, 0.25 
+					ellipsoid 
+				at 0, 0, 1.3 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.4 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+				at 0, 0, 1.5 
+					axes 0.25, 0.25, 0.25 
+					ellipsoid 
+		// The shoes: 
+			color 64, 64, 100, 1 
+			at 0, 0, 0.25 
+			axes 0.25, 0.28, 0.5 
+			vector two.left-low.femur.leg.foot 
+				ellipsoid 
+			vector two.right-low.femur.leg.foot 
+				ellipsoid 
+		vector two.body 
+			color 249, 11, 146 , 1 
+			axes 0.6, 0.33, 0.33 
+			// The shirt: 
+				at 0, 0, 0.1 
+					axes 0.58, 0.36, 0.33 
+					ellipsoid 
+				at 0, 0, 0.2 
+					axes 0.55, 0.35, 0.33 
+					ellipsoid 
+				at 0, 0, 0.3 
+					axes 0.53, 0.34, 0.33 
+					ellipsoid 
+				at 0, 0, 0.4 
+					axes 0.52, 0.33, 0.33 
+					ellipsoid 
+				at 0, 0, 0.5 
+					axes 0.51, 0.33, 0.33 
+					ellipsoid 
+				at 0, 0, 0.6 
+					axes 0.53, 0.33, 0.33 
+					ellipsoid 
+				at 0, 0, 0.7 
+					axes 0.54, 0.34, 0.33 
+					ellipsoid 
+				at 0, 0, 0.8 
+					axes 0.55, 0.34, 0.33 
+					ellipsoid 
+				at 0, 0, 0.9 
+					axes 0.58, 0.35, 0.33 
+					ellipsoid 
+				at 0, 0, 1.0 
+					axes 0.6, 0.34, 0.33 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.6, 0.33, 0.33 
+					ellipsoid 
+				vector two.body.left-high.arm 
+					at 0, 0, 0.33 
+					axes 0.16, 0.16, 0.33 
+						ellipsoid 
+				vector two.body.right-high.arm 
+						ellipsoid 
+		vector two.body.neck 
+			color 255,220,177, 1 
+			at 0, 0, 0 
+			axes 0.14, 0.14, 0.4 
+				ellipsoid 
+			vector two.body.left-high.arm 
+				at 0, 0, 0.55 
+				axes 0.15, 0.125, 0.55 
+					ellipsoid 
+			vector two.body.right-high.arm 
+					ellipsoid 
+			vector two.body.left-high.arm.forearm 
+				at 0, 0, 0.25 
+				axes 0.125, 0.12, 0.25 
+					ellipsoid 
+				at 0, 0, 0.35 
+				axes 0.1, 0.085, 0.35 
+					ellipsoid 
+				at 0, 0, 0.45 
+				axes 0.08, 0.05, 0.45 
+					ellipsoid 
+			vector two.body.right-high.arm.forearm 
+				at 0, 0, 0.25 
+				axes 0.125, 0.12, 0.25 
+					ellipsoid 
+				at 0, 0, 0.35 
+				axes 0.1, 0.085, 0.35 
+					ellipsoid 
+				at 0, 0, 0.45 
+				axes 0.08, 0.05, 0.45 
+					ellipsoid 
+			// The head: 
+				vector two.body.neck.head 
+					//at 0, -3.5, 4.75 
+					at 0, -0.29166667, 0.395833334 
+					//axes 0.25, 0.29166667, 0.395833334 
+					axes 0.3, 0.35, 0.45 
+						ellipsoid 
+				// The nose: 
+					vector two.body.neck.head.face.nose 
+						path 
+						pt 0, 0, 0.08 
+						pt 0, 0, 0.08 
+						pt 0, -0.08, 0.02 
+						pt 0, -0.08, 0.02 
+						pt 0, -0.08, 0.02 
+						pt 0, 0, 0 
+						pt 0, 0, 0 
+						outline 0, 0, 0 , 1 
+						fill 
+						stroke 
+				// The eyes: 
+					vector two.body.neck.head.face.eyes.left 
+						at -0.125, 0, 0 
+						axes 0.0625, 0.03125, 0.125 
+							color 250, 250, 250 , 1 
+							ellipsoid 
+						vector two.body.neck.head.face.eyes.left.point 
+							axes 0.03125, 0.015625, 0.0625 
+								color 4, 180, 49 , 1 
+								ellipsoid 
+							at -0.13, 0, 0 
+							axes 0.015625, 0.0078125, 0.0325 
+								color 8, 8, 8 , 1 
+								ellipsoid 
+					vector two.body.neck.head.face.eyes.right 
+						at 0.125, 0, 0 
+						axes 0.0625, 0.03125, 0.125 
+							color 250, 250, 250 , 1 
+							ellipsoid 
+						vector two.body.neck.head.face.eyes.right.point 
+							axes 0.03125, 0.015625, 0.0625 
+								color 4, 180, 49 , 1 
+								ellipsoid 
+							at 0.13, 0, 0 
+							axes 0.015625, 0.0078125, 0.0325 
+								color 8, 8, 8 , 1 
+								ellipsoid 
+				// The mouth: 
+					path 
+					vector two.body.neck.head.face.mouth.sides.left 
+						pt -0.1, 0, 0 
+						pt -0.1, 0, 0 
+					vector two.body.neck.head.face.mouth 
+						pt -0.05, 0, 0 
+						pt 0, 0, 0 
+						pt 0.05, 0, 0 
+					vector two.body.neck.head.face.mouth.sides.right 
+						pt 0.1, 0, 0 
+						pt 0.1, 0, 0 
+						pt 0.1, 0, 0 
+					vector two.body.neck.head.face.mouth.bottom 
+						pt 0.05, 0, 0 
+						pt 0, 0, 0 
+						pt -0.05, 0, 0 
+					vector two.body.neck.head.face.mouth.sides.left 
+						pt -0.1, 0, 0 
+						pt -0.1, 0, 0 
+					color 128, 22, 22 
+					outline 8, 8, 8 , 1 
+					fill 
+					stroke 
+// ... 
+
+
+
+
+
+
+
+
+// Prop:  nei no kuruma 
+	vector nei-car 
+		color 11, 59, 23, 1 
+		at 0, 0, 0 
+			axes 3.15, 7.3, 2.18 
+			ellipsoid 
+		color 64, 64, 64, 1 
+		axes 0.75, 1.25, 1.25 
+			at 3.15, 4.375, -0.5 
+				ellipsoid 
+			at -3.15, 4.375, -0.5 
+				ellipsoid 
+			at 3.15, -4.375, -0.5 
+				ellipsoid 
+			at -3.15, -4.375, -0.5 
+				ellipsoid 
+// ... 
+
+
+
+
+
+
+
+
+
+// Item:  nei2 no (gray cart) 
+	color 128, 128, 128, 1 
+	outline 4, 4, 4, 1 
+	vector nei2-GrayCart 
+		path 
+			pt 1, -1, 0 
+				pt 1, -1, 0 
+				pt -1, -1, 0 
+			pt -1, -1, 0 
+				pt -1, -1, 0 
+				pt -1, 1, 0 
+			pt -1, 1, 0 
+				pt -1, 1, 0 
+				pt 1, -1, 0 
+			pt 1, -1, 0 
+			//stroke 
+			fill 
+		path 
+			pt 1, -1, 0 
+			pt 1, -1, 0 
+			pt -1, -1, 0 
+			pt -1, -1, 0 
+			pt -1, -1, 0 
+			pt -1, -1, 3.25 
+			pt -1, -1, 3.25 
+			pt -1, -1, 3.25 
+			pt 1, -1, 3.25 
+			pt 1, -1, 3.25 
+			//stroke 
+			fill 
+		path 
+			pt 1, -1, 0 
+			pt 1, -1, 0 
+			pt 1, 1, 0 
+			pt 1, 1, 0 
+			pt 1, 1, 0 
+			pt 1, 1, 3.25 
+			pt 1, 1, 3.25 
+			pt 1, 1, 3.25 
+			pt 1, -1, 3.25 
+			pt 1, -1, 3.25 
+			//stroke 
+			fill 
+		path 
+			pt -1, 1, 0 
+			pt -1, 1, 0 
+			pt -1, -1, 0 
+			pt -1, -1, 0 
+			pt -1, -1, 0 
+			pt -1, -1, 3.25 
+			pt -1, -1, 3.25 
+			pt -1, -1, 3.25 
+			pt -1, 1, 3.25 
+			pt -1, 1, 3.25 
+			//stroke 
+			fill 
+		path 
+			pt 1, 1, 0 
+			pt 1, 1, 0 
+			pt -1, 1, 0 
+			pt -1, 1, 0 
+			pt -1, 1, 0 
+			pt -1, 1, 3.25 
+			pt -1, 1, 3.25 
+			pt -1, 1, 3.25 
+			pt 1, 1, 3.25 
+			pt 1, 1, 3.25 
+			//stroke 
+			fill 
+		path 
+			pt -1, 1, 0 
+			pt -1, 1, 3.25 
+			stroke 
+		path 
+			pt 1, 1, 0 
+			pt 1, 1, 3.25 
+			stroke 
+		path 
+			pt 1, -1, 0 
+			pt 1, -1, 3.25 
+			stroke 
+		path 
+			pt -1, -1, 0 
+			pt -1, -1, 3.25 
+			stroke 
+		// ... 
+		path 
+			pt -1, 1, 0 
+			pt -1, -1, 0 
+			stroke 
+		path 
+			pt -1, 1, 0 
+			pt 1, 1, 0 
+			stroke 
+		path 
+			pt 1, 1, 0 
+			pt 1, -1, 0 
+			stroke 
+		path 
+			pt 1, -1, 0 
+			pt -1, -1, 0 
+			stroke 
+		// ... 
+		path 
+			pt -1, 1, 3.25 
+			pt -1, -1, 3.25 
+			stroke 
+		path 
+			pt -1, 1, 3.25 
+			pt 1, 1, 3.25 
+			stroke 
+		path 
+			pt 1, 1, 3.25 
+			pt 1, -1, 3.25 
+			stroke 
+		path 
+			pt 1, -1, 3.25 
+			pt -1, -1, 3.25 
+			stroke 
+	vector nei2-GrayCart.lid 
+		path 
+			pt 1, -2, 0 
+			pt 1, -2, 0 
+			pt -1, -2, 0 
+			pt -1, -2, 0 
+			pt -1, -2, 0 
+			pt -1, 0, 0 
+			pt -1, 0, 0 
+			pt -1, 0, 0 
+			pt 1, 0, 0 
+			pt 1, 0, 0 
+			stroke 
+			fill 
+	vector nei2-GrayCart.wheels 
+		color 32, 32, 32, 1 
+			axes 0.04, 0.45, 0.45 
+			at 1, 1, 0 
+				ellipsoid 
+			at -1, 1, 0 
+				ellipsoid 
+// ... 
+
+// Item:  family1 no (gray cart) 
+	
+// ... 
+

@@ -1,0 +1,66 @@
+// character: one 
+	vector one 
+		color 0, 0, 255 , 1 
+		// The pants: 
+			at 0, 0.08, 0 
+			axes 0.6, 0.33, 0.33 
+				ellipsoid 
+			vector one.left-low.femur 
+				
+		vector one.body 
+			color 255, 0, 0 , 1 
+			// The shirt: 
+				at 0, 0, 0.1 
+					ellipsoid 
+				at 0, 0, 0.2 
+					ellipsoid 
+				at 0, 0, 0.3 
+					ellipsoid 
+				at 0, 0, 0.4 
+					ellipsoid 
+				at 0, 0, 0.5 
+					ellipsoid 
+				at 0, 0, 0.6 
+					ellipsoid 
+				at 0, 0, 0.7 
+					ellipsoid 
+				at 0, 0, 0.8 
+					ellipsoid 
+				at 0, 0, 0.9 
+					ellipsoid 
+				at 0, 0, 1.0 
+					ellipsoid 
+				at 0, 0, 1.1 
+					axes 0.7, 0.33, 0.33 
+					ellipsoid 
+				vector one.body.left-high.arm 
+					at 0, 0, 0.33 
+					axes 0.16, 0.16, 0.33 
+						ellipsoid 
+				vector one.body.right-high.arm 
+						ellipsoid 
+		vector one.body.neck 
+			color 255,220,177, 1 
+			at 0, 0, 0 
+			axes 0.28, 0.28, 0.4 
+				ellipsoid 
+			vector one.body.left-high.arm 
+				at 0, 0, 0.55 
+				axes 0.15, 0.125, 0.55 
+					ellipsoid 
+			vector one.body.right-high.arm 
+					ellipsoid 
+			vector one.body.left-high.arm.forearm 
+				at 0, 0, 0.25 
+				axes 0.125, 0.12, 0.25 
+					ellipsoid 
+				at 0, 0, 0.6 
+				axes 0.08, 0.05, 0.25 
+					ellipsoid 
+			vector one.body.right-high.arm.forearm 
+				at 0, 0, 0.25 
+				axes 0.125, 0.12, 0.25 
+					ellipsoid 
+				at 0, 0, 0.6 
+				axes 0.08, 0.05, 0.25 
+					ellipsoid 

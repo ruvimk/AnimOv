@@ -1,0 +1,1 @@
+vect stick-figure-1.body.right-high.right-arm.right-forearm

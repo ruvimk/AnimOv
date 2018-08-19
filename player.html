@@ -1,0 +1,272 @@
+<!DOCTYPE HTML> 
+<html> 
+	<head> 
+		<title> AnimOv Play </title> 
+	</head> 
+	<body> 
+		<script type="text/javascript"> 
+			var txt= document.createElement ("div"); 
+				document.body.appendChild (txt); 
+				document.body.style.background= "#000000"; 
+				document.body.style.margin= "0px"; 
+				txt.style.position= "absolute"; 
+				txt.style.left= "0px"; 
+				txt.style.top= "0px"; 
+			/*var ctrl= document.createElement ("div"); 
+				document.body.appendChild (ctrl); */
+			var a; 
+			var http; 
+			if (navigator.appName == "Microsoft Internet Explorer") http= new ActiveXObject ("Microsoft.XMLHTTP"); 
+			else http= new XMLHttpRequest (); 
+			var n; 
+			var id= 0; 
+			var fps; 
+			var buffer_seconds_ahead= 10; 
+			var buffer_size; 
+			var main_w; 
+			var main_h; 
+			var play_w; 
+			var play_h; 
+			var frames; 
+			var query= (location + "").split ("?")[1]; 
+			if (query){ 
+				var arr= query.split ("&"); 
+				var i; 
+				for (i= 0; i < arr.length; i++){ 
+					if (arr[i].split ("=")[0] == "id") id= parseInt (arr[i].split ("=")[1]); 
+				} 
+				if (id){ 
+					//txt.innerHTML= "<font color=\"red\">Loading... </font>"; 
+					//http.open ("GET", "/AnimOv/data/id" + id + ".aof", false); 
+					//http.send (); 
+					//if (http.responseText){ 
+						//frames= http.responseText.split ("<frame break>"); 
+						frames= []; 
+						//delete http.responseText; 
+						http.open ("GET", "/AnimOv/data/id" + id + ".txt", false); 
+						http.send (); 
+						if (http.responseText){ 
+							arr= http.responseText.split ("\r\n"); 
+						} else if (http.response){ 
+							arr= http.response.split ("\r\n"); 
+						} else { 
+							arr= [400, 300, 12]; 
+						} 
+						main_w= parseInt (arr[0]); 
+						main_h= parseInt (arr[1]); 
+						fps= parseInt (arr[2]); 
+						if (isNaN (main_w)) main_w= 400; 
+						if (isNaN (main_h)) main_h= 300; 
+						if (isNaN (fps)) fps= 12; 
+						buffer_size= fps * buffer_seconds_ahead; 
+						/*ctrl.appendChild (a= document.createElement ("a")); 
+							a.href= "javascript: play ();"; 
+							a.appendChild (document.createTextNode ("Play")); 
+						ctrl.appendChild (a= document.createElement ("a")); 
+							a.href= "javascript: pause ();"; 
+							a.appendChild (document.createTextNode ("Pause")); 
+						ctrl.appendChild (a= document.createElement ("a")); 
+							a.href= "javascript: stop ();"; 
+							a.appendChild (document.createTextNode ("Stop")); 
+						txt.innerHTML= "Press play to begin."; */
+						//var main_interval= setInterval ("RenderNext ();", n); 
+						setTimeout ("RenderNext ();", 100); 
+					//} 
+				} 
+			} 
+			var s= 1; 
+			var counter= 0; 
+			var stopped= false; 
+			var paused= true; 
+			var status= ""; 
+			var can= document.createElement ("canvas"); 
+				can.width= main_w * s; 
+				can.height= main_h * s; 
+				txt.appendChild (can); 
+			var skip_arr= []; 
+			var skip_t= 0; 
+			function RenderNext (){ 
+				var time1= new Date (); 
+				var win_w= window.innerWidth; 
+				var win_h= window.innerHeight - 10; 
+				var left_margin; 
+				var sW= win_w / main_w; 
+				var sH= win_h / main_h; 
+					if (sW < sH) s= sW; 
+					else s= sH; 
+					play_w= main_w * s; 
+					play_h= main_h * s; 
+					left_margin= (win_w - play_w) / 2; 
+				var cmd= (location + "").split ("#")[1]; 
+				if (cmd && cmd != status){ 
+					location= "#" + status; 
+					skip_arr= cmd.split ("skip"); 
+					if (cmd == "pause") pause (); 
+					else if (cmd == "play") play (); 
+					else if (cmd == "stop") stop (); 
+					else if (cmd.toLowerCase () == ("GetStatus").toLowerCase ()) location= "#" + (stopped? "stopped":(paused? "paused":"playing")); 
+					else if (skip_arr[1] && !isNaN (skip_t= parseFloat (unescape (skip_arr[1])))) skip (skip_t); 
+					skip_arr= []; 
+				} 
+				if (!frames[counter + buffer_size]) update_buffer (); 
+				if (!paused && frames[counter]){ 
+					//txt.innerHTML= ""; 
+						//can.width= main_w * s; 
+						//can.height= main_h * s; 
+						can.style.marginLeft= left_margin + "px"; 
+						can.width= play_w; 
+						can.height= play_h; 
+						can.onclick= function (e){}; 
+						can.onmouseup= function (e){ 
+							paused= !paused; 
+							stopped= false; 
+							status= stopped? "stopped":(paused? "paused":"playing"); 
+						}; 
+					var con= can.getContext ("2d"); 
+					var mt= function (x, y){ 
+						con.moveTo (x, y); 
+					}; 
+					var lt= function (x, y){ 
+						con.lineTo (x, y); 
+					}; 
+					var qc= function (a, b, c, d){ 
+						con.quadraticCurveTo (a, b, c, d); 
+					}; 
+					var bc= function (a, b, c, d, e, f){ 
+						con.bezierCurveTo (a, b, c, d, e, f); 
+					}; 
+					var ar= function (a, b, c, d, e, f){ 
+						con.arc (a, b, c, d, e, f); 
+					}; 
+					var fr= function (a, b, c, d){ 
+						con.fillRect (a, b, c, d); 
+					}; 
+					var sr= function (a, b, c, d){ 
+						con.strokeRect (a, b, c, d); 
+					}; 
+					var ff= function (){ 
+						con.fill (); 
+					}; 
+					var sf= function (){ 
+						con.stroke (); 
+					}; 
+					var fst= function (x){ con.fillStyle= x; }; 
+					var sst= function (x){ con.strokeStyle= x; }; 
+					var lwd= function (x){ con.lineWidth= x; }; 
+					try { 
+						eval (frames[counter] || ""); 
+					} catch (err){ 
+						
+					} 
+					counter++; 
+				} 
+				n= Math.floor (1000 / fps) - (new Date () - time1); 
+				if (n < 20) n= 20; 
+				setTimeout ("RenderNext ();", n); 
+			} 
+			function play (){ 
+				paused= false; 
+				if (buffer_status.split ("top").length > 1) counter= 0; 
+				stopped= false; 
+				status= "playing"; 
+			} 
+			function pause (){ 
+				paused= true; 
+				stopped= false; 
+				status= "paused"; 
+			} 
+			function stop (){ 
+				paused= true; 
+				counter= 0; 
+				stopped= true; 
+				status= "stopped"; 
+			} 
+			function skip (t){ 
+				counter= Math.floor (fps * t); 
+			} 
+			var http1; 
+			var http2; 
+				if (navigator.appName == "Microsoft Internet Explorer"){ 
+					http1= new ActiveXObject ("Microsoft.XMLHTTP"); 
+					http2= new ActiveXObject ("Microsoft.XMLHTTP"); 
+				} else { 
+					http1= new XMLHttpRequest (); 
+					http2= new XMLHttpRequest (); 
+				} 
+			var buffer_status= "normal"; 
+			function update_buffer (){ 
+				var arr; 
+				var done_now= false; 
+				var done_buf= false; 
+				if (buffer_status == "buffering") return; 
+				arr= buffer_status.split ("top"); 
+				if (arr.length > 1){ 
+					if (counter >= parseInt (arr[1])) done_now= true; 
+					if (counter + buffer_size >= parseInt (arr[1])) done_buf= true; 
+				} 
+				var i; 
+				for (i= 0; i + fps < frames[counter]; i++){ 
+					delete frames[counter]; 
+					if (frames[counter]) frames[counter]= ""; 
+				} 
+				if (!frames[counter] && !done_now){ 
+					status= "buffering" + counter; 
+					buffer_status= "buffering"; 
+					http1.open ("GET", "BufferFrames.asp?id=" + id + "&start=" + counter + "&len=" + (buffer_size * 2)); 
+					http1.onreadystatechange= function (){ 
+						var arr; 
+						var i; 
+						var t; 
+						if (http1.readyState == 4){ 
+							if (http1.status == 200){ 
+								arr= (t= http1.responseText || http1.response || "").split ("<frame break>"); 
+								if (!t){ 
+									buffer_status= "top" + counter; 
+									paused= true; 
+									counter= 0; 
+									status= stopped? "stopped":(paused? "paused":"playing"); 
+									return; 
+								} 
+								for (i= counter; i - counter < buffer_size * 2; i++) frames[i]= arr[i - counter]; 
+								delete arr; 
+								status= stopped? "stopped":(paused? "paused":"playing"); 
+								buffer_status= "normal"; 
+							} else { 
+								status= "buffer+error"; 
+								buffer_status= "error"; 
+							} 
+						} 
+					}; 
+					http1.send (); 
+				} else if (!done_buf){ 
+					buffer_status= "buffering"; 
+					http2.open ("GET", "BufferFrames.asp?id=" + id + "&start=" + (counter + buffer_size) + "&len=" + buffer_size); 
+					http2.onreadystatechange= function (){ 
+						var arr; 
+						var i; 
+						var t; 
+						if (http2.readyState == 4){ 
+							if (http2.status == 200){ 
+								arr= (t= http2.responseText || http2.response || "").split ("<frame break>"); 
+								if (!t){ 
+									buffer_status= "top" + (counter + buffer_size); 
+									return; 
+								} 
+								for (i= counter + buffer_size; i - counter < buffer_size * 2; i++) frames[i]= arr[i - counter - buffer_size]; 
+								delete arr; 
+								buffer_status= "normal"; 
+							} else { 
+								buffer_status= "error"; 
+							} 
+						} 
+					}; 
+					http2.send (); 
+				} else if (!frames[counter]){ 
+					paused= true; 
+					counter= 0; 
+					status= stopped? "stopped":(paused? "paused":"playing"); 
+				} 
+			} 
+		</script> 
+	</body> 
+</html> 

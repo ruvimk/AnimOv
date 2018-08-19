@@ -1,0 +1,101 @@
+color 240,240,240,1 
+path 
+vector stick-figure-1.body.neck.head.face 
+pt -7.74,0,0.64 
+pt -8.14,0,7.58 
+pt -7,0,10.8 
+pt -5.08,0,10.78 
+pt -3.06,0,10.84 
+pt -2.18,0,9.24 
+pt -2.42,0,0.7 
+fill 
+path 
+pt 7.74,0,0.64 
+pt 8.14,0,7.58 
+pt 7,0,10.8 
+pt 5.08,0,10.78 
+pt 3.06,0,10.84 
+pt 2.18,0,9.24 
+pt 2.42,0,0.7 
+fill 
+color 255,220,177,1 
+vector stick-figure-1.body.neck 
+at 0, 0, 10 
+axes 5, 5, 10 
+ellipsoid 
+vector stick-figure-1.body.neck.head 
+at 0, 0, 30 
+axes 15, 18, 22 
+ellipsoid 
+color 68,68,68,1 
+vector stick-figure-1.body.neck.head.hair 
+at 0, 1.5, 30.8 
+axes 18, 19, 22 
+ellipsoid 
+color 255,220,177,1 
+vector stick-figure-1.body.left-high.left-arm 
+at 0, 0, 30 
+axes 8, 8, 15 
+ellipsoid 
+vector stick-figure-1.body.left-high.left-arm.left-forearm 
+at 0, 0, 20 
+axes 8, 8, 20 
+ellipsoid 
+vector stick-figure-1.body.right-high.right-arm 
+at 0, 0, 30 
+axes 8, 8, 15 
+ellipsoid 
+vector stick-figure-1.body.right-high.right-arm.right-forearm 
+at 0, 0, 20 
+axes 8, 8, 20 
+ellipsoid 
+color 255,0,0,1 
+vector stick-figure-1.body 
+at 0, 0, 30 
+axes 20, 10, 30 
+ellipsoid 
+at 0, 0, 55 
+axes 20, 10, 15 
+ellipsoid 
+vector stick-figure-1.body.left-high.left-arm 
+at 0, 0, 10 
+axes 10, 10, 10 
+ellipsoid 
+vector stick-figure-1.body.right-high.right-arm 
+ellipsoid 
+color 0,0,255,1 
+vector stick-figure-1 
+at 0, 0, 0 
+axes 20, 10, 5 
+ellipsoid 
+vector stick-figure-1.left-low.left-femur 
+at 0, 0, 30 
+axes 5, 5, 30 
+ellipsoid 
+vector stick-figure-1.left-low.left-femur.left-leg 
+ellipsoid 
+vector stick-figure-1.right-low.right-femur 
+ellipsoid 
+vector stick-figure-1.right-low.right-femur.right-leg 
+ellipsoid 
+color 68,68,0,1 
+vector stick-figure-1.left-low.left-femur.left-leg.left-foot 
+at 0, 0, 10 
+axes 8, 5, 12 
+ellipsoid 
+vector stick-figure-1.right-low.right-femur.right-leg.right-foot 
+ellipsoid 
+color 255,0,0,1 
+path 
+vector figure1.branch1 
+pt 0,0,0 
+pt 0,0,0 
+pt 0,100,0 
+pt 0,100,0 
+pt 0,100,0 
+pt 100,50,70 
+pt 100,50,70 
+pt 100,50,70 
+pt 0,0,0 
+pt 0,0,0 
+fill 

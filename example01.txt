@@ -1,0 +1,12 @@
+figure1.x=0
+figure1.y=0
+figure1.z=0
+figure1.aboutX=7
+figure1.aboutY=0
+figure1.aboutZ=0
+figure1.opc=0
+figure1.branch1.x=0
+... 
+figure1.branch1.opc=0
+
+... toon code, lower-level ... 

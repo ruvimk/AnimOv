@@ -1,0 +1,97 @@
+<!DOCTYPE HTML> 
+<html> 
+	<head> 
+		<title> Render - AnimOv </title> 
+	</head> 
+	<body> 
+		<h1> Render - AnimOv </h1> 
+		<script type="text/javascript"> 
+			var id= 0; 
+			var query= (location + "").split ("?")[1]; 
+			if (query){ 
+				var arr= query.split ("&"); 
+				var i; 
+				for (i= 0; i < arr.length; i++){ 
+					if (arr[i].split ("=")[0] == "id") id= parseInt (arr[i].split ("=")[1]); 
+				} 
+				if (!id) id= 0; 
+			} 
+			var http1; 
+			var http2; 
+				if (navigator.appName == "Microsoft Internet Explorer"){ 
+					http1= new ActiveXObject ("Microsoft.XMLHTTP"); 
+					http2= new ActiveXObject ("Microsoft.XMLHTTP"); 
+				} else { 
+					http1= new XMLHttpRequest (); 
+					http2= new XMLHttpRequest (); 
+				} 
+			var txt= document.createElement ("div"); 
+				document.body.appendChild (txt); 
+			var inp1= document.createElement ("input"); 
+			var inp2= document.createElement ("input"); 
+			var inp3= document.createElement ("input"); 
+				inp1.type= "text"; 
+				inp2.type= "text"; 
+				inp3.type= "text"; 
+				inp1.value= id; 
+				document.body.appendChild (document.createElement ("br")); 
+				document.body.appendChild (document.createTextNode ("ID: ")); 
+				document.body.appendChild (inp1); 
+				document.body.appendChild (document.createElement ("br")); 
+				document.body.appendChild (document.createTextNode ("Target Width: ")); 
+				document.body.appendChild (inp2); 
+				document.body.appendChild (document.createElement ("br")); 
+				document.body.appendChild (document.createTextNode ("Target Height: ")); 
+				document.body.appendChild (inp3); 
+				document.body.appendChild (document.createElement ("br")); 
+			var btn= document.createElement ("button"); 
+				document.body.appendChild (btn); 
+			inp2.value= 640; 
+			inp3.value= 480; 
+			btn.onclick= start; 
+			btn.appendChild (document.createTextNode ("Start Render")); 
+			setTimeout ("UpdateProgress ();", 100); 
+			function UpdateProgress (){ 
+				var can; 
+				var con; 
+				var pc; 
+				var stage; 
+				var msg; 
+				var a; 
+				var b; 
+				if (id){ 
+					try { 
+						http2.open ("GET", "/AnimOv/data/progress" + id + ".txt?cid=" + escape ("" + Math.random ()), false); 
+						http2.send (); 
+						if (http2.responseText){ 
+							pc= 100 * (a= parseInt (http2.responseText)) / (b= parseInt (http2.responseText.split ("/")[1])); 
+							stage= http2.responseText.split (":")[1]; 
+							msg= http2.responseText.split (";msg:")[1] || ""; 
+							txt.innerHTML= msg + " " + a + "/" + b + " (" + pc + "%) <BR> <BR> "; 
+							txt.appendChild (can= document.createElement ("canvas")); 
+								can.width= 400; 
+								can.height= 50; 
+								can.style.border= "1px #88FF00 solid"; 
+								con= can.getContext ("2d"); 
+									con.fillStyle= "#F8F8F8"; 
+									con.fillRect (0, 0, 400, 50); 
+									if (stage.charAt (0) == "c") con.fillStyle= "#888800"; 
+									else con.fillStyle= "#FF0000"; 
+									con.fillRect (0, 0, pc * 4, 50); 
+							if (stage == "r" && pc == 100) btn.disabled= false; 
+						} 
+					} catch (err){ 
+						txt.innerHTML= ""; 
+					} 
+				} 
+				setTimeout ("UpdateProgress ();", 1000); 
+			} 
+			function start (){ 
+				btn.disabled= true; 
+				http1.open ("GET", "/AnimOv/RenderToon2.asp?EnableToon=1&id=" + (id= parseInt (inp1.value)) + "&w=" + parseInt (inp2.value) + "&h=" + parseInt (inp3.value)); 
+				http1.send (); 
+				setTimeout ("btn.disabled= true;", 1100); 
+			} 
+		</script> 
+	</body> 
+</html> 

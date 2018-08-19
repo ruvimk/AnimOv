@@ -1,0 +1,25 @@
+typedef struct { 
+	void * pLast; 
+	void * pNext; 
+	double x; 
+	double y; 
+	double z; 
+	double opc; 
+	char vct[256]; 
+} POINT_LINK; 
+
+unsigned char objColor[3]; 
+unsigned char objOutline[3]; 
+
+double objLine; 
+
+char objVector[1024]; 
+
+double atX, atY, atZ; 
+double aboutX, aboutY, aboutZ; 
+double axisX, axisY, axisZ; 
+
+char cmdString[1024]; 
+char cmdTail[1024]; 
+
+POINT_LINK * pFirst= 0; 

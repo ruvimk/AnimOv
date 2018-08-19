@@ -1,0 +1,175 @@
+<file type="text/xml-animation"> 
+	<header> 
+		<object> 
+			color = #0000FF 
+			and 
+			outline = #FF0000 
+			and line = 1 
+			<points> 
+				vector= figure1.branch1 
+				1 (0, 0, 0) 
+				2 (0, 100, 0) 
+				3 (100, 50, 70) 
+			</points> 
+			<faces> 
+				1, 2, 3 = #FF0000 
+			</faces> 
+			<toon> 
+				vector = figure1.branch1 <!-- 
+				ellipsoid (at:(0, -500, 0);about:(0,0,0);radii:(10, 20, 30);) 
+				ellipsoid (at:(50, -200, -20);about:(0,0,0);axes:(100, 200, 300);) --> 
+			</toon> 
+		</object> 
+		<object name="person1_leye"> 
+			color = #F0F0F0 and outline = #000000 and line = 1 
+			<toon> 
+				vector = stick-figure-1.body.neck.head.face 
+				bezier (fill,) [(-7.74, 0, 0.64), (-8.14, 0, 7.58), (-7, 0, 10.8), (-5.08, 0, 10.78), 
+					(-3.06, 0, 10.84), (-2.18, 0, 9.24), (-2.42, 0, 0.7),] 
+			</toon> 
+		</object> 
+		<object name="person1_reye"> 
+			color = #F0F0F0 and outline = #000000 and line = 1 
+			<toon> 
+				vector = stick-figure-1.body.neck.head.face 
+				bezier (fill,) [(7.74, 0, 0.64), (8.14, 0, 7.58), (7, 0, 10.8), (5.08, 0, 10.78), 
+					(3.06, 0, 10.84), (2.18, 0, 9.24), (2.42, 0, 0.7),] 
+			</toon> 
+		</object> 
+		<object name="person1_head"> 
+			color = #FFDCB1 and outline = #000000 and line = 1 
+			<toon> 
+				vector = stick-figure-1.body.neck 
+				ellipsoid (at: (0, 0, 10); about: (0, 0, 0); axes: (5, 5, 10);) 
+				
+				vector = stick-figure-1.body.neck.head 
+				ellipsoid (at: (0, 0, 30); about: (0, 0, 0); axes: (15, 18, 22);) 
+			</toon> 
+		</object> 
+			<object name="person1_hair"> 
+				color = #444444 
+				<toon> 
+					vector = stick-figure-1.body.neck.head.hair 
+					ellipsoid (at: (0, 1.5, 30.8); about: (0, 0, 0); axes: (18, 19, 22);) 
+				</toon> 
+			</object> 
+		<object name="person1_lhand"> 
+			color = #FFDCB1 and outline = #000000 and line = 1 
+			<toon> 
+				vector = stick-figure-1.body.left-high.left-arm 
+				ellipsoid (at: (0, 0, 30); about: (0, 0, 0); axes: (8, 8, 15);)
+				
+				vector = stick-figure-1.body.left-high.left-arm.left-forearm 
+				ellipsoid (at: (0, 0, 20); about: (0, 0, 0); axes: (8, 8, 20);) 
+			</toon> 
+		</object> 
+		<object name="person1_rhand"> 
+			color = #FFDCB1 and outline = #000000 and line = 1 
+			<toon> 
+				vector = stick-figure-1.body.right-high.right-arm 
+				ellipsoid (at: (0, 0, 30); about: (0, 0, 0); axes: (8, 8, 15);) 
+				
+				vector = stick-figure-1.body.right-high.right-arm.right-forearm 
+				ellipsoid (at: (0, 0, 20); about: (0, 0, 0); axes: (8, 8, 20);) 
+			</toon> 
+		</object> 
+		<object name="person1_shirt"> 
+			color = #FF0000 and outline = #000000 and line = 1 
+			<toon> 
+				vector = stick-figure-1.body 
+				ellipsoid (at:(0,0,30); about: (0, 0, 0); axes: (20, 10, 30);) 
+				ellipsoid (at: (0, 0, 55); about: (0, 0, 0); axes: (20, 10, 15);) 
+				
+				vector = stick-figure-1.body.left-high.left-arm 
+				ellipsoid (at: (0, 0, 10); about: (0, 0, 0); axes: (10, 10, 10);) 
+				
+				vector = stick-figure-1.body.right-high.right-arm 
+				ellipsoid (at: (0, 0, 10); about: (0, 0, 0); axes: (10, 10, 10);) 
+			</toon> 
+		</object> 
+		<object name="person1_pants"> 
+			color = #0000FF and outline = #000000 and line = 1 
+			<toon> 
+				vector = stick-figure-1 
+				ellipsoid (at:(0,0,0); about: (0, 0, 0); axes: (20, 10, 5);) 
+				
+				vector = stick-figure-1.left-low.left-femur 
+				ellipsoid (at: (0, 0, 30); about: (0, 0, 0); axes: (5, 5, 30);) 
+				vector = stick-figure-1.left-low.left-femur.left-leg 
+				ellipsoid (at: (0, 0, 30); about: (0, 0, 0); axes: (5, 5, 30);) 
+				
+				vector = stick-figure-1.right-low.right-femur 
+				ellipsoid (at: (0, 0, 30); about: (0, 0, 0); axes: (5, 5, 30);) 
+				vector = stick-figure-1.right-low.right-femur.right-leg 
+				ellipsoid (at: (0, 0, 30); about: (0, 0, 0); axes: (5, 5, 30);) 
+			</toon> 
+		</object> 
+		<object name="person1_lshoe"> 
+			color = #444400 and outline = #000000 and line = 1 
+			<toon> 
+				vector = stick-figure-1.left-low.left-femur.left-leg.left-foot 
+				ellipsoid (at: (0, 0, 10); about: (0, 0, 0); axes: (8, 5, 12);) 
+			</toon> 
+		</object> 
+		<object name="person1_rshoe"> 
+			color = #444400 and outline = #000000 and line = 1 
+			<toon> 
+				vector = stick-figure-1.right-low.right-femur.right-leg.right-foot 
+				ellipsoid (at: (0, 0, 10); about: (0, 0, 0); axes: (8, 5, 12);) 
+			</toon> 
+		</object> 
+	</header> 
+	<animation fps="12"> 
+		<frame number="1" camname="camera1"> 
+			linesFor = 0 
+			<camera name="camera1" xyz="(0,500,0)" /> 
+			<figure name="figure1"> 
+				<branch name="branch1" rev="(0, 0, 0)" /> 
+			</figure> 
+			<figure name="stick-figure-1" xyz="(0,0,0)" rev="(0,0,3.1415)"> 
+				<branch name="body" xyz="(0,0,0)" rev="(0,0,0)"> 
+					<branch name="neck" xyz="(0,0,60)" rev="(0,0,0)"> 
+						<branch name="head" xyz="(0,0,10)" rev="(0,0,0)"> 
+							<branch name="top-of-head" xyz="(0,0,20)" /> 
+							<branch name="face" xyz="(0, -10, 30)" rev="(0, 0, 0)" /> 
+						</branch> 
+					</branch> 
+					<branch name="left-high" xyz="(0,0,60)" rev="(0,1.57,0)"> 
+						<branch name="left-arm" xyz="(0,0,20)" rev="(0,0.4,0)"> 
+							<branch name="left-forearm" xyz="(0,0,40)" rev="(0,0.8,0)"> 
+								<branch name="left-hand" xyz="(0,0,40)" /> 
+							</branch> 
+						</branch> 
+					</branch> 
+					<branch name="right-high" xyz="(0,0,60)" rev="(0,-1.57,0)"> 
+						<branch name="right-arm" xyz="(0,0,20)" rev="(0,-0.4,0)"> 
+							<branch name="right-forearm" xyz="(0,0,40)" rev="(0,-0.8,0)"> 
+								<branch name="right-hand" xyz="(0,0,40)" /> 
+							</branch> 
+						</branch> 
+					</branch> 
+				</branch> 
+				<branch name="left-low" xyz="(0,0,0)" rev="(0,1.57,0)"> 
+					<branch name="left-femur" xyz="(0,0,20)" rev="(0,1.57,0)"> 
+						<branch name="left-leg" xyz="(0,0,60)" rev="(0,0,0)"> 
+							<branch name="left-foot" xyz="(0,0,60)" rev="(-1.57,0,0)" /> 
+						</branch> 
+					</branch> 
+				</branch> 
+				<branch name="right-low" xyz="(0,0,0)" rev="(0,-1.57,0)"> 
+					<branch name="right-femur" xyz="(0,0,20)" rev="(0,-1.57,0)"> 
+						<branch name="right-leg" xyz="(0,0,60)" rev="(0,0,0)"> 
+							<branch name="right-foot" xyz="(0,0,60)" rev="(-1.57,0,0)" /> 
+						</branch> 
+					</branch> 
+				</branch> 
+			</figure> 
+		</frame> 
+		<frame number="100"> 
+			<figure name="figure1"> 
+				<branch name="branch1" rev="(0, 0, 50)" /> 
+			</figure> 
+			<figure name="stick-figure-1" rev="(0, 0, 10)" /> 
+		</frame> 
+	</animation> 
+</file> 

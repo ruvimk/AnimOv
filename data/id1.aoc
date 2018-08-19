@@ -1,0 +1,110 @@
+1	set figure figures.stick-figure-1.x 100 @1<stop>
+2	set figure figures.stick-figure-1.y 1 @247<stop>
+3	del frame 247<stop>
+4	set figure figures.stick-figure-1.x -50 @1<stop>
+5	set figure figures.stick-figure-1.aboutY 0.5 @1<stop>
+6	set figure figures.stick-figure-1.aboutY 1.5707963267948966 @1<stop>
+7	new camera cam2<stop>
+8	new figure figure02<stop>
+9	new figure figures.figure02.branch1<stop>
+10	new figure figure3<stop>
+11	ren figure figures.figure3 figure03<stop>
+12	ren figure figures.figure1 figure1b<stop>
+13	del figure figures.figure1b<stop>
+14	del figure figures.figure02<stop>
+15	del figure figures.figure03<stop>
+16	del camera cam2<stop>
+17	ren figure figures.stick-figure-1 stick-figure-1<stop>
+18	set camera camera1.zoom 1.125 @1<stop>
+19	set camera camera1.zoom 1.25 @1<stop>
+20	set camera camera1.zoom 1.375 @1<stop>
+21	set camera camera1.zoom 1.5 @1<stop>
+22	set figure figures.stick-figure-1.x -56.04204204204204 @54<stop>
+23	del frame 54<stop>
+24	set camera camera1.zoom 1.5625 @1<stop>
+25	set camera camera1.zoom 3.8125 @1<stop>
+26	set camera camera1.y 401 @1<stop>
+27	set camera camera1.y 426 @1<stop>
+28	set camera camera1.z 34 @1<stop>
+29	set camera camera1.x 1 @1<stop>
+30	set figure figures.stick-figure-1.x -13.5 @1<stop>
+31	set figure figures.stick-figure-1.x -27.5 @1<stop>
+32	set figure figures.stick-figure-1.body.neck.head.x 26.5 @760<stop>
+33	set figure figures.stick-figure-1.body.neck.head.y 22 @788<stop>
+34	set figure figures.stick-figure-1.body.neck.head.z 40.5 @809<stop>
+35	set figure figures.stick-figure-1.body.neck.head.aboutX 6.675884388878311 @844<stop>
+36	set figure figures.stick-figure-1.body.neck.head.aboutY 9.817477042468104 @883<stop>
+37	set figure figures.stick-figure-1.body.neck.head.aboutZ 10.210176124166829 @937<stop>
+38	set figure figures.stick-figure-1.body.neck.head.opc 0 @971<stop>
+39	set figure figures.stick-figure-1.x 59 @1<stop>
+40	set figure figures.stick-figure-1.x 4.5 @1<stop>
+41	set figure figures.stick-figure-1.aboutZ 8.639287143782138 @1<stop>
+42	ren figure figures.stick-figure-1 stick-figure-001<stop>
+43	ren figure figures.stick-figure-001 stick-figure-1<stop>
+44	ren figure figures.stick-figure-1 one<stop>
+45	ren figure figures.one two<stop>
+46	ren figure figures.two three<stop>
+47	ren figure figures.three four<stop>
+48	ren figure figures.four stick-figure-1<stop>
+49	set camera camera1.zoom 2.774774774774775 @414<stop>
+50	set camera camera1.zoom 2.899774774774775 @414<stop>
+51	set camera camera1.zoom 3.024774774774775 @414<stop>
+52	set camera camera1.zoom 3.149774774774775 @414<stop>
+53	set camera camera1.zoom 11 @414<stop>
+54	set camera camera1.zoom 10.875 @414<stop>
+55	set camera camera1.zoom 10.75 @414<stop>
+56	set camera camera1.zoom 10.625 @414<stop>
+57	set camera camera1.zoom 10.5 @414<stop>
+58	set camera camera1.zoom 10.375 @414<stop>
+59	set camera camera1.zoom 10.25 @414<stop>
+60	set camera camera1.zoom 10.125 @414<stop>
+61	set camera camera1.zoom 10.125 @414<stop>
+62	set camera camera1.zoom 10 @414<stop>
+63	set camera camera1.zoom 10 @414<stop>
+64	set camera camera1.zoom 3.9375 @1<stop>
+65	set camera camera1.zoom 4.25 @1<stop>
+66	set camera camera1.zoom 5.6254.25 @1<stop>
+67	set camera camera1.zoom 5.7504 @1<stop>
+68	set camera camera1.zoom 5.8754 @1<stop>
+69	set camera camera1.zoom 6.0004 @1<stop>
+70	set camera camera1.zoom 6.1254 @1<stop>
+71	set camera camera1.zoom 6.2504 @1<stop>
+72	set camera camera1.zoom 6.3754 @1<stop>
+73	set camera camera1.zoom 6.5004 @1<stop>
+74	set camera camera1.zoom 6.6254 @1<stop>
+75	set camera camera1.zoom 6.7504 @1<stop>
+76	set figure figures.stick-figure-1.z 0.5 @120<stop>
+77	set figure figures.stick-figure-1.z 40.5 @120<stop>
+78	set figure figures.stick-figure-1.x 24.670559887951192 @120<stop>
+79	set figure figures.stick-figure-1.x 14.670559887951192 @120<stop>
+80	set figure figures.stick-figure-1.aboutY 1.776383533730265 @120<stop>
+81	set figure figures.stick-figure-1.aboutY 2.169082615428989 @120<stop>
+82	set figure figures.stick-figure-1.aboutY 2.561781697127713 @120<stop>
+83	set figure figures.stick-figure-1.aboutY 2.9544807788264373 @120<stop>
+84	set figure figures.stick-figure-1.aboutY 3.3471798605251614 @120<stop>
+85	set figure figures.stick-figure-1.aboutY 3.7398789422238856 @120<stop>
+86	set figure figures.stick-figure-1.aboutY 4.132578023922609 @120<stop>
+87	set figure figures.stick-figure-1.aboutY 4.525277105621333 @120<stop>
+88	set figure figures.stick-figure-1.aboutY 4.132578023922609 @120<stop>
+89	set figure figures.stick-figure-1.aboutY 3.7398789422238847 @120<stop>
+90	set figure figures.stick-figure-1.aboutY 3.3471798605251606 @120<stop>
+91	set figure figures.stick-figure-1.aboutY 2.9544807788264364 @120<stop>
+92	set figure figures.stick-figure-1.aboutY 2.5617816971277123 @120<stop>
+93	set figure figures.stick-figure-1.aboutY 2.169082615428988 @120<stop>
+94	set figure figures.stick-figure-1.aboutY 1.7763835337302642 @120<stop>
+95	set figure figures.stick-figure-1.aboutY 1.3836844520315401 @120<stop>
+96	set figure figures.stick-figure-1.aboutY 0.9909853703328161 @120<stop>
+97	set figure figures.stick-figure-1.aboutY 1.3836844520315401 @120<stop>
+98	set figure figures.stick-figure-1.aboutY 1.7763835337302642 @120<stop>
+99	set figure figures.stick-figure-1.aboutX 13.901595212595571 @120<stop>
+100	set figure figures.stick-figure-1.aboutX 14.294294294294294 @120<stop>
+101	set figure figures.stick-figure-1.aboutZ 7.010403451992474 @120<stop>
+102	set figure figures.stick-figure-1.aboutZ 6.617704370293749 @120<stop>
+103	set figure figures.stick-figure-1.aboutZ 6.2250052885950255 @120<stop>
+104	set figure figures.stick-figure-1.aboutZ 5.832306206896301 @120<stop>
+105	set figure figures.stick-figure-1.aboutZ 5.439607125197576 @120<stop>
+106	set figure figures.stick-figure-1.aboutZ 8.246588062083414 @1<stop>
+107	set figure figures.stick-figure-1.aboutZ 8.63928714378214 @1<stop>
+108	set figure figures.stick-figure-1.z 10 @1<stop>
+109	set figure figures.stick-figure-1.z 0 @1<stop>
+<end of message>

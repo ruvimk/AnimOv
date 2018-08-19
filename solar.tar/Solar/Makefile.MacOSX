@@ -1,0 +1,14 @@
+# makefile for the solarsystem program
+# Jon McCormack, April 2003
+# Macintosh OS X Version - the choice of champions!
+
+OBJS = material.o solarsystem.o trackball.o text.o
+LIBS = -framework OpenGL -framework GLUT -lobjc
+CFLAGS = -Wall
+
+solarsystem: $(OBJS)
+	$(CC) -o solarsystem $(OBJS) $(LIBS)
+
+
+clean:
+	@rm -f $(OBJS) solarsystem

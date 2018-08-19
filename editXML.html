@@ -1,0 +1,76 @@
+<!DOCTYPE HTML> 
+<html> 
+	<head> 
+		<title> Edit XML - AnimOv </title> 
+	</head> 
+	<body> 
+		<h1> Edit XML - AnimOv </h1> 
+		<script type="text/javascript"> 
+			var id= 0; 
+			var query= (location + "").split ("?")[1]; 
+				if (query){ 
+					var arr= query.split ("&"); 
+					var i; 
+					for (i= 0; i < arr.length; i++){ 
+						if (arr[i].split ("=")[0] == "id") id= parseInt (arr[i].split ("=")[1]); 
+					} 
+					if (!id) id= 0; 
+				} 
+			var inp1= document.createElement ("input"); 
+			var txt1= document.createElement ("textarea"); 
+				inp1.type= "input"; 
+				inp1.value= id; 
+			var btn1= document.createElement ("button"); 
+			var btn2= document.createElement ("button"); 
+				btn1.onclick= load; 
+				btn2.onclick= save; 
+				btn1.appendChild (document.createTextNode ("Load")); 
+				btn2.appendChild (document.createTextNode ("Save")); 
+			var http; 
+				if (navigator.appName == "Microsoft Internet Explorer") http= new ActiveXObject ("Microsoft.XMLHTTP"); 
+				else http= new XMLHttpRequest (); 
+				http.open ("GET", "/AnimOv/LoadXML.asp?id=" + id, false); 
+				http.send (); 
+				txt1.cols= 80; 
+				txt1.rows= 20; 
+				if (http.status == 200){ 
+					if (http.responseText) txt1.value= http.responseText; 
+					else if (http.response) txt1.value= http.response; 
+				} 
+			document.body.appendChild (document.createTextNode ("ID: ")); 
+			document.body.appendChild (inp1); 
+			document.body.appendChild (btn1); 
+			document.body.appendChild (document.createElement ("br")); 
+			document.body.appendChild (txt1); 
+			document.body.appendChild (document.createElement ("br")); 
+			document.body.appendChild (btn2); 
+			function load (){ 
+				id= parseInt (inp1.value); 
+				http.open ("GET", "/AnimOv/LoadXML.asp?id=" + id, false); 
+				http.send (); 
+				if (http.status != 200){ 
+					// An error occurred. 
+					txt1.value= ""; 
+					return; 
+				} 
+				try { 
+					if (http.responseText) txt1.value= http.responseText; 
+					else if (http.responseText === "") txt1.value= ""; 
+					else alert ("An error occurred."); 
+				} catch (err){ 
+					alert ("An error occurred."); 
+				} 
+			} 
+			function save (){ 
+				id= parseInt (inp1.value); 
+				if (id != 0){ 
+					http.open ("POST", "/AnimOv/SaveXML.asp", false); 
+					http.setRequestHeader ("Content-Type", "application/x-www-form-urlencoded"); 
+					http.send ("id=" + id + "&data=" + escape (txt1.value)); 
+				} else { 
+					alert ("Error:  ID can't be NULL."); 
+				} 
+			} 
+		</script> 
+	</body> 
+</html> 

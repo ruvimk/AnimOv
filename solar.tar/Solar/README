@@ -1,0 +1,80 @@
+Solarsystem - OpenGL demo of a simple solar system
+--------------------------------------------------
+
+Jon McCormack, April 2004, email: jonmc AT csse.monash.edu.au
+Developed as part of the CSE3313 Computer Graphics Course
+Monash University, School of Computer Science and Software Engineering
+Clayton, Victoria, Australia.
+
+This program illustrates the use of inherited compound transforms in OpenGL. The solar system consists of:
+- a sun at the world coordinate origin
+- Earth orbiting the sun once per year
+- moon orbiting the Earth once every 28 days (for fans of the film 28 days latter!).
+
+The Earth also rotates around its own axis once per day (24 hours) and is slightly tilted off its axis
+The program also illustrates the following:
+- a "virtual trackball" for object manipulation (see trackball.h and trackball.c)
+- OpenGL Lighting (there are 2 lights in the program a white light and a blue light)
+- Double buffering
+- Z-buffering (hidden surface removal)
+- use of different transformations for 3D shapes and 2D text in one viewport
+
+* Compiling the program:
+-----------------------
+
+The program contains 2 makefiles: 1 for Mac OS X (BSD Unix) and one for Linux/X Windows
+
+Makefile.MacOSX - Macintosh Makefile
+Makefile.Linux - Linux Makefile
+
+copy the Makefile appropriate for your system to Makefile and then type make to build the program.
+
+make clean will remove all intermediate files.
+
+* Running the program:
+---------------------
+
+solarsystem (no command line arguements)
+
+Hold down the left mouse button and move the mouse to activate the virtual trackball and revolve the
+solar system around on the screen. The right mouse button brings up a menu with the following options:
+
+   wireframe       - toggle wireframe/solid display of planets
+   lighting        - turn OpenGL lighting on and off
+   smooth shading  - turn OpenGL smoothing on and off
+   z-buffer        - turn OpenGL z-buffering on and off
+   orbit rings     - turn the display or earth and moon orbit paths on and off
+
+In addition to the menu there are a number of key commands:
+   z               - zoom out (using gluPerspective)
+   Z               - zoom in (using gluPerspective)
+   .               - zoom out (by translating the camera away from the origin)
+   .               - zoom in (by translating the camera towards the origin)
+   +               - increase simulation time step (runs faster)
+   -               - decrease simulation time step (runs slower)
+   t               - reset simulation time step
+   q               - quit the program
+   
+* Extensions:
+------------
+You might like to try to code the following extensions:
+- Add backface removal to speed up display
+- Modify the trackball interface so its rotation is not reset when menu commands are called
+- Add text labels for the sun, Earth and moon that follow the objects as they move
+- Add a star field as background objects
+- Add texturing of the objects for a more realistic display
+
+* Files:
+-------
+
+Makefile.Linux   - Makefile for Linux/X11 systems
+Makefile.MacOSX  - Makefile for MacOS X systems
+README           - This file
+bool.h           - defines simple boolean type
+material.c       - material, colour and light definitions
+material.h
+solarsystem.c    - main solarsystem code
+text.c           - utility routines for text display
+text.h
+trackball.c      - virtual trackball interface
+trackball.h
